@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T19:32:30.006Z",
+  "generatedAt": "2026-09-11T09:13:50.776Z",
   "counts": {
     "concerts": 13,
     "programmes": 36,
@@ -217,8 +217,8 @@
       "ticket_price": "",
       "currency": "",
       "rating": "",
-      "companion": "Also performed on 2025-05-09. Part of French May Arts Festival.",
-      "notes": ""
+      "companion": "",
+      "notes": "Also performed on 2025-05-09. Part of French May Arts Festival."
     },
     {
       "concert_id": "2",
@@ -412,9 +412,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
+      "soloists": "",
       "performers": "",
-      "notes": "Opening piece. Energetic and brilliant.",
-      "": ""
+      "notes": "Opening piece. Energetic and brilliant."
     },
     {
       "concert_id": "1",
@@ -426,9 +426,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
-      "performers": "Gautier Capucon",
-      "notes": "Written for Rostropovich.",
-      "": ""
+      "soloists": "Gautier Capucon",
+      "performers": "",
+      "notes": "Written for Rostropovich."
     },
     {
       "concert_id": "1",
@@ -440,9 +440,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
+      "soloists": "",
       "performers": "",
-      "notes": "Ravel's 150th anniversary year.",
-      "": ""
+      "notes": "Ravel's 150th anniversary year."
     },
     {
       "concert_id": "1",
@@ -454,9 +454,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
+      "soloists": "",
       "performers": "",
-      "notes": "Lyrical and tender.",
-      "": ""
+      "notes": "Lyrical and tender."
     },
     {
       "concert_id": "1",
@@ -468,9 +468,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
+      "soloists": "",
       "performers": "",
-      "notes": "The famous orchestral showpiece.",
-      "": ""
+      "notes": "The famous orchestral showpiece."
     },
     {
       "concert_id": "2",
@@ -482,9 +482,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Tarmo Peltokoski",
-      "performers": "Leila Josefowicz (violin)",
-      "notes": "",
-      "": ""
+      "soloists": "Leila Josefowicz (violin)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "2",
@@ -496,9 +496,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Tarmo Peltokoski",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     },
     {
       "concert_id": "3",
@@ -510,9 +510,9 @@
       "catalog": "",
       "period": "Post-Romantic",
       "conductor": "Esa-Pekka Salonen",
+      "soloists": "",
       "performers": "",
-      "notes": "Tone poem.",
-      "": ""
+      "notes": "Tone poem."
     },
     {
       "concert_id": "3",
@@ -524,9 +524,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Esa-Pekka Salonen",
-      "performers": "Stefan Dohr (horn)",
-      "notes": "Asian Premiere.",
-      "": ""
+      "soloists": "Stefan Dohr (horn)",
+      "performers": "",
+      "notes": "Asian Premiere."
     },
     {
       "concert_id": "3",
@@ -538,9 +538,9 @@
       "catalog": "",
       "period": "Post-Romantic",
       "conductor": "Esa-Pekka Salonen",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     },
     {
       "concert_id": "4",
@@ -552,9 +552,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Michael Sanderling",
+      "soloists": "",
       "performers": "",
-      "notes": "Theme and variations.",
-      "": ""
+      "notes": "Theme and variations."
     },
     {
       "concert_id": "4",
@@ -566,9 +566,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Michael Sanderling",
-      "performers": "Richard Bamping (cello)",
-      "notes": "World Premiere.",
-      "": ""
+      "soloists": "Richard Bamping (cello)",
+      "performers": "",
+      "notes": "World Premiere."
     },
     {
       "concert_id": "4",
@@ -580,9 +580,9 @@
       "catalog": "",
       "period": "Post-Romantic",
       "conductor": "Michael Sanderling",
+      "soloists": "",
       "performers": "",
-      "notes": "Nietzsche-inspired tone poem.",
-      "": ""
+      "notes": "Nietzsche-inspired tone poem."
     },
     {
       "concert_id": "5",
@@ -594,9 +594,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Francois-Frederic Guy",
-      "performers": "Francois-Frederic Guy (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Francois-Frederic Guy (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "5",
@@ -608,9 +608,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Francois-Frederic Guy",
-      "performers": "Francois-Frederic Guy (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Francois-Frederic Guy (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "5",
@@ -622,9 +622,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Francois-Frederic Guy",
-      "performers": "Francois-Frederic Guy (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Francois-Frederic Guy (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "6",
@@ -636,9 +636,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Francois-Frederic Guy",
-      "performers": "Francois-Frederic Guy (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Francois-Frederic Guy (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "6",
@@ -650,9 +650,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Francois-Frederic Guy",
-      "performers": "Francois-Frederic Guy (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Francois-Frederic Guy (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "7",
@@ -664,9 +664,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Tarmo Peltokoski",
+      "soloists": "",
       "performers": "",
-      "notes": "Composed for LA Philharmonic centennial.",
-      "": ""
+      "notes": "Composed for LA Philharmonic centennial."
     },
     {
       "concert_id": "7",
@@ -678,9 +678,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Tarmo Peltokoski",
-      "performers": "Chen Reiss (soprano), Andre Schuen (bass-baritone), Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",
-      "notes": "Symphony with chorus.",
-      "": ""
+      "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
+      "performers": "Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",
+      "notes": "Symphony with chorus."
     },
     {
       "concert_id": "8",
@@ -692,9 +692,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Yu Long",
+      "soloists": "",
       "performers": "",
-      "notes": "From Khovanshchina Prelude.",
-      "": ""
+      "notes": "From Khovanshchina Prelude."
     },
     {
       "concert_id": "8",
@@ -706,9 +706,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Yu Long",
-      "performers": "Behzod Abduraimov (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Behzod Abduraimov (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "8",
@@ -720,9 +720,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Yu Long",
+      "soloists": "",
       "performers": "",
-      "notes": "Symphonic suite.",
-      "": ""
+      "notes": "Symphonic suite."
     },
     {
       "concert_id": "9",
@@ -734,9 +734,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Tarmo Peltokoski",
+      "soloists": "",
       "performers": "",
-      "notes": "Composed for Bicentennial of the LA Philharmonic.",
-      "": ""
+      "notes": "Composed for Bicentennial of the LA Philharmonic."
     },
     {
       "concert_id": "9",
@@ -748,9 +748,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Tarmo Peltokoski",
-      "performers": "Lang Lang (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Lang Lang (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "9",
@@ -762,9 +762,9 @@
       "catalog": "",
       "period": "Post-Romantic",
       "conductor": "Tarmo Peltokoski",
+      "soloists": "",
       "performers": "",
-      "notes": "Four legends from the Kalevala.",
-      "": ""
+      "notes": "Four legends from the Kalevala."
     },
     {
       "concert_id": "10",
@@ -776,9 +776,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Kahchun Wong",
+      "soloists": "",
       "performers": "",
-      "notes": "Goethe's Egmont incidental music.",
-      "": ""
+      "notes": "Goethe's Egmont incidental music."
     },
     {
       "concert_id": "10",
@@ -790,9 +790,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Kahchun Wong",
+      "soloists": "",
       "performers": "",
-      "notes": "Italianate sun-drenched energy.",
-      "": ""
+      "notes": "Italianate sun-drenched energy."
     },
     {
       "concert_id": "10",
@@ -804,9 +804,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Kahchun Wong",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     },
     {
       "concert_id": "11",
@@ -818,9 +818,9 @@
       "catalog": "",
       "period": "Classical",
       "conductor": "Andris Nelsons",
-      "performers": "Yulianna Avdeeva (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Yulianna Avdeeva (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "11",
@@ -832,9 +832,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Andris Nelsons",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     },
     {
       "concert_id": "12",
@@ -846,9 +846,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Andris Nelsons",
-      "performers": "Yulianna Avdeeva (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Yulianna Avdeeva (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "12",
@@ -860,9 +860,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Andris Nelsons",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     },
     {
       "concert_id": "13",
@@ -874,9 +874,9 @@
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Lio Kuokman",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": "World Premiere. HK Phil Commission."
+      "notes": "World Premiere. HK Phil Commission."
     },
     {
       "concert_id": "13",
@@ -888,9 +888,9 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Lio Kuokman",
-      "performers": "Eric Lu (piano)",
-      "notes": "",
-      "": ""
+      "soloists": "Eric Lu (piano)",
+      "performers": "",
+      "notes": ""
     },
     {
       "concert_id": "13",
@@ -902,9 +902,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Lio Kuokman",
+      "soloists": "",
       "performers": "",
-      "notes": "",
-      "": ""
+      "notes": ""
     }
   ]
 }

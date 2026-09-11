@@ -1,7 +1,5 @@
 # Classical Music Concert Log
 
-A CSV-based system for recording classical music concert experiences, designed for easy statistical analysis.
-
 A CSV-based concert log with a clean **front-end / back-end** separation.
 
 ## Architecture
@@ -20,7 +18,8 @@ concert-log/
 │   ├── concerts.csv        # Source of truth — one row per concert
 │   └── programmes.csv      # Source of truth — one row per piece
 ├── scripts/
-│   └── build-data.js       # Generates docs/data/concert.json for static hosting
+│   ├── build-data.js       # Generates docs/data/concert.json for static hosting
+│   └── validate-data.js    # Checks encoding, columns, dates, referential integrity
 ├── docs/                   # Frontend (static, deployable to GitHub Pages)
 │   ├── index.html
 │   ├── css/
@@ -31,7 +30,8 @@ concert-log/
 │   │   └── app.js          # Renders the dataset, theme switching, search
 │   └── data/
 │       └── concert.json    # Precomputed dataset the frontend fetches
-└── serve.cmd               # One-click launcher (runs server.js)
+├── serve.cmd               # One-click launcher (runs server.js)
+└── .gitattributes          # Normalizes CSV line endings to LF
 ```
 
 **Backend** — `server.js` reads the CSVs via `lib/parse.js`, builds the dataset
@@ -99,8 +99,38 @@ a new theme automatically applies everywhere, including the charts.
 
 ## Data entry
 
-Edit `data/concerts.csv` and `data/programmes.csv`, then restart `node server.js`
-(or re-run `node scripts/build-data.js` for a static build).
+Edit `data/concerts.csv` and `data/programmes.csv`, then:
+
+```bash
+node scripts/validate-data.js   # check encoding, columns, dates, links
+node scripts/build-data.js      # regenerate docs/data/concert.json
+node server.js                  # or restart the running server
+```
+
+### CSV format & Excel
+
+CSV has no single standard, and spreadsheet editors rewrite the whole file, which
+makes Git merges painful (every line shows as changed). To keep the files
+merge-safe:
+
+- **Encoding:** UTF-8 **with BOM**, **LF** line endings. `.gitattributes` pins the
+  line endings (`*.csv text eol=lf`), overriding Git-for-Windows' `core.autocrlf`.
+- **Dates:** ISO `YYYY-MM-DD`. The backend also accepts `2025/5/8` and normalizes it.
+- **Columns:** no trailing empty columns; quote only fields that contain a comma,
+  quote, or newline.
+
+If you edit in **Excel**, save with **File → Save As → CSV UTF-8 (Comma delimited)**
+and set the `date` column format to **Text** before typing dates — otherwise Excel
+rewrites `2026-09-10` as `2026/9/10` and reformats quoting. After any Excel edit,
+run `node scripts/validate-data.js`.
+
+One-time, after `.gitattributes` is committed, normalize the existing history so
+the line-ending rule takes effect:
+
+```bash
+git add --renormalize .
+git commit -m "Normalize CSV line endings"
+```
 
 ## Schema
 
@@ -135,7 +165,8 @@ Edit `data/concerts.csv` and `data/programmes.csv`, then restart `node server.js
 | `catalog` | text | Catalog number: K. (Mozart), BWV (Bach), RV (Vivaldi), etc. | `K. 525` |
 | `period` | text | One of: `Classical`, `Romantic`, `Post-Romantic`, `20th Century`, `Contemporary` | `Romantic` |
 | `conductor` | text | Conductor name (duplicated from concerts.csv for easy querying) | `Andris Nelsons` |
-| `performers` | text | Performers specific to this piece (soloists, etc.) | `Hilary Hahn` |
+| `soloists` | text | Featured soloists for this piece (leave empty for symphonies, etc.) | `Lang Lang (piano)` |
+| `performers` | text | Ensemble / chorus specific to this piece (if any) | `Hong Kong Philharmonic Chorus` |
 | `notes` | text | Notes on this particular piece | `First time hearing live` |
 
 ## Data Entry

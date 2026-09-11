@@ -83,7 +83,7 @@
     }).filter(function (r) {
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
-                 r.p.conductor, r.p.performers, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
+                 r.p.conductor, r.p.soloists, r.p.performers, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(function (a, b) {
       var d = (a.c.date || "").localeCompare(b.c.date || "");
@@ -100,6 +100,7 @@
         "<td>" + esc(p.opus || "") + "</td>" +
         "<td>" + (p.period ? '<span class="pill">' + esc(p.period) + '</span>' : "") + "</td>" +
         "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +
+        "<td>" + esc(p.soloists || "") + "</td>" +
         "<td>" + esc(c.venue || "") + "</td>" +
         "</tr>";
     }).join("");

@@ -1,0 +1,4 @@
+# Normalize CSV line endings so Git merges stay line-stable.
+# core.autocrlf=true (Git for Windows default) otherwise rewrites the whole
+# file on every checkout, turning small edits into full-file conflicts.
+*.csv text eol=lf
