@@ -48,7 +48,10 @@ window.ConcertCharts = (function () {
   function hBar(data, color, maxRows) {
     if (!data.length) return '<p class="muted">No data.</p>';
     if (maxRows) data = data.slice(0, maxRows);
-    var rowH = 30, pad = { l: 150, r: 46, t: 6, b: 6 };
+    // Reserve label space based on the longest label so text never overflows.
+    var longest = data.reduce(function (m, d) { return Math.max(m, String(d.label).length); }, 0);
+    var padL = Math.min(Math.max(longest * 7.4 + 16, 96), 250);
+    var rowH = 32, pad = { l: padL, r: 46, t: 6, b: 6 };
     var W = 600, H = data.length * rowH + pad.t + pad.b;
     var iw = W - pad.l - pad.r;
     var max = Math.max.apply(null, data.map(function (d) { return d.value; })) || 1;
@@ -56,7 +59,7 @@ window.ConcertCharts = (function () {
     var s = ['<svg viewBox="0 0 ' + W + ' ' + H + '" role="img">'];
     data.forEach(function (d, i) {
       var y = pad.t + i * rowH;
-      var barH = 16;
+      var barH = 18;
       var w = Math.max(iw * d.value / max, 2);
       s.push('<text class="row-label" x="' + (pad.l - 10) + '" y="' + (y + barH - 2) + '" text-anchor="end">' + esc(d.label) + '</text>');
       s.push('<rect x="' + pad.l + '" y="' + y + '" width="' + w + '" height="' + barH + '" rx="4" style="fill:' + color + '" opacity="0.88"><title>' + esc(d.label) + ': ' + d.value + '</title></rect>');

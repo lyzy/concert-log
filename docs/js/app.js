@@ -14,6 +14,7 @@
 
   var dataset = null;
   var concertById = {};
+  var sort = { key: "date", dir: "asc" };
 
   // ---------------------------------------------------------------- theme
   function applyTheme(theme) {
@@ -55,6 +56,7 @@
     document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
     document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);
     document.getElementById("chartVenue").innerHTML = Charts.hBar(ch.byVenue, "var(--chart-4)", 8);
+    document.getElementById("chartRating").innerHTML = Charts.vBar(ch.byRating, "var(--chart-5)");
   }
 
   function renderRepeated() {
@@ -76,6 +78,47 @@
     }).join("") + '</ul>';
   }
 
+  function stars(rating) {
+    var pct = Math.max(0, Math.min(5, rating)) / 5 * 100;
+    return '<span class="stars" style="--pct:' + pct + '%" title="' + esc(rating) + ' / 5">' +
+      '<span class="stars-bg">\u2605\u2605\u2605\u2605\u2605</span>' +
+      '<span class="stars-fg">\u2605\u2605\u2605\u2605\u2605</span>' +
+      '</span>';
+  }
+
+  function ratingCell(v) {
+    if (v == null) return '<span class="muted">\u2014</span>';
+    return '<span class="rating-cell">' + stars(v) +
+      '<span class="rating-num">' + esc(v) + '</span></span>';
+  }
+
+  function compareRows(a, b) {
+    if (sort.key === "composer") {
+      // `composer` is the surname field; `composer_full` breaks ties.
+      var an = a.p.composer || a.p.composer_full || "";
+      var bn = b.p.composer || b.p.composer_full || "";
+      var dc = an.localeCompare(bn);
+      if (dc) return sort.dir === "asc" ? dc : -dc;
+      var df = (a.p.composer_full || "").localeCompare(b.p.composer_full || "");
+      if (df) return sort.dir === "asc" ? df : -df;
+      var dtc = (a.c.date || "").localeCompare(b.c.date || "");
+      if (dtc) return dtc;
+      return (+a.p.piece_order || 0) - (+b.p.piece_order || 0);
+    }
+    if (sort.key === "rating") {
+      var ra = a.p.rating, rb = b.p.rating;
+      if (ra == null && rb == null) return (b.c.date || "").localeCompare(a.c.date || "");
+      if (ra == null) return 1;
+      if (rb == null) return -1;
+      var d = ra - rb;
+      if (d) return sort.dir === "asc" ? d : -d;
+      return (b.c.date || "").localeCompare(a.c.date || "");
+    }
+    var dd = (a.c.date || "").localeCompare(b.c.date || "");
+    if (dd) return sort.dir === "asc" ? dd : -dd;
+    return (+a.p.piece_order || 0) - (+b.p.piece_order || 0);
+  }
+
   function renderTable(query) {
     var q = (query || "").trim().toLowerCase();
     var rows = dataset.programmes.map(function (p) {
@@ -83,13 +126,10 @@
     }).filter(function (r) {
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
-                 r.p.conductor, r.p.soloists, r.p.performers, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
+                 r.p.conductor, r.p.soloists, r.p.performers, r.p.rating,
+                 r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
-    }).sort(function (a, b) {
-      var d = (a.c.date || "").localeCompare(b.c.date || "");
-      if (d) return d;
-      return (+a.p.piece_order || 0) - (+b.p.piece_order || 0);
-    });
+    }).sort(compareRows);
 
     document.getElementById("tbody").innerHTML = rows.map(function (r) {
       var p = r.p, c = r.c;
@@ -102,6 +142,7 @@
         "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +
         "<td>" + esc(p.soloists || "") + "</td>" +
         "<td>" + esc(c.venue || "") + "</td>" +
+        "<td>" + ratingCell(p.rating) + "</td>" +
         "</tr>";
     }).join("");
   }
@@ -170,6 +211,31 @@
   document.getElementById("search").addEventListener("input", function (e) {
     if (dataset) renderTable(e.target.value);
   });
+
+  // sortable column headers
+  function applySortClasses() {
+    Array.prototype.forEach.call(document.querySelectorAll("th[data-sort]"), function (th) {
+      th.classList.remove("sorted-asc", "sorted-desc");
+      if (th.getAttribute("data-sort") === sort.key) {
+        th.classList.add(sort.dir === "asc" ? "sorted-asc" : "sorted-desc");
+      }
+    });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll("th[data-sort]"), function (th) {
+    th.addEventListener("click", function () {
+      var key = th.getAttribute("data-sort");
+      if (sort.key === key) {
+        sort.dir = sort.dir === "asc" ? "desc" : "asc";
+      } else {
+        sort.key = key;
+        sort.dir = key === "rating" ? "desc" : "asc";
+      }
+      applySortClasses();
+      renderTable(document.getElementById("search").value);
+    });
+  });
+  applySortClasses();
 
   load();
 })();

@@ -78,15 +78,20 @@ function main() {
   checkEncoding("programmes.csv", pBuf);
 
   console.log("\nconcerts.csv structure");
-  const concerts = checkStructure("concerts.csv", parseCSV(cBuf.toString("utf8")), 13, true);
+  const concerts = checkStructure("concerts.csv", parseCSV(cBuf.toString("utf8")), 12, true);
   const dIdx = colIndex(concerts.header, "date");
   concerts.data.forEach((r, i) => {
     const raw = r[dIdx];
-    if (raw && normalizeDate(raw) !== raw) err("line " + (i + 2) + ": date '" + raw + "' is not ISO (YYYY-MM-DD)");
+    if (raw && normalizeDate(raw) !== raw) warn("line " + (i + 2) + ": date '" + raw + "' is not ISO (normalized to " + normalizeDate(raw) + " at runtime)");
   });
 
   console.log("\nprogrammes.csv structure");
-  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 12, false);
+  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 13, false);
+  const rIdx = colIndex(programmes.header, "rating");
+  programmes.data.forEach((r, i) => {
+    const raw = (r[rIdx] || "").trim();
+    if (raw && isNaN(parseFloat(raw))) warn("line " + (i + 2) + ": rating '" + raw + "' is not numeric");
+  });
 
   console.log("\nreferential integrity");
   const cIds = new Set(concerts.data.map(r => r[0]));

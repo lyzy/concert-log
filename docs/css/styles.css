@@ -140,8 +140,8 @@ svg text { font-family: inherit; }
 .axis-text { fill: var(--text-faint); font-size: 10px; }
 .cat-label { fill: var(--text-muted); font-size: 11px; }
 .bar-value { fill: var(--text); font-size: 11px; font-weight: 600; }
-.row-label { fill: var(--text); font-size: 12px; }
-.row-value { fill: var(--text-muted); font-size: 12px; }
+.row-label { fill: var(--text); font-size: 13.5px; }
+.row-value { fill: var(--text-muted); font-size: 12.5px; }
 .donut-total { fill: var(--text); font-size: 24px; font-weight: 700; }
 .donut-caption { fill: var(--text-muted); font-size: 11px; }
 
@@ -206,6 +206,12 @@ thead th {
   top: 0;
   background: var(--bg-card);
 }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--accent); }
+th.sorted-asc::after { content: " \25b2"; color: var(--accent); }
+th.sorted-desc::after { content: " \25bc"; color: var(--accent); }
+.sorthint { align-self: center; color: var(--text-faint); font-size: 12px; }
+.sorthint b { color: var(--text-muted); font-weight: 600; }
 tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
 tbody tr { transition: background 0.12s ease; }
 tbody tr:hover { background: var(--accent-soft); }
@@ -220,6 +226,27 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   color: var(--text-muted);
   white-space: nowrap;
 }
+
+/* star rating: two stacked rows of stars, the top one clipped to --pct */
+.stars {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 1;
+}
+.stars-bg { color: var(--border); }
+.stars-fg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--pct);
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--accent);
+}
+.rating-cell { display: inline-flex; align-items: center; gap: 7px; }
+.rating-num { color: var(--text-muted); font-size: 11.5px; font-variant-numeric: tabular-nums; }
 
 .muted { color: var(--text-muted); }
 footer { margin-top: 34px; color: var(--text-muted); font-size: 12.5px; text-align: center; }

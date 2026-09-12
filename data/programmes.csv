@@ -1,37 +1,37 @@
-﻿concert_id,piece_order,composer,composer_full,work_title,opus,catalog,period,conductor,soloists,performers,notes
-1,1,Shostakovich,Dmitri Shostakovich,Festive Overture,Op. 96,,20th Century,Christoph Koncz,,,Opening piece. Energetic and brilliant.
-1,2,Shostakovich,Dmitri Shostakovich,Cello Concerto No. 1,Op. 107,,20th Century,Christoph Koncz,Gautier Capucon (cello),,Written for Rostropovich.
-1,3,Ravel,Maurice Ravel,La Valse,,,20th Century,Christoph Koncz,,,Ravel's 150th anniversary year.
-1,4,Ravel,Maurice Ravel,Pavane pour une infante défunte,,,20th Century,Christoph Koncz,,,Lyrical and tender.
-1,5,Ravel,Maurice Ravel,Boléro,,,20th Century,Christoph Koncz,,,The famous orchestral showpiece.
-2,1,Salonen,Esa-Pekka Salonen,Violin Concerto,,,Contemporary,Tarmo Peltokoski,Leila Josefowicz (violin),,
-2,2,Shostakovich,Dmitri Shostakovich,Symphony No. 11,Op. 103,,20th Century,Tarmo Peltokoski,,,
-3,1,Richard Strauss,Richard Strauss,Don Juan,Op. 20,,Post-Romantic,Esa-Pekka Salonen,,,Tone poem.
-3,2,Salonen,Esa-Pekka Salonen,Horn Concerto,,,Contemporary,Esa-Pekka Salonen,Stefan Dohr (horn),,Asian Premiere.
-3,3,Sibelius,Jean Sibelius,Symphony No. 5,Op. 82,,Post-Romantic,Esa-Pekka Salonen,,,
-4,1,Brahms,Johannes Brahms,Variations on a Theme by Haydn,Op. 56a,,Romantic,Michael Sanderling,,,Theme and variations.
-4,2,Dani Howard,Dani Howard,"Cello Concerto ""The Lonesome Walker""",,,Contemporary,Michael Sanderling,Richard Bamping (cello),,World Premiere.
-4,3,Richard Strauss,Richard Strauss,Also sprach Zarathustra,Op. 30,,Post-Romantic,Michael Sanderling,,,Nietzsche-inspired tone poem.
-5,1,Beethoven,Ludwig van Beethoven,Piano Concerto No. 2,Op. 19,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,
-5,2,Beethoven,Ludwig van Beethoven,Piano Concerto No. 3,Op. 37,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,
-5,3,Beethoven,Ludwig van Beethoven,Piano Concerto No. 4,Op. 58,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,
-6,1,Beethoven,Ludwig van Beethoven,Piano Concerto No. 1,Op. 15,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,
-6,2,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,
-7,1,Salonen,Esa-Pekka Salonen,Polydectes,,,Contemporary,Tarmo Peltokoski,,,Composed for LA Philharmonic centennial.
-7,2,Vaughan Williams,Ralph Vaughan Williams,A Sea Symphony,,,20th Century,Tarmo Peltokoski,"Chen Reiss (soprano), Andre Schuen (bass-baritone)","Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",Symphony with chorus.
-8,1,Mussorgsky,Modest Mussorgsky,Dawn on the Moscow River,,,Romantic,Yu Long,,,From Khovanshchina Prelude.
-8,2,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Yu Long,Behzod Abduraimov (piano),,
-8,3,Rimsky-Korsakov,Nikolai Rimsky-Korsakov,Scheherazade,Op. 35,,Romantic,Yu Long,,,Symphonic suite.
-9,1,Salonen,Esa-Pekka Salonen,Castor,,,Contemporary,Tarmo Peltokoski,,,Composed for Bicentennial of the LA Philharmonic.
-9,2,Grieg,Edvard Grieg,Piano Concerto,Op. 16,,Romantic,Tarmo Peltokoski,Lang Lang (piano),,
-9,3,Sibelius,Jean Sibelius,Lemminkainen Suite,Op. 22,,Post-Romantic,Tarmo Peltokoski,,,Four legends from the Kalevala.
-10,1,Beethoven,Ludwig van Beethoven,Egmont Overture,Op. 84,,Classical,Kahchun Wong,,,Goethe's Egmont incidental music.
-10,2,Mendelssohn,Felix Mendelssohn,"Symphony No. 4 ""Italian""",Op. 90,,Romantic,Kahchun Wong,,,Italianate sun-drenched energy.
-10,3,Beethoven,Ludwig van Beethoven,Symphony No. 4,Op. 60,,Classical,Kahchun Wong,,,
-11,1,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Andris Nelsons,Yulianna Avdeeva (piano),,
-11,2,Schumann,Robert Schumann,"Symphony No. 1 ""Spring""",Op. 38,,Romantic,Andris Nelsons,,,
-12,1,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Andris Nelsons,Yulianna Avdeeva (piano),,
-12,2,Shostakovich,Dmitri Shostakovich,Symphony No. 10,Op. 93,,20th Century,Andris Nelsons,,,
-13,1,Yao Chen,Yao Chen,Waltz of the Rolling Giants,,,Contemporary,Lio Kuokman,,,World Premiere. HK Phil Commission.
-13,2,Chopin,Fryderyk Chopin,Piano Concerto No. 1,Op. 11,,Romantic,Lio Kuokman,Eric Lu (piano),,
-13,3,Stravinsky,Igor Stravinsky,The Firebird Suite,,,20th Century,Lio Kuokman,,,
+﻿concert_id,piece_order,composer,composer_full,work_title,opus,catalog,period,conductor,soloists,performers,rating,notes
+1,1,Shostakovich,Dmitri Shostakovich,Festive Overture,Op. 96,,20th Century,Christoph Koncz,,,,Opening piece. Energetic and brilliant.
+1,2,Shostakovich,Dmitri Shostakovich,Cello Concerto No. 1,Op. 107,,20th Century,Christoph Koncz,Gautier Capucon (cello),,4,Written for Rostropovich.
+1,3,Ravel,Maurice Ravel,La Valse,,,20th Century,Christoph Koncz,,,4,Ravel's 150th anniversary year.
+1,4,Ravel,Maurice Ravel,Pavane pour une infante défunte,,,20th Century,Christoph Koncz,,,4,Lyrical and tender.
+1,5,Ravel,Maurice Ravel,Boléro,,,20th Century,Christoph Koncz,,,4,The famous orchestral showpiece.
+2,1,Salonen,Esa-Pekka Salonen,Violin Concerto,,,Contemporary,Tarmo Peltokoski,Leila Josefowicz (violin),,3,
+2,2,Shostakovich,Dmitri Shostakovich,Symphony No. 11,Op. 103,,20th Century,Tarmo Peltokoski,,,4,
+3,1,Strauss,Richard Strauss,Don Juan,Op. 20,,Post-Romantic,Esa-Pekka Salonen,,,5,Tone poem.
+3,2,Salonen,Esa-Pekka Salonen,Horn Concerto,,,Contemporary,Esa-Pekka Salonen,Stefan Dohr (horn),,5,Asian Premiere.
+3,3,Sibelius,Jean Sibelius,Symphony No. 5,Op. 82,,Post-Romantic,Esa-Pekka Salonen,,,5,
+4,1,Brahms,Johannes Brahms,Variations on a Theme by Haydn,Op. 56a,,Romantic,Michael Sanderling,,,3.5,Theme and variations.
+4,2,Howard,Dani Howard,"Cello Concerto ""The Lonesome Walker""",,,Contemporary,Michael Sanderling,Richard Bamping (cello),,3.5,World Premiere.
+4,3,Strauss,Richard Strauss,Also sprach Zarathustra,Op. 30,,Post-Romantic,Michael Sanderling,,,4,Nietzsche-inspired tone poem.
+5,1,Beethoven,Ludwig van Beethoven,Piano Concerto No. 2,Op. 19,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,3,
+5,2,Beethoven,Ludwig van Beethoven,Piano Concerto No. 3,Op. 37,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,2,
+5,3,Beethoven,Ludwig van Beethoven,Piano Concerto No. 4,Op. 58,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,3,
+6,1,Beethoven,Ludwig van Beethoven,Piano Concerto No. 1,Op. 15,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,3.5,
+6,2,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,4,
+7,1,Salonen,Esa-Pekka Salonen,Pollux,,,Contemporary,Tarmo Peltokoski,,,3.5,Composed for LA Philharmonic centennial.
+7,2,Vaughan Williams,Ralph Vaughan Williams,A Sea Symphony,,,20th Century,Tarmo Peltokoski,"Chen Reiss (soprano), Andre Schuen (bass-baritone)","Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",3.5,Symphony with chorus.
+8,1,Mussorgsky,Modest Mussorgsky,Dawn on the Moscow River,,,Romantic,Yu Long,,,4,From Khovanshchina Prelude.
+8,2,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Yu Long,Behzod Abduraimov (piano),,2.5,
+8,3,Rimsky-Korsakov,Nikolai Rimsky-Korsakov,Scheherazade,Op. 35,,Romantic,Yu Long,,,4,Symphonic suite.
+9,1,Salonen,Esa-Pekka Salonen,Castor,,,Contemporary,Tarmo Peltokoski,,,4,Composed for Bicentennial of the LA Philharmonic.
+9,2,Grieg,Edvard Grieg,Piano Concerto,Op. 16,,Romantic,Tarmo Peltokoski,Lang Lang (piano),,5,
+9,3,Sibelius,Jean Sibelius,Lemminkainen Suite,Op. 22,,Post-Romantic,Tarmo Peltokoski,,,4.5,Four legends from the Kalevala.
+10,1,Beethoven,Ludwig van Beethoven,Egmont Overture,Op. 84,,Classical,Kahchun Wong,,,,Goethe's Egmont incidental music.
+10,2,Mendelssohn,Felix Mendelssohn,"Symphony No. 4 ""Italian""",Op. 90,,Romantic,Kahchun Wong,,,3.5,Italianate sun-drenched energy.
+10,3,Beethoven,Ludwig van Beethoven,Symphony No. 4,Op. 60,,Classical,Kahchun Wong,,,,
+11,1,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Andris Nelsons,Yulianna Avdeeva (piano),,2,
+11,2,Schumann,Robert Schumann,"Symphony No. 1 ""Spring""",Op. 38,,Romantic,Andris Nelsons,,,5,
+12,1,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Andris Nelsons,Yulianna Avdeeva (piano),,3.5,
+12,2,Shostakovich,Dmitri Shostakovich,Symphony No. 10,Op. 93,,20th Century,Andris Nelsons,,,5,
+13,1,Yao,Yao Chen,Waltz of the Rolling Giants,,,Contemporary,Lio Kuokman,,,4.5,World Premiere. HK Phil Commission.
+13,2,Chopin,Fryderyk Chopin,Piano Concerto No. 1,Op. 11,,Romantic,Lio Kuokman,Eric Lu (piano),,5,
+13,3,Stravinsky,Igor Stravinsky,The Firebird Suite,,,20th Century,Lio Kuokman,,,3,

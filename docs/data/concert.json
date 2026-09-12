@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:13:50.776Z",
+  "generatedAt": "2026-09-12T18:26:08.128Z",
   "counts": {
     "concerts": 13,
     "programmes": 36,
@@ -20,6 +20,10 @@
     {
       "label": "Pieces heard",
       "value": 36
+    },
+    {
+      "label": "Avg rating",
+      "value": "3.8"
     },
     {
       "label": "Composers",
@@ -165,12 +169,42 @@
     ],
     "byVenue": [
       {
-        "label": "Hong Kong Cultural Centre Concert Hall",
+        "label": "Hong Kong Cultural Centre",
         "value": 11
       },
       {
-        "label": "Hong Kong City Hall Concert Hall",
+        "label": "Hong Kong City Hall",
         "value": 2
+      }
+    ],
+    "byRating": [
+      {
+        "label": "2",
+        "value": 2
+      },
+      {
+        "label": "2.5",
+        "value": 1
+      },
+      {
+        "label": "3",
+        "value": 4
+      },
+      {
+        "label": "3.5",
+        "value": 7
+      },
+      {
+        "label": "4",
+        "value": 10
+      },
+      {
+        "label": "4.5",
+        "value": 2
+      },
+      {
+        "label": "5",
+        "value": 7
       }
     ]
   },
@@ -216,7 +250,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": "Also performed on 2025-05-09. Part of French May Arts Festival."
     },
@@ -231,7 +264,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -246,7 +278,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -261,7 +292,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -276,7 +306,6 @@
       "programme_type": "Piano Concertos",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -291,7 +320,6 @@
       "programme_type": "Piano Concertos",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -306,7 +334,6 @@
       "programme_type": "Symphony with Voices",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -321,7 +348,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -336,7 +362,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -351,7 +376,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -366,7 +390,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -381,7 +404,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     },
@@ -396,7 +418,6 @@
       "programme_type": "Symphony",
       "ticket_price": "",
       "currency": "",
-      "rating": "",
       "companion": "",
       "notes": ""
     }
@@ -414,6 +435,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
+      "rating": null,
       "notes": "Opening piece. Energetic and brilliant."
     },
     {
@@ -426,8 +448,9 @@
       "catalog": "",
       "period": "20th Century",
       "conductor": "Christoph Koncz",
-      "soloists": "Gautier Capucon",
+      "soloists": "Gautier Capucon (cello)",
       "performers": "",
+      "rating": 4,
       "notes": "Written for Rostropovich."
     },
     {
@@ -442,6 +465,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "Ravel's 150th anniversary year."
     },
     {
@@ -456,6 +480,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "Lyrical and tender."
     },
     {
@@ -470,6 +495,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "The famous orchestral showpiece."
     },
     {
@@ -484,6 +510,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Leila Josefowicz (violin)",
       "performers": "",
+      "rating": 3,
       "notes": ""
     },
     {
@@ -498,12 +525,13 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": ""
     },
     {
       "concert_id": "3",
       "piece_order": "1",
-      "composer": "Richard Strauss",
+      "composer": "Strauss",
       "composer_full": "Richard Strauss",
       "work_title": "Don Juan",
       "opus": "Op. 20",
@@ -512,6 +540,7 @@
       "conductor": "Esa-Pekka Salonen",
       "soloists": "",
       "performers": "",
+      "rating": 5,
       "notes": "Tone poem."
     },
     {
@@ -526,6 +555,7 @@
       "conductor": "Esa-Pekka Salonen",
       "soloists": "Stefan Dohr (horn)",
       "performers": "",
+      "rating": 5,
       "notes": "Asian Premiere."
     },
     {
@@ -540,6 +570,7 @@
       "conductor": "Esa-Pekka Salonen",
       "soloists": "",
       "performers": "",
+      "rating": 5,
       "notes": ""
     },
     {
@@ -554,12 +585,13 @@
       "conductor": "Michael Sanderling",
       "soloists": "",
       "performers": "",
+      "rating": 3.5,
       "notes": "Theme and variations."
     },
     {
       "concert_id": "4",
       "piece_order": "2",
-      "composer": "Dani Howard",
+      "composer": "Howard",
       "composer_full": "Dani Howard",
       "work_title": "Cello Concerto \"The Lonesome Walker\"",
       "opus": "",
@@ -568,12 +600,13 @@
       "conductor": "Michael Sanderling",
       "soloists": "Richard Bamping (cello)",
       "performers": "",
+      "rating": 3.5,
       "notes": "World Premiere."
     },
     {
       "concert_id": "4",
       "piece_order": "3",
-      "composer": "Richard Strauss",
+      "composer": "Strauss",
       "composer_full": "Richard Strauss",
       "work_title": "Also sprach Zarathustra",
       "opus": "Op. 30",
@@ -582,6 +615,7 @@
       "conductor": "Michael Sanderling",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "Nietzsche-inspired tone poem."
     },
     {
@@ -596,6 +630,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
+      "rating": 3,
       "notes": ""
     },
     {
@@ -610,6 +645,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
+      "rating": 2,
       "notes": ""
     },
     {
@@ -624,6 +660,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
+      "rating": 3,
       "notes": ""
     },
     {
@@ -638,6 +675,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
+      "rating": 3.5,
       "notes": ""
     },
     {
@@ -652,6 +690,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
+      "rating": 4,
       "notes": ""
     },
     {
@@ -659,13 +698,14 @@
       "piece_order": "1",
       "composer": "Salonen",
       "composer_full": "Esa-Pekka Salonen",
-      "work_title": "Polydectes",
+      "work_title": "Pollux",
       "opus": "",
       "catalog": "",
       "period": "Contemporary",
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
+      "rating": 3.5,
       "notes": "Composed for LA Philharmonic centennial."
     },
     {
@@ -680,6 +720,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
       "performers": "Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",
+      "rating": 3.5,
       "notes": "Symphony with chorus."
     },
     {
@@ -694,6 +735,7 @@
       "conductor": "Yu Long",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "From Khovanshchina Prelude."
     },
     {
@@ -708,6 +750,7 @@
       "conductor": "Yu Long",
       "soloists": "Behzod Abduraimov (piano)",
       "performers": "",
+      "rating": 2.5,
       "notes": ""
     },
     {
@@ -722,6 +765,7 @@
       "conductor": "Yu Long",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "Symphonic suite."
     },
     {
@@ -736,6 +780,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
+      "rating": 4,
       "notes": "Composed for Bicentennial of the LA Philharmonic."
     },
     {
@@ -750,6 +795,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Lang Lang (piano)",
       "performers": "",
+      "rating": 5,
       "notes": ""
     },
     {
@@ -764,6 +810,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
+      "rating": 4.5,
       "notes": "Four legends from the Kalevala."
     },
     {
@@ -778,6 +825,7 @@
       "conductor": "Kahchun Wong",
       "soloists": "",
       "performers": "",
+      "rating": null,
       "notes": "Goethe's Egmont incidental music."
     },
     {
@@ -792,6 +840,7 @@
       "conductor": "Kahchun Wong",
       "soloists": "",
       "performers": "",
+      "rating": 3.5,
       "notes": "Italianate sun-drenched energy."
     },
     {
@@ -806,6 +855,7 @@
       "conductor": "Kahchun Wong",
       "soloists": "",
       "performers": "",
+      "rating": null,
       "notes": ""
     },
     {
@@ -820,6 +870,7 @@
       "conductor": "Andris Nelsons",
       "soloists": "Yulianna Avdeeva (piano)",
       "performers": "",
+      "rating": 2,
       "notes": ""
     },
     {
@@ -834,6 +885,7 @@
       "conductor": "Andris Nelsons",
       "soloists": "",
       "performers": "",
+      "rating": 5,
       "notes": ""
     },
     {
@@ -848,6 +900,7 @@
       "conductor": "Andris Nelsons",
       "soloists": "Yulianna Avdeeva (piano)",
       "performers": "",
+      "rating": 3.5,
       "notes": ""
     },
     {
@@ -862,12 +915,13 @@
       "conductor": "Andris Nelsons",
       "soloists": "",
       "performers": "",
+      "rating": 5,
       "notes": ""
     },
     {
       "concert_id": "13",
       "piece_order": "1",
-      "composer": "Yao Chen",
+      "composer": "Yao",
       "composer_full": "Yao Chen",
       "work_title": "Waltz of the Rolling Giants",
       "opus": "",
@@ -876,6 +930,7 @@
       "conductor": "Lio Kuokman",
       "soloists": "",
       "performers": "",
+      "rating": 4.5,
       "notes": "World Premiere. HK Phil Commission."
     },
     {
@@ -890,6 +945,7 @@
       "conductor": "Lio Kuokman",
       "soloists": "Eric Lu (piano)",
       "performers": "",
+      "rating": 5,
       "notes": ""
     },
     {
@@ -904,6 +960,7 @@
       "conductor": "Lio Kuokman",
       "soloists": "",
       "performers": "",
+      "rating": 3,
       "notes": ""
     }
   ]

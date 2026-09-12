@@ -148,7 +148,6 @@ git commit -m "Normalize CSV line endings"
 | `programme_type` | text | Concert type: `Symphony`, `Chamber`, `Opera`, `Recital`, `Gala`, `Choral`, `Other` | `Symphony` |
 | `ticket_price` | number | Ticket cost (numeric only) | `90` |
 | `currency` | text | Currency code | `EUR` |
-| `rating` | integer | Your rating: `1` to `5` (0 = unrated) | `5` |
 | `companion` | text | Who you went with (leave empty if solo) | `Wife` |
 | `notes` | text | Personal notes, memories, highlights | `Incredible Beethoven 7th` |
 
@@ -167,6 +166,7 @@ git commit -m "Normalize CSV line endings"
 | `conductor` | text | Conductor name (duplicated from concerts.csv for easy querying) | `Andris Nelsons` |
 | `soloists` | text | Featured soloists for this piece (leave empty for symphonies, etc.) | `Lang Lang (piano)` |
 | `performers` | text | Ensemble / chorus specific to this piece (if any) | `Hong Kong Philharmonic Chorus` |
+| `rating` | number | Your rating for this piece: `1` to `5`, half-points allowed (empty = unrated) | `4.5` |
 | `notes` | text | Notes on this particular piece | `First time hearing live` |
 
 ## Data Entry
@@ -182,7 +182,7 @@ Paste a concert URL and I will:
 1. Fetch the page and extract concert details
 2. Append one row to `concerts.csv`
 3. Append the programme rows to `programmes.csv`
-4. Ask you to fill in rating, companion, and notes
+4. Ask you to fill in the per-piece ratings, plus companion and notes
 
 ## Statistics
 
@@ -250,11 +250,10 @@ GROUP BY year, currency;
 ### Average Rating by Composer
 
 ```sql
-SELECT p.composer, AVG(c.rating) AS avg_rating
-FROM programmes p
-JOIN concerts c ON p.concert_id = c.concert_id
-WHERE c.rating > 0
-GROUP BY p.composer
+SELECT composer, AVG(rating) AS avg_rating
+FROM programmes
+WHERE rating > 0
+GROUP BY composer
 ORDER BY avg_rating DESC;
 ```
 
