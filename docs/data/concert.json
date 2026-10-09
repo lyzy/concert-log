@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-09T09:50:54.194Z",
+  "generatedAt": "2026-10-09T16:10:56.800Z",
   "counts": {
-    "events": 16,
-    "programmes": 40,
-    "composers": 20,
-    "works": 38,
+    "events": 17,
+    "programmes": 42,
+    "composers": 22,
+    "works": 40,
     "orchestras": 3,
     "years": 2
   },
   "byType": {
     "Concert": 15,
-    "Opera": 1
+    "Opera": 2
   },
   "dateRange": {
     "from": "2025-05-08",
-    "to": "2026-09-16"
+    "to": "2026-10-09"
   },
   "stats": [
     {
       "label": "Events",
-      "value": 16
+      "value": 17
     },
     {
       "label": "Pieces heard",
-      "value": 40
+      "value": 42
     },
     {
       "label": "Avg rating",
@@ -31,11 +31,11 @@
     },
     {
       "label": "Composers",
-      "value": 20
+      "value": 22
     },
     {
       "label": "Unique works",
-      "value": 38
+      "value": 40
     },
     {
       "label": "Orchestras",
@@ -58,7 +58,7 @@
       },
       {
         "label": "2026",
-        "value": 13
+        "value": 14
       }
     ],
     "byPeriod": [
@@ -75,12 +75,12 @@
         "value": 9
       },
       {
-        "label": "Contemporary",
-        "value": 6
+        "label": "Post-Romantic",
+        "value": 7
       },
       {
-        "label": "Post-Romantic",
-        "value": 5
+        "label": "Contemporary",
+        "value": 6
       }
     ],
     "byComposer": [
@@ -177,6 +177,10 @@
       {
         "label": "Robert Kružík",
         "value": 2
+      },
+      {
+        "label": "Roberto Gianola",
+        "value": 2
       }
     ],
     "byVenue": [
@@ -190,7 +194,7 @@
       },
       {
         "label": "Hong Kong Cultural Centre Grand Theatre",
-        "value": 1
+        "value": 2
       }
     ],
     "byRating": [
@@ -212,11 +216,11 @@
       },
       {
         "label": "4",
-        "value": 11
+        "value": 12
       },
       {
         "label": "4.5",
-        "value": 3
+        "value": 4
       },
       {
         "label": "5",
@@ -472,6 +476,20 @@
       "city": "Hong Kong",
       "orchestra": "The Janáček Opera of the National Theatre Brno",
       "conductor": "Robert Kružík",
+      "soloists": "",
+      "event_type": "Opera",
+      "ticket_price": "",
+      "currency": "",
+      "companion": "",
+      "notes": ""
+    },
+    {
+      "concert_id": "17",
+      "date": "2026-10-09",
+      "venue": "Hong Kong Cultural Centre Grand Theatre",
+      "city": "Hong Kong",
+      "orchestra": "Hong Kong Philharmonic Orchestra",
+      "conductor": "Roberto Gianola",
       "soloists": "",
       "event_type": "Opera",
       "ticket_price": "",
@@ -1076,6 +1094,36 @@
       "catalog": "",
       "period": "Romantic",
       "conductor": "Robert Kružík",
+      "soloists": "",
+      "performers": "",
+      "rating": 4,
+      "notes": ""
+    },
+    {
+      "concert_id": "17",
+      "piece_order": "1",
+      "composer": "Mascagni",
+      "composer_full": "Pietro Mascagni",
+      "work_title": "Cavalleria Rusticana",
+      "opus": "",
+      "catalog": "",
+      "period": "Post-Romantic",
+      "conductor": "Roberto Gianola",
+      "soloists": "",
+      "performers": "",
+      "rating": 4.5,
+      "notes": ""
+    },
+    {
+      "concert_id": "17",
+      "piece_order": "2",
+      "composer": "Leoncavallo",
+      "composer_full": "Ruggero Leoncavallo",
+      "work_title": "Pagliacci",
+      "opus": "",
+      "catalog": "",
+      "period": "Post-Romantic",
+      "conductor": "Roberto Gianola",
       "soloists": "",
       "performers": "",
       "rating": 4,
