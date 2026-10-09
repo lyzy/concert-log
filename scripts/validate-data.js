@@ -85,6 +85,14 @@ function main() {
     if (raw && normalizeDate(raw) !== raw) warn("line " + (i + 2) + ": date '" + raw + "' is not ISO (normalized to " + normalizeDate(raw) + " at runtime)");
   });
 
+  const tIdx = colIndex(concerts.header, "event_type");
+  const ALLOWED_TYPES = ["Concert", "Opera", "Ballet"];
+  concerts.data.forEach((r, i) => {
+    const t = (r[tIdx] || "").trim();
+    if (!t) warn("line " + (i + 2) + ": event_type empty (shown as Concert)");
+    else if (ALLOWED_TYPES.indexOf(t) === -1) warn("line " + (i + 2) + ": event_type '" + t + "' is not one of " + ALLOWED_TYPES.join("/"));
+  });
+
   console.log("\nprogrammes.csv structure");
   const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 13, false);
   const rIdx = colIndex(programmes.header, "rating");

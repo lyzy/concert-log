@@ -15,6 +15,14 @@
   var dataset = null;
   var concertById = {};
   var sort = { key: "date", dir: "asc" };
+  var filterType = "";
+
+  var FILTERS = [
+    { type: "", label: "All" },
+    { type: "Concert", label: "Concerts" },
+    { type: "Opera", label: "Operas" },
+    { type: "Ballet", label: "Ballets" }
+  ];
 
   // ---------------------------------------------------------------- theme
   function applyTheme(theme) {
@@ -40,7 +48,25 @@
     var r = dataset.dateRange;
     var range = r ? (" \u00b7 " + r.from + " \u2192 " + r.to) : "";
     document.getElementById("subtitle").textContent =
-      c.concerts + " concerts \u00b7 " + c.programmes + " pieces" + range;
+      c.events + " events \u00b7 " + c.programmes + " pieces" + range;
+  }
+
+  function renderFilters() {
+    var counts = dataset.byType || {};
+    var el = document.getElementById("filters");
+    el.innerHTML = FILTERS.map(function (f) {
+      var n = f.type === "" ? dataset.counts.events : (counts[f.type] || 0);
+      var cls = "filter" + (f.type === filterType ? " active" : "") + (n === 0 && f.type !== "" ? " empty" : "");
+      return '<button class="' + cls + '" data-type="' + f.type + '" type="button">' +
+        esc(f.label) + ' <span class="count">' + n + '</span></button>';
+    }).join("");
+    Array.prototype.forEach.call(el.querySelectorAll("button"), function (b) {
+      b.addEventListener("click", function () {
+        filterType = b.getAttribute("data-type");
+        renderFilters();
+        renderTable(document.getElementById("search").value);
+      });
+    });
   }
 
   function renderStats() {
@@ -92,6 +118,11 @@
       '<span class="rating-num">' + esc(v) + '</span></span>';
   }
 
+  function typeBadge(t) {
+    if (!t || t === "Concert") return "";
+    return ' <span class="type-badge">' + esc(t) + '</span>';
+  }
+
   function compareRows(a, b) {
     if (sort.key === "composer") {
       // `composer` is the surname field; `composer_full` breaks ties.
@@ -124,10 +155,11 @@
     var rows = dataset.programmes.map(function (p) {
       return { p: p, c: concertById[p.concert_id] || {} };
     }).filter(function (r) {
+      if (filterType && (r.c.event_type || "Concert") !== filterType) return false;
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
                  r.p.conductor, r.p.soloists, r.p.performers, r.p.rating,
-                 r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
+                 r.c.event_type, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
@@ -136,7 +168,7 @@
       return "<tr>" +
         "<td>" + esc(c.date || "") + "</td>" +
         "<td>" + esc(p.composer_full || p.composer) + "</td>" +
-        "<td>" + esc(p.work_title) + "</td>" +
+        "<td>" + esc(p.work_title) + typeBadge(c.event_type) + "</td>" +
         "<td>" + esc(p.opus || "") + "</td>" +
         "<td>" + (p.period ? '<span class="pill">' + esc(p.period) + '</span>' : "") + "</td>" +
         "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +
@@ -152,6 +184,7 @@
     dataset.concerts.forEach(function (c) { concertById[c.concert_id] = c; });
     renderSubtitle();
     renderStats();
+    renderFilters();
     renderCharts();
     renderRepeated();
     renderTable("");

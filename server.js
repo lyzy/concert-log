@@ -13,7 +13,11 @@ const { buildDataset } = require("./lib/dataset");
 
 const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, "docs");
-const PORT = process.env.PORT || 3000;
+
+// Preferred ports (3000 first; some Windows setups reserve 2948-3047 for
+// Hyper-V/WSL, which makes 3000 fail with EACCES). Try each until one binds,
+// or honour an explicit PORT from the environment.
+const PORTS = process.env.PORT ? [Number(process.env.PORT)] : [3000, 8080, 8081, 5173, 4321, 9000];
 
 const dataset = buildDataset();
 
@@ -57,7 +61,7 @@ function sendJson(res, data, status) {
   res.end(JSON.stringify(data));
 }
 
-const server = http.createServer(function (req, res) {
+function handle(req, res) {
   const url = req.url.split("?")[0];
 
   if (url === "/api/dataset") {
@@ -75,6 +79,7 @@ const server = http.createServer(function (req, res) {
   if (url === "/api/stats") {
     return sendJson(res, {
       counts: dataset.counts,
+      byType: dataset.byType,
       dateRange: dataset.dateRange,
       stats: dataset.stats,
       charts: dataset.charts,
@@ -91,10 +96,29 @@ const server = http.createServer(function (req, res) {
   }
 
   serveStatic(req, res);
-});
+}
 
-server.listen(PORT, function () {
-  console.log("Concert Record running at http://localhost:" + PORT);
-  console.log("Dataset: " + dataset.concerts.length + " concerts, " + dataset.programmes.length + " pieces.");
-  console.log("API: /api/dataset  /api/concerts  /api/programmes  /api/stats  /api/health");
-});
+function start(index) {
+  if (index >= PORTS.length) {
+    console.error("No free port found (tried " + PORTS.join(", ") + "). Set PORT to override.");
+    process.exit(1);
+  }
+  const port = PORTS[index];
+  const server = http.createServer(handle);
+  server.on("error", function (err) {
+    if (err.code === "EADDRINUSE" || err.code === "EACCES") {
+      console.log("Port " + port + " unavailable (" + err.code + "), trying next...");
+      start(index + 1);
+    } else {
+      console.error("Could not start server: " + err.message);
+      process.exit(1);
+    }
+  });
+  server.listen(port, function () {
+    console.log("Concert Record running at http://localhost:" + port);
+    console.log("Dataset: " + dataset.concerts.length + " events, " + dataset.programmes.length + " pieces.");
+    console.log("API: /api/dataset  /api/concerts  /api/programmes  /api/stats  /api/health");
+  });
+}
+
+start(0);

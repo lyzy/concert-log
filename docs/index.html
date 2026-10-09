@@ -32,7 +32,7 @@
   <section class="stats" id="stats"></section>
 
   <div class="grid">
-    <div class="card reveal"><h2>Concerts per Year</h2><div id="chartYear"></div></div>
+    <div class="card reveal"><h2>Events per Year</h2><div id="chartYear"></div></div>
     <div class="card reveal"><h2>Pieces by Period</h2><div id="chartPeriod"></div></div>
   </div>
 
@@ -50,6 +50,7 @@
   <div class="grid wide">
     <div class="card tablecard reveal">
       <h2>All Pieces</h2>
+      <div class="filters" id="filters"></div>
       <div class="searchrow">
         <input id="search" type="search" placeholder="Filter by composer, work, conductor, venue, period&hellip;">
         <span class="sorthint">Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort</span>
@@ -81,7 +82,7 @@
     <h3>Couldn&rsquo;t load the concert data</h3>
     <p id="overlayMsg">The dataset could not be fetched.</p>
     <button id="retryBtn">Retry</button>
-    <div class="hint">Start the backend with <code>node server.js</code> (or <code>serve.cmd</code>) and open <code>http://localhost:3000</code>.</div>
+    <div class="hint">Start the backend with <code>node server.js</code> (or <code>serve.cmd</code>) and open the URL it prints (usually <code>http://localhost:3000</code>).</div>
   </div>
 </div>
 

@@ -1,12 +1,16 @@
 {
-  "generatedAt": "2026-09-16T15:44:38.166Z",
+  "generatedAt": "2026-10-09T09:50:54.194Z",
   "counts": {
-    "concerts": 14,
-    "programmes": 38,
-    "composers": 18,
-    "works": 36,
-    "orchestras": 2,
+    "events": 16,
+    "programmes": 40,
+    "composers": 20,
+    "works": 38,
+    "orchestras": 3,
     "years": 2
+  },
+  "byType": {
+    "Concert": 15,
+    "Opera": 1
   },
   "dateRange": {
     "from": "2025-05-08",
@@ -14,12 +18,12 @@
   },
   "stats": [
     {
-      "label": "Concerts",
-      "value": 14
+      "label": "Events",
+      "value": 16
     },
     {
       "label": "Pieces heard",
-      "value": 38
+      "value": 40
     },
     {
       "label": "Avg rating",
@@ -27,15 +31,15 @@
     },
     {
       "label": "Composers",
-      "value": 18
+      "value": 20
     },
     {
       "label": "Unique works",
-      "value": 36
+      "value": 38
     },
     {
       "label": "Orchestras",
-      "value": 2
+      "value": 3
     },
     {
       "label": "Years",
@@ -54,20 +58,20 @@
       },
       {
         "label": "2026",
-        "value": 11
+        "value": 13
       }
     ],
     "byPeriod": [
+      {
+        "label": "Romantic",
+        "value": 11
+      },
       {
         "label": "20th Century",
         "value": 9
       },
       {
         "label": "Classical",
-        "value": 9
-      },
-      {
-        "label": "Romantic",
         "value": 9
       },
       {
@@ -109,6 +113,10 @@
         "value": 2
       },
       {
+        "label": "Antonín Dvořák",
+        "value": 1
+      },
+      {
         "label": "Dani Howard",
         "value": 1
       },
@@ -122,10 +130,6 @@
       },
       {
         "label": "Fryderyk Chopin",
-        "value": 1
-      },
-      {
-        "label": "Igor Stravinsky",
         "value": 1
       }
     ],
@@ -169,16 +173,24 @@
       {
         "label": "Manfred Honeck",
         "value": 2
+      },
+      {
+        "label": "Robert Kružík",
+        "value": 2
       }
     ],
     "byVenue": [
       {
         "label": "Hong Kong Cultural Centre",
-        "value": 12
+        "value": 13
       },
       {
         "label": "Hong Kong City Hall",
         "value": 2
+      },
+      {
+        "label": "Hong Kong Cultural Centre Grand Theatre",
+        "value": 1
       }
     ],
     "byRating": [
@@ -192,7 +204,7 @@
       },
       {
         "label": "3",
-        "value": 4
+        "value": 5
       },
       {
         "label": "3.5",
@@ -200,7 +212,7 @@
       },
       {
         "label": "4",
-        "value": 10
+        "value": 11
       },
       {
         "label": "4.5",
@@ -251,7 +263,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Christoph Koncz",
       "soloists": "Gautier Capucon (cello)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -265,7 +277,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Tarmo Peltokoski",
       "soloists": "Leila Josefowicz (violin)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -279,7 +291,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Esa-Pekka Salonen",
       "soloists": "Stefan Dohr (horn)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -293,7 +305,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Michael Sanderling",
       "soloists": "Richard Bamping (cello)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -307,7 +319,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
-      "programme_type": "Piano Concertos",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -321,7 +333,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
-      "programme_type": "Piano Concertos",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -335,7 +347,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Tarmo Peltokoski",
       "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
-      "programme_type": "Symphony with Voices",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -349,7 +361,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Yu Long",
       "soloists": "Behzod Abduraimov (piano)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -363,7 +375,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Tarmo Peltokoski",
       "soloists": "Lang Lang (piano)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -377,7 +389,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Kahchun Wong",
       "soloists": "",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -391,7 +403,7 @@
       "orchestra": "Gewandhausorchester Leipzig",
       "conductor": "Andris Nelsons",
       "soloists": "Yulianna Avdeeva (piano)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -405,7 +417,7 @@
       "orchestra": "Gewandhausorchester Leipzig",
       "conductor": "Andris Nelsons",
       "soloists": "Yulianna Avdeeva (piano)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -419,7 +431,7 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Lio Kuokman",
       "soloists": "Eric Lu (piano)",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
@@ -433,11 +445,39 @@
       "orchestra": "Hong Kong Philharmonic Orchestra",
       "conductor": "Manfred Honeck",
       "soloists": "",
-      "programme_type": "Symphony",
+      "event_type": "Concert",
       "ticket_price": "",
       "currency": "",
       "companion": "",
       "notes": "Season Opening: Manfred Honeck's Pastoral and Elektra. Also performed on 2026-09-17."
+    },
+    {
+      "concert_id": "15",
+      "date": "2026-03-22",
+      "venue": "Hong Kong Cultural Centre Concert Hall",
+      "city": "Hong Kong",
+      "orchestra": "The Janáček Opera of the National Theatre Brno",
+      "conductor": "Robert Kružík",
+      "soloists": "",
+      "event_type": "Concert",
+      "ticket_price": "",
+      "currency": "",
+      "companion": "",
+      "notes": ""
+    },
+    {
+      "concert_id": "16",
+      "date": "2026-03-21",
+      "venue": "Hong Kong Cultural Centre Grand Theatre",
+      "city": "Hong Kong",
+      "orchestra": "The Janáček Opera of the National Theatre Brno",
+      "conductor": "Robert Kružík",
+      "soloists": "",
+      "event_type": "Opera",
+      "ticket_price": "",
+      "currency": "",
+      "companion": "",
+      "notes": ""
     }
   ],
   "programmes": [
@@ -1010,6 +1050,36 @@
       "performers": "",
       "rating": 5,
       "notes": "Suite from the opera, arr. Manfred Honeck & Tomás Ille."
+    },
+    {
+      "concert_id": "15",
+      "piece_order": "1",
+      "composer": "Dvořák",
+      "composer_full": "Antonín Dvořák",
+      "work_title": "Requiem",
+      "opus": "Op. 89",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Robert Kružík",
+      "soloists": "",
+      "performers": "",
+      "rating": 3,
+      "notes": ""
+    },
+    {
+      "concert_id": "16",
+      "piece_order": "1",
+      "composer": "Tchaikovsky",
+      "composer_full": "Pyotr Ilyich Tchaikovsky",
+      "work_title": "Eugene Onegin",
+      "opus": "Op. 24",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Robert Kružík",
+      "soloists": "",
+      "performers": "",
+      "rating": 4,
+      "notes": ""
     }
   ]
 }

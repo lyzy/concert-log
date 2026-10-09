@@ -1,6 +1,6 @@
 # Classical Music Concert Log
 
-A CSV-based concert log with a clean **front-end / back-end** separation.
+A CSV-based performance log — concerts, opera, and ballet — with a clean **front-end / back-end** separation.
 
 ## Architecture
 
@@ -15,7 +15,7 @@ concert-log/
 │   └── dataset.js          # Builds the dataset (concerts + programmes + stats)
 │                           #   shared by the server (API) and the build script
 ├── data/
-│   ├── concerts.csv        # Source of truth — one row per concert
+│   ├── concerts.csv        # Source of truth — one row per event
 │   └── programmes.csv      # Source of truth — one row per piece
 ├── scripts/
 │   ├── build-data.js       # Generates docs/data/concert.json for static hosting
@@ -45,10 +45,14 @@ it to disk for static hosts.
 Requires Node.js (no dependencies, no internet needed).
 
 ```bash
-node server.js            # open http://localhost:3000
+node server.js            # open the printed URL (usually http://localhost:3000)
 ```
 
 On Windows you can double-click **`serve.cmd`** instead.
+
+If port 3000 is unavailable (some Windows setups reserve 2948-3047 for Hyper-V/WSL),
+the server automatically tries `8080`, `8081`, `5173`, `4321`, `9000` and prints the
+port it picked. Set the `PORT` environment variable to force a specific port.
 
 - `GET /api/dataset` — the full dataset
 - `GET /api/concerts` — concerts only
@@ -145,7 +149,7 @@ git commit -m "Normalize CSV line endings"
 | `orchestra` | text | Orchestra name | `Vienna Philharmonic` |
 | `conductor` | text | Conductor name (leave empty if none) | `Andris Nelsons` |
 | `soloists` | text | Soloists, semicolon-separated (if any) | `Hilary Hahn; Lang Lang` |
-| `programme_type` | text | Concert type: `Symphony`, `Chamber`, `Opera`, `Recital`, `Gala`, `Choral`, `Other` | `Symphony` |
+| `event_type` | text | Event type: `Concert`, `Opera`, `Ballet` (empty = `Concert`) | `Concert` |
 | `ticket_price` | number | Ticket cost (numeric only) | `90` |
 | `currency` | text | Currency code | `EUR` |
 | `companion` | text | Who you went with (leave empty if solo) | `Wife` |
@@ -175,6 +179,32 @@ git commit -m "Normalize CSV line endings"
 
 1. Add one row to `concerts.csv` with the concert details
 2. Add N rows to `programmes.csv` (one per piece), all sharing the same `concert_id`
+
+### Event types (concert / opera / ballet)
+
+`concerts.csv` holds every kind of event. Set `event_type` to `Concert`, `Opera`,
+or `Ballet` (blank is treated as `Concert`). Since an opera or a ballet is a
+single work, it gets **one row** in `programmes.csv` — put principals (singers or
+dancers) in `soloists`, and production credits (choreographer, stage director,
+librettist) in `notes`.
+
+An opera:
+
+```csv
+# concerts.csv
+15,2026-10-02,Hong Kong Cultural Centre Grand Theatre,Hong Kong,Hong Kong Philharmonic Orchestra,Conductor Name,,Opera,,,,,
+# programmes.csv
+15,1,Verdi,Giuseppe Verdi,La traviata,,,Romantic,Conductor Name,"Singer A (Violetta); Singer B (Alfredo)",,4.5,
+```
+
+A ballet:
+
+```csv
+# concerts.csv
+16,2026-11-05,Hong Kong Cultural Centre Grand Theatre,Hong Kong,Hong Kong Ballet,,Ballet,,,,,
+# programmes.csv
+16,1,Tchaikovsky,Pyotr Ilyich Tchaikovsky,Swan Lake,Op. 20,,Romantic,Conductor Name,"Dancer A (Odette); Dancer B (Siegfried)",,5,Choreography by Choreographer Name.
+```
 
 ### Via URL (Automated)
 
