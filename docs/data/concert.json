@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-09T16:10:56.800Z",
+  "generatedAt": "2026-10-22T16:41:14.351Z",
   "counts": {
-    "events": 17,
-    "programmes": 42,
-    "composers": 22,
-    "works": 40,
+    "events": 18,
+    "programmes": 58,
+    "composers": 31,
+    "works": 56,
     "orchestras": 3,
     "years": 2
   },
   "byType": {
-    "Concert": 15,
+    "Concert": 16,
     "Opera": 2
   },
   "dateRange": {
     "from": "2025-05-08",
-    "to": "2026-10-09"
+    "to": "2026-10-22"
   },
   "stats": [
     {
       "label": "Events",
-      "value": 17
+      "value": 18
     },
     {
       "label": "Pieces heard",
-      "value": 42
+      "value": 58
     },
     {
       "label": "Avg rating",
@@ -31,11 +31,11 @@
     },
     {
       "label": "Composers",
-      "value": 22
+      "value": 31
     },
     {
       "label": "Unique works",
-      "value": 40
+      "value": 56
     },
     {
       "label": "Orchestras",
@@ -58,13 +58,13 @@
       },
       {
         "label": "2026",
-        "value": 14
+        "value": 15
       }
     ],
     "byPeriod": [
       {
         "label": "Romantic",
-        "value": 11
+        "value": 27
       },
       {
         "label": "20th Century",
@@ -97,6 +97,14 @@
         "value": 4
       },
       {
+        "label": "Gaetano Donizetti",
+        "value": 3
+      },
+      {
+        "label": "Gioachino Rossini",
+        "value": 3
+      },
+      {
         "label": "Maurice Ravel",
         "value": 3
       },
@@ -105,35 +113,31 @@
         "value": 3
       },
       {
+        "label": "Charles Gounod",
+        "value": 2
+      },
+      {
+        "label": "Giuseppe Verdi",
+        "value": 2
+      },
+      {
+        "label": "Jacques Offenbach",
+        "value": 2
+      },
+      {
         "label": "Jean Sibelius",
         "value": 2
       },
       {
         "label": "Sergei Rachmaninoff",
         "value": 2
-      },
-      {
-        "label": "Antonín Dvořák",
-        "value": 1
-      },
-      {
-        "label": "Dani Howard",
-        "value": 1
-      },
-      {
-        "label": "Edvard Grieg",
-        "value": 1
-      },
-      {
-        "label": "Felix Mendelssohn",
-        "value": 1
-      },
-      {
-        "label": "Fryderyk Chopin",
-        "value": 1
       }
     ],
     "byConductor": [
+      {
+        "label": "Michele Spotti",
+        "value": 16
+      },
       {
         "label": "Tarmo Peltokoski",
         "value": 7
@@ -177,16 +181,12 @@
       {
         "label": "Robert Kružík",
         "value": 2
-      },
-      {
-        "label": "Roberto Gianola",
-        "value": 2
       }
     ],
     "byVenue": [
       {
         "label": "Hong Kong Cultural Centre",
-        "value": 13
+        "value": 14
       },
       {
         "label": "Hong Kong City Hall",
@@ -496,6 +496,20 @@
       "currency": "",
       "companion": "",
       "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "date": "2026-10-22",
+      "venue": "Hong Kong Cultural Centre Concert Hall",
+      "city": "Hong Kong",
+      "orchestra": "Hong Kong Philharmonic Orchestra",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "event_type": "Concert",
+      "ticket_price": "",
+      "currency": "",
+      "companion": "",
+      "notes": "Juan Diego Flórez Opera Gala (Hong Kong debut)."
     }
   ],
   "programmes": [
@@ -1127,6 +1141,246 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "1",
+      "composer": "Rossini",
+      "composer_full": "Gioachino Rossini",
+      "work_title": "La pietra del paragone: Quell'alme pupille",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "2",
+      "composer": "Rossini",
+      "composer_full": "Gioachino Rossini",
+      "work_title": "La Cenerentola: Overture",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "3",
+      "composer": "Rossini",
+      "composer_full": "Gioachino Rossini",
+      "work_title": "La Cenerentola: Sì, ritrovarla io giuro",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "4",
+      "composer": "Donizetti",
+      "composer_full": "Gaetano Donizetti",
+      "work_title": "Don Pasquale: Overture",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "5",
+      "composer": "Donizetti",
+      "composer_full": "Gaetano Donizetti",
+      "work_title": "L'elisir d'amore: Una furtiva lagrima",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "6",
+      "composer": "Donizetti",
+      "composer_full": "Gaetano Donizetti",
+      "work_title": "Lucia di Lammermoor: Tombe degli avi miei",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "7",
+      "composer": "Bizet",
+      "composer_full": "Georges Bizet",
+      "work_title": "Carmen: Aragonaise",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "8",
+      "composer": "Soutullo & Vert",
+      "composer_full": "Reveriano Soutullo & Juan Vert",
+      "work_title": "El último romántico: Bella enamorada",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "9",
+      "composer": "Serrano",
+      "composer_full": "José Serrano",
+      "work_title": "La alegría del batallón: Al mismito rey del moro",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "10",
+      "composer": "Offenbach",
+      "composer_full": "Jacques Offenbach",
+      "work_title": "Orphée aux enfers: Can-can",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "11",
+      "composer": "Offenbach",
+      "composer_full": "Jacques Offenbach",
+      "work_title": "La belle Hélène: Au mont Ida",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "12",
+      "composer": "Gounod",
+      "composer_full": "Charles Gounod",
+      "work_title": "Roméo et Juliette: Entr'acte to Act II",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "13",
+      "composer": "Gounod",
+      "composer_full": "Charles Gounod",
+      "work_title": "Roméo et Juliette: L'amour!... Ah, lève-toi soleil!",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "14",
+      "composer": "Massenet",
+      "composer_full": "Jules Massenet",
+      "work_title": "Werther: Pourquoi me réveiller?",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "15",
+      "composer": "Verdi",
+      "composer_full": "Giuseppe Verdi",
+      "work_title": "Macbeth: Prelude",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "concert_id": "18",
+      "piece_order": "16",
+      "composer": "Verdi",
+      "composer_full": "Giuseppe Verdi",
+      "work_title": "I Lombardi alla prima crociata: La mia letizia infondere",
+      "opus": "",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Michele Spotti",
+      "soloists": "Juan Diego Flórez (tenor)",
+      "performers": "",
+      "rating": null,
       "notes": ""
     }
   ]
