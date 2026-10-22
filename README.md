@@ -188,6 +188,11 @@ single work, it gets **one row** in `programmes.csv` — put principals (singers
 dancers) in `soloists`, and production credits (choreographer, stage director,
 librettist) in `notes`.
 
+For a **gala or recital** made of excerpts, use `event_type = Concert` and give
+each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture`).
+The rows stay separate so you can rate each, but two excerpts from the same opera
+are counted as **one work** in the statistics.
+
 An opera:
 
 ```csv
