@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T16:53:54.222Z",
+  "generatedAt": "2026-10-22T16:58:36.563Z",
   "counts": {
     "events": 18,
     "programmes": 56,
@@ -526,7 +526,8 @@
       "soloists": "",
       "performers": "",
       "rating": null,
-      "notes": "Opening piece. Energetic and brilliant."
+      "notes": "Opening piece. Energetic and brilliant.",
+      "tag": ""
     },
     {
       "concert_id": "1",
@@ -541,7 +542,8 @@
       "soloists": "Gautier Capucon (cello)",
       "performers": "",
       "rating": 4,
-      "notes": "Written for Rostropovich."
+      "notes": "Written for Rostropovich.",
+      "tag": ""
     },
     {
       "concert_id": "1",
@@ -556,7 +558,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "Ravel's 150th anniversary year."
+      "notes": "Ravel's 150th anniversary year.",
+      "tag": ""
     },
     {
       "concert_id": "1",
@@ -571,7 +574,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "Lyrical and tender."
+      "notes": "Lyrical and tender.",
+      "tag": ""
     },
     {
       "concert_id": "1",
@@ -586,7 +590,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "The famous orchestral showpiece."
+      "notes": "The famous orchestral showpiece.",
+      "tag": ""
     },
     {
       "concert_id": "2",
@@ -601,7 +606,8 @@
       "soloists": "Leila Josefowicz (violin)",
       "performers": "",
       "rating": 3,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "2",
@@ -616,7 +622,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "3",
@@ -631,7 +638,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": "Tone poem."
+      "notes": "Tone poem.",
+      "tag": ""
     },
     {
       "concert_id": "3",
@@ -646,7 +654,8 @@
       "soloists": "Stefan Dohr (horn)",
       "performers": "",
       "rating": 5,
-      "notes": "Asian Premiere."
+      "notes": "Asian Premiere.",
+      "tag": ""
     },
     {
       "concert_id": "3",
@@ -661,7 +670,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "4",
@@ -676,7 +686,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3.5,
-      "notes": "Theme and variations."
+      "notes": "Theme and variations.",
+      "tag": ""
     },
     {
       "concert_id": "4",
@@ -691,7 +702,8 @@
       "soloists": "Richard Bamping (cello)",
       "performers": "",
       "rating": 3.5,
-      "notes": "World Premiere."
+      "notes": "World Premiere.",
+      "tag": ""
     },
     {
       "concert_id": "4",
@@ -706,7 +718,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "Nietzsche-inspired tone poem."
+      "notes": "Nietzsche-inspired tone poem.",
+      "tag": ""
     },
     {
       "concert_id": "5",
@@ -721,7 +734,8 @@
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
       "rating": 3,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "5",
@@ -736,7 +750,8 @@
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
       "rating": 2,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "5",
@@ -751,7 +766,8 @@
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
       "rating": 3,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "6",
@@ -766,7 +782,8 @@
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
       "rating": 3.5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "6",
@@ -781,7 +798,8 @@
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "7",
@@ -796,7 +814,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3.5,
-      "notes": "Composed for LA Philharmonic centennial."
+      "notes": "Composed for LA Philharmonic centennial.",
+      "tag": ""
     },
     {
       "concert_id": "7",
@@ -811,7 +830,8 @@
       "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
       "performers": "Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",
       "rating": 3.5,
-      "notes": "Symphony with chorus."
+      "notes": "Symphony with chorus.",
+      "tag": ""
     },
     {
       "concert_id": "8",
@@ -826,7 +846,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "From Khovanshchina Prelude."
+      "notes": "From Khovanshchina Prelude.",
+      "tag": ""
     },
     {
       "concert_id": "8",
@@ -841,7 +862,8 @@
       "soloists": "Behzod Abduraimov (piano)",
       "performers": "",
       "rating": 2.5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "8",
@@ -856,7 +878,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "Symphonic suite."
+      "notes": "Symphonic suite.",
+      "tag": ""
     },
     {
       "concert_id": "9",
@@ -871,7 +894,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": "Composed for Bicentennial of the LA Philharmonic."
+      "notes": "Composed for Bicentennial of the LA Philharmonic.",
+      "tag": ""
     },
     {
       "concert_id": "9",
@@ -886,7 +910,8 @@
       "soloists": "Lang Lang (piano)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "9",
@@ -901,7 +926,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4.5,
-      "notes": "Four legends from the Kalevala."
+      "notes": "Four legends from the Kalevala.",
+      "tag": ""
     },
     {
       "concert_id": "10",
@@ -916,7 +942,8 @@
       "soloists": "",
       "performers": "",
       "rating": null,
-      "notes": "Goethe's Egmont incidental music."
+      "notes": "Goethe's Egmont incidental music.",
+      "tag": ""
     },
     {
       "concert_id": "10",
@@ -931,7 +958,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3.5,
-      "notes": "Italianate sun-drenched energy."
+      "notes": "Italianate sun-drenched energy.",
+      "tag": ""
     },
     {
       "concert_id": "10",
@@ -946,7 +974,8 @@
       "soloists": "",
       "performers": "",
       "rating": null,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "11",
@@ -961,7 +990,8 @@
       "soloists": "Yulianna Avdeeva (piano)",
       "performers": "",
       "rating": 2,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "11",
@@ -976,7 +1006,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "12",
@@ -991,7 +1022,8 @@
       "soloists": "Yulianna Avdeeva (piano)",
       "performers": "",
       "rating": 3.5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "12",
@@ -1006,7 +1038,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "13",
@@ -1021,7 +1054,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4.5,
-      "notes": "World Premiere. HK Phil Commission."
+      "notes": "World Premiere. HK Phil Commission.",
+      "tag": ""
     },
     {
       "concert_id": "13",
@@ -1036,7 +1070,8 @@
       "soloists": "Eric Lu (piano)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "13",
@@ -1051,7 +1086,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "14",
@@ -1066,7 +1102,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4.5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "14",
@@ -1081,7 +1118,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": "Suite from the opera, arr. Manfred Honeck & Tomás Ille."
+      "notes": "Suite from the opera, arr. Manfred Honeck & Tomás Ille.",
+      "tag": ""
     },
     {
       "concert_id": "15",
@@ -1096,7 +1134,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "16",
@@ -1111,7 +1150,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "17",
@@ -1126,7 +1166,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4.5,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "17",
@@ -1141,7 +1182,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": ""
     },
     {
       "concert_id": "18",
@@ -1156,7 +1198,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1171,7 +1214,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1186,7 +1230,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 4.5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1201,7 +1246,8 @@
       "soloists": "",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1216,7 +1262,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1231,7 +1278,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1246,7 +1294,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3.5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1261,7 +1310,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1276,7 +1326,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1291,7 +1342,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1306,7 +1358,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1321,7 +1374,8 @@
       "soloists": "",
       "performers": "",
       "rating": 3.5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1336,7 +1390,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 4,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1351,7 +1406,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1366,7 +1422,8 @@
       "soloists": "",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     },
     {
       "concert_id": "18",
@@ -1381,7 +1438,8 @@
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
       "rating": 5,
-      "notes": ""
+      "notes": "",
+      "tag": "Opera"
     }
   ]
 }

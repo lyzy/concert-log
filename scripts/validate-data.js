@@ -94,7 +94,7 @@ function main() {
   });
 
   console.log("\nprogrammes.csv structure");
-  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 13, false);
+  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 14, false);
   const rIdx = colIndex(programmes.header, "rating");
   programmes.data.forEach((r, i) => {
     const raw = (r[rIdx] || "").trim();

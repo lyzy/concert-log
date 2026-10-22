@@ -118,8 +118,11 @@
       '<span class="rating-num">' + esc(v) + '</span></span>';
   }
 
-  function typeBadge(t) {
-    if (!t || t === "Concert") return "";
+  function workBadge(p, c) {
+    // Per-piece tag wins; otherwise show the event type for opera/ballet events.
+    var t = String(p.tag || "").trim();
+    if (!t && c.event_type && c.event_type !== "Concert") t = c.event_type;
+    if (!t) return "";
     return ' <span class="type-badge">' + esc(t) + '</span>';
   }
 
@@ -158,7 +161,7 @@
       if (filterType && (r.c.event_type || "Concert") !== filterType) return false;
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
-                 r.p.conductor, r.p.soloists, r.p.performers, r.p.rating,
+                 r.p.conductor, r.p.soloists, r.p.performers, r.p.rating, r.p.tag,
                  r.c.event_type, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
@@ -168,7 +171,7 @@
       return "<tr>" +
         "<td>" + esc(c.date || "") + "</td>" +
         "<td>" + esc(p.composer_full || p.composer) + "</td>" +
-        "<td>" + esc(p.work_title) + typeBadge(c.event_type) + "</td>" +
+        "<td>" + esc(p.work_title) + workBadge(p, c) + "</td>" +
         "<td>" + esc(p.opus || "") + "</td>" +
         "<td>" + (p.period ? '<span class="pill">' + esc(p.period) + '</span>' : "") + "</td>" +
         "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +

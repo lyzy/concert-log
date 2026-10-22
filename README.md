@@ -172,6 +172,7 @@ git commit -m "Normalize CSV line endings"
 | `performers` | text | Ensemble / chorus specific to this piece (if any) | `Hong Kong Philharmonic Chorus` |
 | `rating` | number | Your rating for this piece: `1` to `5`, half-points allowed (empty = unrated) | `4.5` |
 | `notes` | text | Notes on this particular piece | `First time hearing live` |
+| `tag` | text | Optional badge shown next to the work, e.g. `Opera` for opera excerpts | `Opera` |
 
 ## Data Entry
 
@@ -191,7 +192,8 @@ librettist) in `notes`.
 For a **gala or recital** made of excerpts, use `event_type = Concert` and give
 each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture`).
 The rows stay separate so you can rate each, but two excerpts from the same opera
-are counted as **one work** in the statistics.
+are counted as **one work** in the statistics. Set `tag = Opera` on those rows to
+show an `OPERA` badge next to each excerpt.
 
 An opera:
 
