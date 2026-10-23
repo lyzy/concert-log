@@ -16,6 +16,8 @@
   var concertById = {};
   var sort = { key: "date", dir: "asc" };
   var filterType = "";
+  var showEncores = true;
+  var ENCORE_KEY = "concert-show-encores";
 
   var FILTERS = [
     { type: "", label: "All" },
@@ -118,12 +120,18 @@
       '<span class="rating-num">' + esc(v) + '</span></span>';
   }
 
+  function isEncore(p) {
+    return !!p.encore;
+  }
+
   function workBadge(p, c) {
+    var parts = [];
     // Per-piece tag wins; otherwise show the event type for opera/ballet events.
     var t = String(p.tag || "").trim();
     if (!t && c.event_type && c.event_type !== "Concert") t = c.event_type;
-    if (!t) return "";
-    return ' <span class="type-badge">' + esc(t) + '</span>';
+    if (t) parts.push('<span class="type-badge">' + esc(t) + '</span>');
+    if (isEncore(p)) parts.push('<span class="type-badge encore-badge">Encore</span>');
+    return parts.length ? " " + parts.join(" ") : "";
   }
 
   function compareRows(a, b) {
@@ -150,6 +158,10 @@
     }
     var dd = (a.c.date || "").localeCompare(b.c.date || "");
     if (dd) return sort.dir === "asc" ? dd : -dd;
+    // same date: group by event, then follow piece_order (true performance order,
+    // so encores stay where they happened instead of being pushed to the end)
+    var ca = +a.c.concert_id || 0, cb = +b.c.concert_id || 0;
+    if (ca !== cb) return ca - cb;
     return (+a.p.piece_order || 0) - (+b.p.piece_order || 0);
   }
 
@@ -158,17 +170,25 @@
     var rows = dataset.programmes.map(function (p) {
       return { p: p, c: concertById[p.concert_id] || {} };
     }).filter(function (r) {
+      if (!showEncores && isEncore(r.p)) return false;
       if (filterType && (r.c.event_type || "Concert") !== filterType) return false;
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
-                 r.p.conductor, r.p.soloists, r.p.performers, r.p.rating, r.p.tag,
+                 r.p.conductor, r.p.soloists, r.p.performers, r.p.rating, r.p.tag, r.p.section,
                  r.c.event_type, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
-    document.getElementById("tbody").innerHTML = rows.map(function (r) {
+    var html = [];
+    var prevEvent = null, prevEncore = false;
+    rows.forEach(function (r) {
+      var enc = isEncore(r.p);
+      // Divider only makes sense in date order, where rows are grouped by event.
+      if (sort.key === "date" && enc && !(prevEvent === r.c.concert_id && prevEncore)) {
+        html.push('<tr class="section-row"><td colspan="9">\u2014 Encore \u2014</td></tr>');
+      }
       var p = r.p, c = r.c;
-      return "<tr>" +
+      html.push("<tr>" +
         "<td>" + esc(c.date || "") + "</td>" +
         "<td>" + esc(p.composer_full || p.composer) + "</td>" +
         "<td>" + esc(p.work_title) + workBadge(p, c) + "</td>" +
@@ -178,8 +198,11 @@
         "<td>" + esc(p.soloists || "") + "</td>" +
         "<td>" + esc(c.venue || "") + "</td>" +
         "<td>" + ratingCell(p.rating) + "</td>" +
-        "</tr>";
-    }).join("");
+        "</tr>");
+      prevEvent = r.c.concert_id;
+      prevEncore = enc;
+    });
+    document.getElementById("tbody").innerHTML = html.join("");
   }
 
   function renderAll() {
@@ -236,7 +259,17 @@
   }
 
   // ------------------------------------------------------------- wire up
+  function initEncores() {
+    try {
+      var v = localStorage.getItem(ENCORE_KEY);
+      if (v !== null) showEncores = v === "1";
+    } catch (e) { /* ignore */ }
+    var cb = document.getElementById("showEncores");
+    if (cb) cb.checked = showEncores;
+  }
+
   initTheme();
+  initEncores();
 
   document.getElementById("themeSelect").addEventListener("change", function (e) {
     applyTheme(e.target.value);
@@ -246,6 +279,11 @@
   document.getElementById("retryBtn").addEventListener("click", load);
   document.getElementById("search").addEventListener("input", function (e) {
     if (dataset) renderTable(e.target.value);
+  });
+  document.getElementById("showEncores").addEventListener("change", function (e) {
+    showEncores = e.target.checked;
+    try { localStorage.setItem(ENCORE_KEY, showEncores ? "1" : "0"); } catch (err) { /* ignore */ }
+    if (dataset) renderTable(document.getElementById("search").value);
   });
 
   // sortable column headers

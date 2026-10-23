@@ -94,11 +94,16 @@ function main() {
   });
 
   console.log("\nprogrammes.csv structure");
-  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 14, false);
+  const programmes = checkStructure("programmes.csv", parseCSV(pBuf.toString("utf8")), 15, false);
   const rIdx = colIndex(programmes.header, "rating");
   programmes.data.forEach((r, i) => {
     const raw = (r[rIdx] || "").trim();
     if (raw && isNaN(parseFloat(raw))) warn("line " + (i + 2) + ": rating '" + raw + "' is not numeric");
+  });
+  const sIdx = colIndex(programmes.header, "section");
+  programmes.data.forEach((r, i) => {
+    const s = (r[sIdx] || "").trim();
+    if (s && !/^encore\b/i.test(s)) warn("line " + (i + 2) + ": section '" + s + "' is neither blank nor 'Encore...'");
   });
 
   console.log("\nreferential integrity");

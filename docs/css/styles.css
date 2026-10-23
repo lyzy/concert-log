@@ -228,9 +228,31 @@ th.sorted-asc::after { content: " \25b2"; color: var(--accent); }
 th.sorted-desc::after { content: " \25bc"; color: var(--accent); }
 .sorthint { align-self: center; color: var(--text-faint); font-size: 12px; }
 .sorthint b { color: var(--text-muted); font-weight: 600; }
+.encore-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.encore-toggle input { accent-color: var(--accent); cursor: pointer; }
 tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
 tbody tr { transition: background 0.12s ease; }
 tbody tr:hover { background: var(--accent-soft); }
+tr.section-row td {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  background: var(--bg-card-2);
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  padding: 7px 10px;
+}
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .pill {
   display: inline-block;
@@ -277,6 +299,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   color: var(--accent);
   vertical-align: middle;
 }
+.type-badge.encore-badge { border-style: dashed; }
 
 .muted { color: var(--text-muted); }
 footer { margin-top: 34px; color: var(--text-muted); font-size: 12.5px; text-align: center; }

@@ -173,6 +173,7 @@ git commit -m "Normalize CSV line endings"
 | `rating` | number | Your rating for this piece: `1` to `5`, half-points allowed (empty = unrated) | `4.5` |
 | `notes` | text | Notes on this particular piece | `First time hearing live` |
 | `tag` | text | Optional badge shown next to the work, e.g. `Opera` for opera excerpts | `Opera` |
+| `section` | text | `Encore` (or `Encore 1`, `Encore 2`) for encore pieces; blank for the announced programme | `Encore` |
 
 ## Data Entry
 
@@ -194,6 +195,19 @@ each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture
 The rows stay separate so you can rate each, but two excerpts from the same opera
 are counted as **one work** in the statistics. Set `tag = Opera` on those rows to
 show an `OPERA` badge next to each excerpt.
+
+### Encores
+
+Record encores as extra rows with `section = Encore` (use `Encore 1`, `Encore 2`
+for multiple rounds). Keep counting `piece_order` after the main programme.
+
+- Encores are **display-only**: they never affect the statistics (pieces heard,
+  composers, periods, ratings, unique works).
+- In date order the table groups them under an `— Encore —` divider, and each row
+  carries a dashed `ENCORE` badge.
+- The **Encores** checkbox above the table shows/hides them (remembered per browser).
+- If you can't remember a concert's encores, just leave them out — the log makes no
+  claim that a concert had none.
 
 An opera:
 
