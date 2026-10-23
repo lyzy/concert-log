@@ -170,10 +170,49 @@ git commit -m "Normalize CSV line endings"
 | `conductor` | text | Conductor name (duplicated from concerts.csv for easy querying) | `Andris Nelsons` |
 | `soloists` | text | Featured soloists for this piece (leave empty for symphonies, etc.) | `Lang Lang (piano)` |
 | `performers` | text | Ensemble / chorus specific to this piece (if any) | `Hong Kong Philharmonic Chorus` |
-| `rating` | number | Your rating for this piece: `1` to `5`, half-points allowed (empty = unrated) | `4.5` |
+| `rating` | number | Your rating for this piece: `0` to `5` (0.5 steps recommended; empty = unrated, `0` = unacceptable) | `4.5` |
 | `notes` | text | Notes on this particular piece | `First time hearing live` |
 | `tag` | text | Optional badge shown next to the work, e.g. `Opera` for opera excerpts | `Opera` |
 | `section` | text | `Encore` (or `Encore 1`, `Encore 2`) for encore pieces; blank for the announced programme | `Encore` |
+
+## Rating rubric
+
+Ratings are **per piece**, on a **0–5** scale (0.5 steps are enough; empty = not rated,
+`0` = unacceptable). The goal is consistency, not precision.
+
+### What to weigh (five lenses)
+
+1. **Technical execution** — accuracy, intonation, ensemble, coordination.
+2. **Interpretation & style** — phrasing, tempo, dynamics, structure, stylistic fit.
+3. **Sound & balance** — tone, blend, dynamic range, hall/acoustics.
+4. **Communication & presence** — soloist charisma, conductor's control, risk, spontaneity.
+5. **Impact & memorability** — did it move you? would you seek it out again? did it change how you hear the work?
+
+*Optional:* **programme/context** (rarity, new work, comparison with reference recordings) —
+this is more about the event; note it in the piece's `notes` if it matters.
+
+### Anchors
+
+| Score | Meaning |
+|---|---|
+| **5.0** | Reference-level: among the best you have heard live; nothing you would change; worth travelling for |
+| **4.5** | Outstanding: clearly above routine, memorable, only tiny flaws; would strongly recommend |
+| **4.0** | Very good: satisfying and well executed, but not transcendent; minor reservations |
+| **3.5** | Good: competent and pleasant, with a clear weak spot (routine reading, uneven ensemble); glad you went, wouldn't rush back |
+| **3.0** | Adequate: passes, no highlights, flaws present but not ruinous |
+| **2.5** | Below par: problems start to interfere; would not recommend |
+| **2.0** | Poor: clear technical or interpretive failures; hard to enjoy |
+| **1.0–1.5** | Bad: serious problems; you wanted it to end |
+| **0** | Unacceptable / failed |
+
+### Calibration
+
+- **3.0 is neutral**, not "bad". Most "it was fine" performances belong at **3–3.5**.
+- Reserve **4.5–5** for roughly the top **10%** of experiences.
+- Anchor **relative to your best live hearing or a reference recording**, not to the rest of the same evening.
+- Score the five lenses first; if two are clearly weak, the total should not be 4.5+.
+- Re-check the next day, when the buzz has faded.
+- If more than half your scores are ≥4, you are probably being generous.
 
 ## Data Entry
 
