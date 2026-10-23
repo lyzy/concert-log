@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T18:35:32.490Z",
+  "generatedAt": "2026-10-23T19:07:04.841Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -185,19 +185,19 @@
     ],
     "byVenue": [
       {
-        "label": "Hong Kong Cultural Centre",
+        "label": "HK Cultural Centre Concert Hall",
         "value": 14
       },
       {
-        "label": "Hong Kong City Hall",
+        "label": "HK City Hall Concert Hall",
         "value": 2
       },
       {
-        "label": "Hong Kong Cultural Centre Grand Theatre",
+        "label": "HK Cultural Centre Grand Theatre",
         "value": 2
       },
       {
-        "label": "Shenzhen",
+        "label": "Shenzhen Concert Hall",
         "value": 1
       }
     ],
@@ -275,7 +275,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": "Also performed on 2025-05-09. Part of French May Arts Festival."
+      "notes": "Also performed on 2025-05-09. Part of French May Arts Festival.",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "2",
@@ -289,7 +290,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "3",
@@ -303,7 +305,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "4",
@@ -317,7 +320,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "5",
@@ -331,7 +335,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK City Hall Concert Hall"
     },
     {
       "concert_id": "6",
@@ -345,7 +350,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK City Hall Concert Hall"
     },
     {
       "concert_id": "7",
@@ -359,7 +365,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "8",
@@ -373,7 +380,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "9",
@@ -387,7 +395,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "10",
@@ -401,7 +410,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "11",
@@ -415,7 +425,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "12",
@@ -429,7 +440,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "13",
@@ -443,7 +455,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "14",
@@ -457,7 +470,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": "Season Opening: Manfred Honeck's Pastoral and Elektra. Also performed on 2026-09-17."
+      "notes": "Season Opening: Manfred Honeck's Pastoral and Elektra. Also performed on 2026-09-17.",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "15",
@@ -471,7 +485,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "16",
@@ -485,7 +500,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Grand Theatre"
     },
     {
       "concert_id": "17",
@@ -499,7 +515,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "HK Cultural Centre Grand Theatre"
     },
     {
       "concert_id": "18",
@@ -513,7 +530,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": "Juan Diego Flórez Opera Gala (Hong Kong debut)."
+      "notes": "Juan Diego Flórez Opera Gala (Hong Kong debut).",
+      "venue_display": "HK Cultural Centre Concert Hall"
     },
     {
       "concert_id": "19",
@@ -527,7 +545,8 @@
       "ticket_price": "",
       "currency": "",
       "companion": "",
-      "notes": ""
+      "notes": "",
+      "venue_display": "Shenzhen Concert Hall"
     }
   ],
   "programmes": [

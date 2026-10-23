@@ -175,7 +175,7 @@
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
                  r.p.conductor, r.p.soloists, r.p.performers, r.p.rating, r.p.tag, r.p.section,
-                 r.c.event_type, r.c.venue, r.c.city, r.c.date].join(" ").toLowerCase();
+                 r.c.event_type, r.c.venue, r.c.venue_display, r.c.city, r.c.date].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
@@ -189,7 +189,7 @@
         "<td>" + (p.period ? '<span class="pill">' + esc(p.period) + '</span>' : "") + "</td>" +
         "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +
         "<td>" + esc(p.soloists || "") + "</td>" +
-        "<td>" + esc(c.venue || "") + "</td>" +
+        "<td>" + esc(c.venue_display || c.venue || "") + "</td>" +
         "<td>" + ratingCell(p.rating) + "</td>" +
         "</tr>";
     });
