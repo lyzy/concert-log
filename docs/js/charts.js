@@ -45,7 +45,7 @@ window.ConcertCharts = (function () {
   }
 
   // Horizontal bar chart (ranked, e.g. most-heard composers).
-  function hBar(data, color, maxRows) {
+  function hBar(data, color, maxRows, maxOverride) {
     if (!data.length) return '<p class="muted">No data.</p>';
     if (maxRows) data = data.slice(0, maxRows);
     // Reserve label space based on the longest label so text never overflows.
@@ -54,7 +54,7 @@ window.ConcertCharts = (function () {
     var rowH = 32, pad = { l: padL, r: 46, t: 6, b: 6 };
     var W = 600, H = data.length * rowH + pad.t + pad.b;
     var iw = W - pad.l - pad.r;
-    var max = Math.max.apply(null, data.map(function (d) { return d.value; })) || 1;
+    var max = maxOverride || Math.max.apply(null, data.map(function (d) { return d.value; })) || 1;
     color = color || PALETTE[1];
     var s = ['<svg viewBox="0 0 ' + W + ' ' + H + '" role="img">'];
     data.forEach(function (d, i) {

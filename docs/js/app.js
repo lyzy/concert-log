@@ -79,7 +79,7 @@
 
   function renderCharts() {
     var ch = dataset.charts;
-    document.getElementById("chartYear").innerHTML = Charts.vBar(ch.byYear, "var(--chart-1)");
+    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(ch.byPeriodRating, "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(ch.byPeriod);
     document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
     document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);

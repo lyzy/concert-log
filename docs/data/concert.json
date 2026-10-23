@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:07:04.841Z",
+  "generatedAt": "2026-10-23T19:49:08.775Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -51,16 +51,6 @@
     }
   ],
   "charts": {
-    "byYear": [
-      {
-        "label": "2025",
-        "value": 3
-      },
-      {
-        "label": "2026",
-        "value": 16
-      }
-    ],
     "byPeriod": [
       {
         "label": "Romantic",
@@ -81,6 +71,33 @@
       {
         "label": "Contemporary",
         "value": 7
+      }
+    ],
+    "byPeriodRating": [
+      {
+        "label": "Post-Romantic",
+        "value": 4.56,
+        "count": 8
+      },
+      {
+        "label": "Romantic",
+        "value": 4.27,
+        "count": 26
+      },
+      {
+        "label": "Contemporary",
+        "value": 4,
+        "count": 7
+      },
+      {
+        "label": "20th Century",
+        "value": 3.94,
+        "count": 9
+      },
+      {
+        "label": "Classical",
+        "value": 3.14,
+        "count": 9
       }
     ],
     "byComposer": [
