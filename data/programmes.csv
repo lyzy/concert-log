@@ -1,13 +1,14 @@
 ﻿concert_id,piece_order,composer,composer_full,work_title,opus,catalog,period,conductor,soloists,performers,rating,notes,tag,section
 1,1,Shostakovich,Dmitri Shostakovich,Festive Overture,Op. 96,,20th Century,Christoph Koncz,,,,Opening piece. Energetic and brilliant.,,
-1,2,Shostakovich,Dmitri Shostakovich,Cello Concerto No. 1,Op. 107,,20th Century,Christoph Koncz,Gautier Capucon (cello),,4,Written for Rostropovich.,,
-1,3,Ravel,Maurice Ravel,La Valse,,,20th Century,Christoph Koncz,,,4,Ravel's 150th anniversary year.,,
-1,4,Ravel,Maurice Ravel,Pavane pour une infante défunte,,,20th Century,Christoph Koncz,,,4,Lyrical and tender.,,
-1,5,Ravel,Maurice Ravel,Boléro,,,20th Century,Christoph Koncz,,,4,The famous orchestral showpiece.,,
-2,1,Salonen,Esa-Pekka Salonen,Violin Concerto,,,Contemporary,Tarmo Peltokoski,Leila Josefowicz (violin),,3,,,
-2,2,Shostakovich,Dmitri Shostakovich,Symphony No. 11,Op. 103,,20th Century,Tarmo Peltokoski,,,4,,,
+1,2,Shostakovich,Dmitri Shostakovich,Cello Concerto No. 1,Op. 107,,20th Century,Christoph Koncz,Gautier Capucon (cello),,3.5,Written for Rostropovich.,,
+1,3,Ravel,Maurice Ravel,La Valse,,,20th Century,Christoph Koncz,,,3.5,Ravel's 150th anniversary year.,,
+1,4,Ravel,Maurice Ravel,Pavane pour une infante défunte,,,20th Century,Christoph Koncz,,,3.5,Lyrical and tender.,,
+1,5,Ravel,Maurice Ravel,Boléro,,,20th Century,Christoph Koncz,,,3.5,The famous orchestral showpiece.,,
+2,1,Salonen,Esa-Pekka Salonen,Violin Concerto,,,Contemporary,Tarmo Peltokoski,Leila Josefowicz (violin),,4,,,
+2,2,Salonen,Esa-Pekka Salonen,Lachen Verlernt: Finale,,,,,Leila Josefowicz (violin),,,,,encore
+2,3,Shostakovich,Dmitri Shostakovich,Symphony No. 11,Op. 103,,20th Century,Tarmo Peltokoski,,,4.5,,,
 3,1,Strauss,Richard Strauss,Don Juan,Op. 20,,Post-Romantic,Esa-Pekka Salonen,,,5,Tone poem.,,
-3,2,Salonen,Esa-Pekka Salonen,Horn Concerto,,,Contemporary,Esa-Pekka Salonen,Stefan Dohr (horn),,5,Asian Premiere.,,
+3,2,Salonen,Esa-Pekka Salonen,Horn Concerto,,,Contemporary,Esa-Pekka Salonen,Stefan Dohr (horn),,4,Asian Premiere.,,
 3,3,Sibelius,Jean Sibelius,Symphony No. 5,Op. 82,,Post-Romantic,Esa-Pekka Salonen,,,5,,,
 4,1,Brahms,Johannes Brahms,Variations on a Theme by Haydn,Op. 56a,,Romantic,Michael Sanderling,,,3.5,Theme and variations.,,
 4,2,Howard,Dani Howard,"Cello Concerto ""The Lonesome Walker""",,,Contemporary,Michael Sanderling,Richard Bamping (cello),,3.5,World Premiere.,,
@@ -19,22 +20,29 @@
 6,2,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Francois-Frederic Guy,Francois-Frederic Guy (piano),,4,,,
 7,1,Salonen,Esa-Pekka Salonen,Pollux,,,Contemporary,Tarmo Peltokoski,,,3.5,Composed for LA Philharmonic centennial.,,
 7,2,Vaughan Williams,Ralph Vaughan Williams,A Sea Symphony,,,20th Century,Tarmo Peltokoski,"Chen Reiss (soprano), Andre Schuen (bass-baritone)","Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",3.5,Symphony with chorus.,,
-8,1,Mussorgsky,Modest Mussorgsky,Dawn on the Moscow River,,,Romantic,Yu Long,,,4,From Khovanshchina Prelude.,,
+8,1,Mussorgsky,Modest Mussorgsky,Dawn on the Moscow River,,,Romantic,Yu Long,,,3.5,From Khovanshchina Prelude.,,
 8,2,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Yu Long,Behzod Abduraimov (piano),,2.5,,,
-8,3,Rimsky-Korsakov,Nikolai Rimsky-Korsakov,Scheherazade,Op. 35,,Romantic,Yu Long,,,4,Symphonic suite.,,
-9,1,Salonen,Esa-Pekka Salonen,Castor,,,Contemporary,Tarmo Peltokoski,,,4,Composed for Bicentennial of the LA Philharmonic.,,
-9,2,Grieg,Edvard Grieg,Piano Concerto,Op. 16,,Romantic,Tarmo Peltokoski,Lang Lang (piano),,5,,,
-9,3,Sibelius,Jean Sibelius,Lemminkainen Suite,Op. 22,,Post-Romantic,Tarmo Peltokoski,,,4.5,Four legends from the Kalevala.,,
+8,3,Rachmaninoff,Sergei Rachmaninoff,"13 Preludes: V. Prelude in G, Moderato",Op. 32,,,,Behzod Abduraimov (piano),,,,,encore
+8,4,Rimsky-Korsakov,Nikolai Rimsky-Korsakov,Scheherazade,Op. 35,,Romantic,Yu Long,,,4,Symphonic suite.,,
+9,1,Salonen,Esa-Pekka Salonen,Castor,,,Contemporary,Tarmo Peltokoski,,,3.5,Composed for Bicentennial of the LA Philharmonic.,,
+9,2,Grieg,Edvard Grieg,Piano Concerto,Op. 16,,Romantic,Tarmo Peltokoski,Lang Lang (piano),,4.5,,,
+9,3,Brahms,Johannes Brahms,21 Hungarian Dance: No. 1 in G minor,,,,,"Lang Lang, Tarmo Peltokoski (piano)",,,,,encore
+9,4,Liszt,Franz Liszt,Consolations S.172: No. 2 Un poco più mosso,,,,,Lang Lang (piano),,,,,encore
+9,5,Sibelius,Jean Sibelius,Lemminkainen Suite,Op. 22,,Post-Romantic,Tarmo Peltokoski,,,4.5,Four legends from the Kalevala.,,
 10,1,Beethoven,Ludwig van Beethoven,Egmont Overture,Op. 84,,Classical,Kahchun Wong,,,,Goethe's Egmont incidental music.,,
-10,2,Mendelssohn,Felix Mendelssohn,"Symphony No. 4 ""Italian""",Op. 90,,Romantic,Kahchun Wong,,,3.5,Italianate sun-drenched energy.,,
+10,2,Mendelssohn,Felix Mendelssohn,"Symphony No. 4 ""Italian""",Op. 90,,Romantic,Kahchun Wong,,,3,Italianate sun-drenched energy.,,
 10,3,Beethoven,Ludwig van Beethoven,Symphony No. 4,Op. 60,,Classical,Kahchun Wong,,,,,,
 11,1,Beethoven,Ludwig van Beethoven,"Piano Concerto No. 5 ""Emperor""",Op. 73,,Classical,Andris Nelsons,Yulianna Avdeeva (piano),,2,,,
-11,2,Schumann,Robert Schumann,"Symphony No. 1 ""Spring""",Op. 38,,Romantic,Andris Nelsons,,,5,,,
+11,2,Schubert,Franz Schubert,Moments musicaux: III. Allegro moderato,Op. 94,,,,Yulianna Avdeeva (piano),,,,,encore
+11,3,Schumann,Robert Schumann,"Symphony No. 1 ""Spring""",Op. 38,,Romantic,Andris Nelsons,,,5,,,
 12,1,Rachmaninoff,Sergei Rachmaninoff,Piano Concerto No. 2,Op. 18,,Romantic,Andris Nelsons,Yulianna Avdeeva (piano),,3.5,,,
-12,2,Shostakovich,Dmitri Shostakovich,Symphony No. 10,Op. 93,,20th Century,Andris Nelsons,,,5,,,
+12,2,Chopin,Fryderyk Chopin,Nocturne 20 in C# minor,,,,,Yulianna Avdeeva (piano),,,,,encore
+12,3,Shostakovich,Dmitri Shostakovich,Symphony No. 10,Op. 93,,20th Century,Andris Nelsons,,,5,,,
+12,4,Shostakovich,Dmitri Shostakovich,"Moscow, Cheryomushki: I. A Spin Through Moscow",Op. 105,,,Andris Nelsons,,,,,,encore
 13,1,Yao,Yao Chen,Waltz of the Rolling Giants,,,Contemporary,Lio Kuokman,,,4.5,World Premiere. HK Phil Commission.,,
-13,2,Chopin,Fryderyk Chopin,Piano Concerto No. 1,Op. 11,,Romantic,Lio Kuokman,Eric Lu (piano),,5,,,
-13,3,Stravinsky,Igor Stravinsky,The Firebird Suite,,,20th Century,Lio Kuokman,,,3,,,
+13,2,Chopin,Fryderyk Chopin,Piano Concerto No. 1,Op. 11,,Romantic,Lio Kuokman,Eric Lu (piano),,4.5,,,
+13,3,Schumann,Robert Schumann,Kinderszenen: Träumerei,Op. 15/7,,Romantic,Lio Kuokman,Eric Lu (piano),,,,,encore
+13,4,Stravinsky,Igor Stravinsky,The Firebird Suite,,,20th Century,Lio Kuokman,,,3,,,
 14,1,Beethoven,Ludwig van Beethoven,"Symphony No. 6 ""Pastoral""",Op. 68,,Classical,Manfred Honeck,,,4.5,,,
 14,2,Strauss,Richard Strauss,Elektra Suite,,,Post-Romantic,Manfred Honeck,,,5,"Suite from the opera, arr. Manfred Honeck & Tomás Ille.",,
 15,1,Dvořák,Antonín Dvořák,Requiem,Op. 89,,Romantic,Robert Kružík,,,3,,,
@@ -48,7 +56,7 @@
 18,5,Donizetti,Gaetano Donizetti,L'elisir d'amore: Una furtiva lagrima,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,5,,Opera,
 18,6,Donizetti,Gaetano Donizetti,Lucia di Lammermoor: Tombe degli avi miei,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,4,,Opera,
 18,7,Bizet,Georges Bizet,Carmen: Aragonaise,,,Romantic,Michele Spotti,,,3.5,,Opera,
-18,8,Soutullo & Vert,Reveriano Soutullo & Juan Vert,El último romántico: Bella enamorada,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,5,,Opera,
+18,8,Soutullo & Vert,Reveriano Soutullo & Juan Vert,El último romántico: Bella enamorada,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,4.5,,Opera,
 18,9,Serrano,José Serrano,La alegría del batallón: Al mismito rey del moro,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,5,,Opera,
 18,10,Offenbach,Jacques Offenbach,Orphée aux enfers: Can-can,,,Romantic,Michele Spotti,,,5,,Opera,
 18,11,Offenbach,Jacques Offenbach,La belle Hélène: Au mont Ida,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,5,,Opera,
@@ -58,8 +66,8 @@
 18,15,Verdi,Giuseppe Verdi,Macbeth: Prelude,,,Romantic,Michele Spotti,,,5,,Opera,
 18,16,Verdi,Giuseppe Verdi,I Lombardi alla prima crociata: La mia letizia infondere,,,Romantic,Michele Spotti,Juan Diego Flórez (tenor),,5,,Opera,
 19,1,Wang,Chenwei Wang,The Sisters' Islands,,,Contemporary,Hannu Lintu,,,4.5,,,
-19,2,Mendelssohn,Felix Mendelssohn,Violin Concerto in E minor,Op. 64,,Romantic,Hannu Lintu,Chloe Chua (violin),,5,,,
+19,2,Mendelssohn,Felix Mendelssohn,Violin Concerto in E minor,Op. 64,,Romantic,Hannu Lintu,Chloe Chua (violin),,4.5,,,
 19,3,Ponce,Manuel Ponce,Estrellita (Heifetz),,,,,Chloe Chua (violin),,,,,encore
 19,4,Bach,Johann Sebastian Bach,Sonata No. 3 for Solo Violin in C Major BWV 1005: 3. Largo,,,,,Chloe Chua (violin),,,,,encore
-19,5,Mahler,Gustav Mahler,Symphony No. 1 in D major,,,Post-Romantic,Hannu Lintu,,,4.5,,,
+19,5,Mahler,Gustav Mahler,Symphony No. 1 in D major,,,Post-Romantic,Hannu Lintu,,,4,,,
 19,6,Sibelius,Jean Sibelius,Andante Festivo,,,,Hannu Lintu,,,,,,encore

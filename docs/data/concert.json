@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:49:08.775Z",
+  "generatedAt": "2026-10-23T20:37:46.710Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -27,7 +27,7 @@
     },
     {
       "label": "Avg rating",
-      "value": "4.1"
+      "value": "4.0"
     },
     {
       "label": "Composers",
@@ -76,22 +76,22 @@
     "byPeriodRating": [
       {
         "label": "Post-Romantic",
-        "value": 4.56,
+        "value": 4.5,
         "count": 8
       },
       {
         "label": "Romantic",
-        "value": 4.27,
+        "value": 4.15,
         "count": 26
       },
       {
         "label": "Contemporary",
-        "value": 4,
+        "value": 3.93,
         "count": 7
       },
       {
         "label": "20th Century",
-        "value": 3.94,
+        "value": 3.75,
         "count": 9
       },
       {
@@ -233,19 +233,19 @@
       },
       {
         "label": "3.5",
-        "value": 9
+        "value": 14
       },
       {
         "label": "4",
-        "value": 17
+        "value": 13
       },
       {
         "label": "4.5",
-        "value": 7
+        "value": 11
       },
       {
         "label": "5",
-        "value": 17
+        "value": 12
       }
     ]
   },
@@ -597,7 +597,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "Gautier Capucon (cello)",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "Written for Rostropovich.",
       "tag": "",
       "section": "",
@@ -615,7 +615,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "Ravel's 150th anniversary year.",
       "tag": "",
       "section": "",
@@ -633,7 +633,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "Lyrical and tender.",
       "tag": "",
       "section": "",
@@ -651,7 +651,7 @@
       "conductor": "Christoph Koncz",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "The famous orchestral showpiece.",
       "tag": "",
       "section": "",
@@ -669,7 +669,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Leila Josefowicz (violin)",
       "performers": "",
-      "rating": 3,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -678,6 +678,24 @@
     {
       "concert_id": "2",
       "piece_order": "2",
+      "composer": "Salonen",
+      "composer_full": "Esa-Pekka Salonen",
+      "work_title": "Lachen Verlernt: Finale",
+      "opus": "",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Leila Josefowicz (violin)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "2",
+      "piece_order": "3",
       "composer": "Shostakovich",
       "composer_full": "Dmitri Shostakovich",
       "work_title": "Symphony No. 11",
@@ -687,7 +705,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 4.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -723,7 +741,7 @@
       "conductor": "Esa-Pekka Salonen",
       "soloists": "Stefan Dohr (horn)",
       "performers": "",
-      "rating": 5,
+      "rating": 4,
       "notes": "Asian Premiere.",
       "tag": "",
       "section": "",
@@ -939,7 +957,7 @@
       "conductor": "Yu Long",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "From Khovanshchina Prelude.",
       "tag": "",
       "section": "",
@@ -966,6 +984,24 @@
     {
       "concert_id": "8",
       "piece_order": "3",
+      "composer": "Rachmaninoff",
+      "composer_full": "Sergei Rachmaninoff",
+      "work_title": "13 Preludes: V. Prelude in G, Moderato",
+      "opus": "Op. 32",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Behzod Abduraimov (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "8",
+      "piece_order": "4",
       "composer": "Rimsky-Korsakov",
       "composer_full": "Nikolai Rimsky-Korsakov",
       "work_title": "Scheherazade",
@@ -993,7 +1029,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "Composed for Bicentennial of the LA Philharmonic.",
       "tag": "",
       "section": "",
@@ -1011,7 +1047,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Lang Lang (piano)",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1020,6 +1056,42 @@
     {
       "concert_id": "9",
       "piece_order": "3",
+      "composer": "Brahms",
+      "composer_full": "Johannes Brahms",
+      "work_title": "21 Hungarian Dance: No. 1 in G minor",
+      "opus": "",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Lang Lang, Tarmo Peltokoski (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "9",
+      "piece_order": "4",
+      "composer": "Liszt",
+      "composer_full": "Franz Liszt",
+      "work_title": "Consolations S.172: No. 2 Un poco più mosso",
+      "opus": "",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Lang Lang (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "9",
+      "piece_order": "5",
       "composer": "Sibelius",
       "composer_full": "Jean Sibelius",
       "work_title": "Lemminkainen Suite",
@@ -1065,7 +1137,7 @@
       "conductor": "Kahchun Wong",
       "soloists": "",
       "performers": "",
-      "rating": 3.5,
+      "rating": 3,
       "notes": "Italianate sun-drenched energy.",
       "tag": "",
       "section": "",
@@ -1110,6 +1182,24 @@
     {
       "concert_id": "11",
       "piece_order": "2",
+      "composer": "Schubert",
+      "composer_full": "Franz Schubert",
+      "work_title": "Moments musicaux: III. Allegro moderato",
+      "opus": "Op. 94",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Yulianna Avdeeva (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "11",
+      "piece_order": "3",
       "composer": "Schumann",
       "composer_full": "Robert Schumann",
       "work_title": "Symphony No. 1 \"Spring\"",
@@ -1146,6 +1236,24 @@
     {
       "concert_id": "12",
       "piece_order": "2",
+      "composer": "Chopin",
+      "composer_full": "Fryderyk Chopin",
+      "work_title": "Nocturne 20 in C# minor",
+      "opus": "",
+      "catalog": "",
+      "period": "",
+      "conductor": "",
+      "soloists": "Yulianna Avdeeva (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "12",
+      "piece_order": "3",
       "composer": "Shostakovich",
       "composer_full": "Dmitri Shostakovich",
       "work_title": "Symphony No. 10",
@@ -1160,6 +1268,24 @@
       "tag": "",
       "section": "",
       "encore": false
+    },
+    {
+      "concert_id": "12",
+      "piece_order": "4",
+      "composer": "Shostakovich",
+      "composer_full": "Dmitri Shostakovich",
+      "work_title": "Moscow, Cheryomushki: I. A Spin Through Moscow",
+      "opus": "Op. 105",
+      "catalog": "",
+      "period": "",
+      "conductor": "Andris Nelsons",
+      "soloists": "",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
     },
     {
       "concert_id": "13",
@@ -1191,7 +1317,7 @@
       "conductor": "Lio Kuokman",
       "soloists": "Eric Lu (piano)",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1200,6 +1326,24 @@
     {
       "concert_id": "13",
       "piece_order": "3",
+      "composer": "Schumann",
+      "composer_full": "Robert Schumann",
+      "work_title": "Kinderszenen: Träumerei",
+      "opus": "Op. 15/7",
+      "catalog": "",
+      "period": "Romantic",
+      "conductor": "Lio Kuokman",
+      "soloists": "Eric Lu (piano)",
+      "performers": "",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "encore",
+      "encore": true
+    },
+    {
+      "concert_id": "13",
+      "piece_order": "4",
       "composer": "Stravinsky",
       "composer_full": "Igor Stravinsky",
       "work_title": "The Firebird Suite",
@@ -1461,7 +1605,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1641,7 +1785,7 @@
       "conductor": "Hannu Lintu",
       "soloists": "Chloe Chua (violin)",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1695,7 +1839,7 @@
       "conductor": "Hannu Lintu",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
