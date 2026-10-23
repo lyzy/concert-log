@@ -179,16 +179,9 @@
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
-    var html = [];
-    var prevEvent = null, prevEncore = false;
-    rows.forEach(function (r) {
-      var enc = isEncore(r.p);
-      // Divider only makes sense in date order, where rows are grouped by event.
-      if (sort.key === "date" && enc && !(prevEvent === r.c.concert_id && prevEncore)) {
-        html.push('<tr class="section-row"><td colspan="9">\u2014 Encore \u2014</td></tr>');
-      }
+    var html = rows.map(function (r) {
       var p = r.p, c = r.c;
-      html.push("<tr>" +
+      return "<tr>" +
         "<td>" + esc(c.date || "") + "</td>" +
         "<td>" + esc(p.composer_full || p.composer) + "</td>" +
         "<td>" + esc(p.work_title) + workBadge(p, c) + "</td>" +
@@ -198,9 +191,7 @@
         "<td>" + esc(p.soloists || "") + "</td>" +
         "<td>" + esc(c.venue || "") + "</td>" +
         "<td>" + ratingCell(p.rating) + "</td>" +
-        "</tr>");
-      prevEvent = r.c.concert_id;
-      prevEncore = enc;
+        "</tr>";
     });
     document.getElementById("tbody").innerHTML = html.join("");
   }

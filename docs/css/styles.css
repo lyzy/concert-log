@@ -242,17 +242,6 @@ th.sorted-desc::after { content: " \25bc"; color: var(--accent); }
 tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
 tbody tr { transition: background 0.12s ease; }
 tbody tr:hover { background: var(--accent-soft); }
-tr.section-row td {
-  text-align: center;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--text-muted);
-  background: var(--bg-card-2);
-  border-top: 1px dashed var(--border);
-  border-bottom: 1px dashed var(--border);
-  padding: 7px 10px;
-}
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .pill {
   display: inline-block;

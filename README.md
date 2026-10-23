@@ -198,13 +198,14 @@ show an `OPERA` badge next to each excerpt.
 
 ### Encores
 
-Record encores as extra rows with `section = Encore` (use `Encore 1`, `Encore 2`
-for multiple rounds). Keep counting `piece_order` after the main programme.
+Record encores as extra rows with `section = Encore` (or `Encore 1`, `Encore 2`).
+Set `piece_order` to the real performance order — encores keep their actual place
+in the programme, including between halves.
 
 - Encores are **display-only**: they never affect the statistics (pieces heard,
   composers, periods, ratings, unique works).
-- In date order the table groups them under an `— Encore —` divider, and each row
-  carries a dashed `ENCORE` badge.
+- Encore rows carry a dashed `ENCORE` badge and are otherwise listed like any other
+  piece (no separate section).
 - The **Encores** checkbox above the table shows/hides them (remembered per browser).
 - If you can't remember a concert's encores, just leave them out — the log makes no
   claim that a concert had none.
