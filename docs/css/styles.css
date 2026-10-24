@@ -103,6 +103,8 @@ select { padding-right: 28px; }
   color: var(--text-muted);
   margin-top: 6px;
 }
+.stat-toggle { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; cursor: pointer; }
+.stat-toggle input { accent-color: var(--accent); }
 
 /* ---------------- cards / grid ---------------- */
 .grid {

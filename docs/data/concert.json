@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T08:12:44.551Z",
+  "generatedAt": "2026-10-24T08:17:59.806Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -46,6 +46,10 @@
       "value": 2
     }
   ],
+  "ratings": {
+    "avg": 3.8333333333333335,
+    "avgNoOpera": 3.6842105263157894
+  },
   "charts": {
     "byPeriod": [
       {

@@ -20,6 +20,8 @@
   var ENCORE_KEY = "concert-show-encores";
   var composerOpera = true;
   var COMPOSER_OPERA_KEY = "concert-composer-opera";
+  var avgOpera = true;
+  var AVG_OPERA_KEY = "concert-avg-opera";
 
   var FILTERS = [
     { type: "", label: "All" },
@@ -74,9 +76,26 @@
   }
 
   function renderStats() {
+    var r = dataset.ratings || {};
     document.getElementById("stats").innerHTML = dataset.stats.map(function (s) {
+      if (s.label === "Avg rating") {
+        var v = avgOpera ? r.avg : r.avgNoOpera;
+        var txt = v == null ? "\u2014" : v.toFixed(1);
+        return '<div class="stat"><div class="n">' + esc(txt) + '</div>' +
+          '<div class="l">' + esc(s.label) +
+          ' <label class="stat-toggle" title="Include opera works in the average"><input type="checkbox" id="avgOpera"' + (avgOpera ? ' checked' : '') + '> Opera</label></div></div>';
+      }
       return '<div class="stat"><div class="n">' + esc(s.value) + '</div><div class="l">' + esc(s.label) + '</div></div>';
     }).join("");
+
+    var cb = document.getElementById("avgOpera");
+    if (cb) {
+      cb.addEventListener("change", function (e) {
+        avgOpera = e.target.checked;
+        try { localStorage.setItem(AVG_OPERA_KEY, avgOpera ? "1" : "0"); } catch (err) { /* ignore */ }
+        renderStats();
+      });
+    }
   }
 
   function renderComposerRating() {
@@ -278,9 +297,17 @@
     if (cb) cb.checked = composerOpera;
   }
 
+  function initAvgOpera() {
+    try {
+      var v = localStorage.getItem(AVG_OPERA_KEY);
+      if (v !== null) avgOpera = v === "1";
+    } catch (e) { /* ignore */ }
+  }
+
   initTheme();
   initEncores();
   initComposerOpera();
+  initAvgOpera();
 
   document.getElementById("themeSelect").addEventListener("change", function (e) {
     applyTheme(e.target.value);
