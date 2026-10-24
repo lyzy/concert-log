@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T20:37:46.710Z",
+  "generatedAt": "2026-10-24T07:27:15.502Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -44,10 +44,6 @@
     {
       "label": "Years",
       "value": 2
-    },
-    {
-      "label": "Ticket spend",
-      "value": "—"
     }
   ],
   "charts": {
@@ -148,6 +144,68 @@
       {
         "label": "Sergei Rachmaninoff",
         "value": 2
+      }
+    ],
+    "byComposerRating": [
+      {
+        "label": "Giuseppe Verdi",
+        "value": 5,
+        "count": 2
+      },
+      {
+        "label": "Jacques Offenbach",
+        "value": 5,
+        "count": 2
+      },
+      {
+        "label": "Jean Sibelius",
+        "value": 4.75,
+        "count": 2
+      },
+      {
+        "label": "Richard Strauss",
+        "value": 4.67,
+        "count": 3
+      },
+      {
+        "label": "Dmitri Shostakovich",
+        "value": 4.33,
+        "count": 4
+      },
+      {
+        "label": "Gaetano Donizetti",
+        "value": 4.33,
+        "count": 3
+      },
+      {
+        "label": "Gioachino Rossini",
+        "value": 4,
+        "count": 2
+      },
+      {
+        "label": "Esa-Pekka Salonen",
+        "value": 3.75,
+        "count": 4
+      },
+      {
+        "label": "Felix Mendelssohn",
+        "value": 3.75,
+        "count": 2
+      },
+      {
+        "label": "Maurice Ravel",
+        "value": 3.5,
+        "count": 3
+      },
+      {
+        "label": "Ludwig van Beethoven",
+        "value": 3.14,
+        "count": 9
+      },
+      {
+        "label": "Sergei Rachmaninoff",
+        "value": 3,
+        "count": 2
       }
     ],
     "byConductor": [

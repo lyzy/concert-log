@@ -82,6 +82,7 @@
     document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(ch.byPeriodRating, "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(ch.byPeriod);
     document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
+    document.getElementById("chartComposerRating").innerHTML = Charts.hBar(ch.byComposerRating, "var(--chart-6)", 0, 5);
     document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);
     document.getElementById("chartVenue").innerHTML = Charts.hBar(ch.byVenue, "var(--chart-4)", 8);
     document.getElementById("chartRating").innerHTML = Charts.vBar(ch.byRating, "var(--chart-5)");
