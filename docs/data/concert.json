@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:42:12.234Z",
+  "generatedAt": "2026-10-24T08:12:44.551Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -27,7 +27,7 @@
     },
     {
       "label": "Avg rating",
-      "value": "4.0"
+      "value": "3.8"
     },
     {
       "label": "Composers",
@@ -72,27 +72,27 @@
     "byPeriodRating": [
       {
         "label": "Post-Romantic",
-        "value": 4.5,
+        "value": 4.19,
         "count": 8
       },
       {
         "label": "Romantic",
-        "value": 4.15,
+        "value": 4.04,
         "count": 26
       },
       {
         "label": "Contemporary",
-        "value": 3.93,
+        "value": 3.71,
         "count": 7
       },
       {
         "label": "20th Century",
-        "value": 3.75,
+        "value": 3.69,
         "count": 9
       },
       {
         "label": "Classical",
-        "value": 3.14,
+        "value": 2.93,
         "count": 9
       }
     ],
@@ -148,29 +148,19 @@
     ],
     "byComposerRating": [
       {
-        "label": "Giuseppe Verdi",
-        "value": 5,
-        "count": 2
-      },
-      {
         "label": "Jacques Offenbach",
-        "value": 5,
-        "count": 2
-      },
-      {
-        "label": "Jean Sibelius",
         "value": 4.75,
         "count": 2
       },
       {
-        "label": "Richard Strauss",
-        "value": 4.67,
-        "count": 3
+        "label": "Jean Sibelius",
+        "value": 4.5,
+        "count": 2
       },
       {
-        "label": "Dmitri Shostakovich",
-        "value": 4.33,
-        "count": 4
+        "label": "Richard Strauss",
+        "value": 4.5,
+        "count": 3
       },
       {
         "label": "Gaetano Donizetti",
@@ -178,19 +168,29 @@
         "count": 3
       },
       {
-        "label": "Gioachino Rossini",
-        "value": 4,
+        "label": "Giuseppe Verdi",
+        "value": 4.25,
         "count": 2
       },
       {
-        "label": "Esa-Pekka Salonen",
-        "value": 3.75,
+        "label": "Dmitri Shostakovich",
+        "value": 4.17,
         "count": 4
       },
       {
         "label": "Felix Mendelssohn",
+        "value": 4,
+        "count": 2
+      },
+      {
+        "label": "Gioachino Rossini",
         "value": 3.75,
         "count": 2
+      },
+      {
+        "label": "Esa-Pekka Salonen",
+        "value": 3.5,
+        "count": 4
       },
       {
         "label": "Maurice Ravel",
@@ -198,41 +198,41 @@
         "count": 3
       },
       {
-        "label": "Ludwig van Beethoven",
-        "value": 3.14,
-        "count": 9
-      },
-      {
         "label": "Sergei Rachmaninoff",
         "value": 3,
         "count": 2
+      },
+      {
+        "label": "Ludwig van Beethoven",
+        "value": 2.93,
+        "count": 9
       }
     ],
     "byComposerRatingNoOpera": [
       {
         "label": "Jean Sibelius",
-        "value": 4.75,
+        "value": 4.5,
         "count": 2
       },
       {
         "label": "Richard Strauss",
-        "value": 4.67,
+        "value": 4.5,
         "count": 3
       },
       {
         "label": "Dmitri Shostakovich",
-        "value": 4.33,
-        "count": 4
-      },
-      {
-        "label": "Esa-Pekka Salonen",
-        "value": 3.75,
+        "value": 4.17,
         "count": 4
       },
       {
         "label": "Felix Mendelssohn",
-        "value": 3.75,
+        "value": 4,
         "count": 2
+      },
+      {
+        "label": "Esa-Pekka Salonen",
+        "value": 3.5,
+        "count": 4
       },
       {
         "label": "Maurice Ravel",
@@ -240,14 +240,14 @@
         "count": 3
       },
       {
-        "label": "Ludwig van Beethoven",
-        "value": 3.14,
-        "count": 9
-      },
-      {
         "label": "Sergei Rachmaninoff",
         "value": 3,
         "count": 2
+      },
+      {
+        "label": "Ludwig van Beethoven",
+        "value": 2.93,
+        "count": 9
       }
     ],
     "byConductor": [
@@ -321,15 +321,15 @@
     "byRating": [
       {
         "label": "2",
-        "value": 2
-      },
-      {
-        "label": "2.5",
         "value": 1
       },
       {
+        "label": "2.5",
+        "value": 3
+      },
+      {
         "label": "3",
-        "value": 5
+        "value": 7
       },
       {
         "label": "3.5",
@@ -337,15 +337,15 @@
       },
       {
         "label": "4",
-        "value": 13
+        "value": 18
       },
       {
         "label": "4.5",
-        "value": 11
+        "value": 6
       },
       {
         "label": "5",
-        "value": 12
+        "value": 8
       }
     ]
   },
@@ -805,7 +805,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -949,7 +949,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
-      "rating": 2,
+      "rating": 2.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -967,7 +967,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
-      "rating": 3,
+      "rating": 2.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -985,7 +985,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
-      "rating": 3.5,
+      "rating": 3,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1003,7 +1003,7 @@
       "conductor": "Francois-Frederic Guy",
       "soloists": "Francois-Frederic Guy (piano)",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1021,7 +1021,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 3.5,
+      "rating": 3,
       "notes": "Composed for LA Philharmonic centennial.",
       "tag": "",
       "section": "",
@@ -1057,7 +1057,7 @@
       "conductor": "Yu Long",
       "soloists": "",
       "performers": "",
-      "rating": 3.5,
+      "rating": 4,
       "notes": "From Khovanshchina Prelude.",
       "tag": "",
       "section": "",
@@ -1129,7 +1129,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 3.5,
+      "rating": 3,
       "notes": "Composed for Bicentennial of the LA Philharmonic.",
       "tag": "",
       "section": "",
@@ -1147,7 +1147,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Lang Lang (piano)",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1201,7 +1201,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "Four legends from the Kalevala.",
       "tag": "",
       "section": "",
@@ -1237,7 +1237,7 @@
       "conductor": "Kahchun Wong",
       "soloists": "",
       "performers": "",
-      "rating": 3,
+      "rating": null,
       "notes": "Italianate sun-drenched energy.",
       "tag": "",
       "section": "",
@@ -1471,7 +1471,7 @@
       "conductor": "Manfred Honeck",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1489,7 +1489,7 @@
       "conductor": "Manfred Honeck",
       "soloists": "",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "Suite from the opera, arr. Manfred Honeck & Tomás Ille.",
       "tag": "",
       "section": "",
@@ -1543,7 +1543,7 @@
       "conductor": "Roberto Gianola",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1561,7 +1561,7 @@
       "conductor": "Roberto Gianola",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1579,7 +1579,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1615,7 +1615,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1633,7 +1633,7 @@
       "conductor": "Michele Spotti",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1669,7 +1669,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 4,
+      "rating": 4.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1705,7 +1705,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1741,7 +1741,7 @@
       "conductor": "Michele Spotti",
       "soloists": "",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1777,7 +1777,7 @@
       "conductor": "Michele Spotti",
       "soloists": "",
       "performers": "",
-      "rating": 3.5,
+      "rating": 3,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1831,7 +1831,7 @@
       "conductor": "Michele Spotti",
       "soloists": "",
       "performers": "",
-      "rating": 5,
+      "rating": 4.5,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1849,7 +1849,7 @@
       "conductor": "Michele Spotti",
       "soloists": "Juan Diego Flórez (tenor)",
       "performers": "",
-      "rating": 5,
+      "rating": 4,
       "notes": "",
       "tag": "Opera",
       "section": "",
@@ -1867,7 +1867,7 @@
       "conductor": "Hannu Lintu",
       "soloists": "",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1885,7 +1885,7 @@
       "conductor": "Hannu Lintu",
       "soloists": "Chloe Chua (violin)",
       "performers": "",
-      "rating": 4.5,
+      "rating": 4,
       "notes": "",
       "tag": "",
       "section": "",
@@ -1939,7 +1939,7 @@
       "conductor": "Hannu Lintu",
       "soloists": "",
       "performers": "",
-      "rating": 4,
+      "rating": 3.5,
       "notes": "",
       "tag": "",
       "section": "",

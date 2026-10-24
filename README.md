@@ -177,8 +177,14 @@ git commit -m "Normalize CSV line endings"
 
 ## Rating rubric
 
-Ratings are **per piece**, on a **0–5** scale (0.5 steps are enough; empty = not rated,
-`0` = unacceptable). The goal is consistency, not precision.
+Ratings are **per piece**, on a **0–5** scale (0.5 steps are enough; `0` = unacceptable).
+Leave a rating **empty when you have no clear impression**.
+
+A rating is for **one specific performance**, not a verdict on the work itself: it
+includes how it was played on the night and the concert environment (hall, seat, mood),
+so the same work can score very differently across hearings. It also reflects **how much
+you personally enjoy the work** — some contemporary pieces are hard to grasp, so they
+rarely score high. The goal is consistency in your own terms, not precision.
 
 ### What to weigh (five lenses)
 
