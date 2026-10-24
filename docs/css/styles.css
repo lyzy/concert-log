@@ -131,6 +131,15 @@ select { padding-right: 28px; }
   color: var(--text-muted);
   margin: 0 0 16px;
 }
+.cardhead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cardhead h2 { margin: 0; }
 
 /* ---------------- svg charts ---------------- */
 svg { display: block; width: 100%; height: auto; overflow: visible; }

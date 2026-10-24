@@ -18,6 +18,8 @@
   var filterType = "";
   var showEncores = true;
   var ENCORE_KEY = "concert-show-encores";
+  var composerOpera = true;
+  var COMPOSER_OPERA_KEY = "concert-composer-opera";
 
   var FILTERS = [
     { type: "", label: "All" },
@@ -77,12 +79,19 @@
     }).join("");
   }
 
+  function renderComposerRating() {
+    if (!dataset) return;
+    var data = composerOpera ? dataset.charts.byComposerRating : dataset.charts.byComposerRatingNoOpera;
+    document.getElementById("chartComposerRating").innerHTML =
+      Charts.hBar(data || [], "var(--chart-6)", 0, 5);
+  }
+
   function renderCharts() {
     var ch = dataset.charts;
     document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(ch.byPeriodRating, "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(ch.byPeriod);
     document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
-    document.getElementById("chartComposerRating").innerHTML = Charts.hBar(ch.byComposerRating, "var(--chart-6)", 0, 5);
+    renderComposerRating();
     document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);
     document.getElementById("chartVenue").innerHTML = Charts.hBar(ch.byVenue, "var(--chart-4)", 8);
     document.getElementById("chartRating").innerHTML = Charts.vBar(ch.byRating, "var(--chart-5)");
@@ -260,8 +269,18 @@
     if (cb) cb.checked = showEncores;
   }
 
+  function initComposerOpera() {
+    try {
+      var v = localStorage.getItem(COMPOSER_OPERA_KEY);
+      if (v !== null) composerOpera = v === "1";
+    } catch (e) { /* ignore */ }
+    var cb = document.getElementById("composerOpera");
+    if (cb) cb.checked = composerOpera;
+  }
+
   initTheme();
   initEncores();
+  initComposerOpera();
 
   document.getElementById("themeSelect").addEventListener("change", function (e) {
     applyTheme(e.target.value);
@@ -276,6 +295,11 @@
     showEncores = e.target.checked;
     try { localStorage.setItem(ENCORE_KEY, showEncores ? "1" : "0"); } catch (err) { /* ignore */ }
     if (dataset) renderTable(document.getElementById("search").value);
+  });
+  document.getElementById("composerOpera").addEventListener("change", function (e) {
+    composerOpera = e.target.checked;
+    try { localStorage.setItem(COMPOSER_OPERA_KEY, composerOpera ? "1" : "0"); } catch (err) { /* ignore */ }
+    renderComposerRating();
   });
 
   // sortable column headers

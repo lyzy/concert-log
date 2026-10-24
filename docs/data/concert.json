@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:27:15.502Z",
+  "generatedAt": "2026-10-24T07:42:12.234Z",
   "counts": {
     "events": 19,
     "programmes": 59,
@@ -181,6 +181,48 @@
         "label": "Gioachino Rossini",
         "value": 4,
         "count": 2
+      },
+      {
+        "label": "Esa-Pekka Salonen",
+        "value": 3.75,
+        "count": 4
+      },
+      {
+        "label": "Felix Mendelssohn",
+        "value": 3.75,
+        "count": 2
+      },
+      {
+        "label": "Maurice Ravel",
+        "value": 3.5,
+        "count": 3
+      },
+      {
+        "label": "Ludwig van Beethoven",
+        "value": 3.14,
+        "count": 9
+      },
+      {
+        "label": "Sergei Rachmaninoff",
+        "value": 3,
+        "count": 2
+      }
+    ],
+    "byComposerRatingNoOpera": [
+      {
+        "label": "Jean Sibelius",
+        "value": 4.75,
+        "count": 2
+      },
+      {
+        "label": "Richard Strauss",
+        "value": 4.67,
+        "count": 3
+      },
+      {
+        "label": "Dmitri Shostakovich",
+        "value": 4.33,
+        "count": 4
       },
       {
         "label": "Esa-Pekka Salonen",
