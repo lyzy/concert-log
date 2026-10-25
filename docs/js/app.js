@@ -8,6 +8,7 @@
 
   var Charts = window.ConcertCharts;
   var I18n = window.ConcertI18n;
+  var DataI18n = window.ConcertDataI18n || { zh: {} };
   var esc = Charts.esc;
   var DATA_URL = "data/concert.json";
   var THEME_KEY = "concert-theme";
@@ -125,21 +126,27 @@
     });
   }
 
+  function localizeBy(arr, cat) {
+    return (arr || []).map(function (d) {
+      return { label: td(cat, d.label), value: d.value, count: d.count };
+    });
+  }
+
   function renderComposerRating() {
     if (!dataset) return;
     var data = composerOpera ? dataset.charts.byComposerRating : dataset.charts.byComposerRatingNoOpera;
     document.getElementById("chartComposerRating").innerHTML =
-      Charts.hBar(data || [], "var(--chart-6)", 0, 5);
+      Charts.hBar(localizeBy(data || [], "composers"), "var(--chart-6)", 0, 5);
   }
 
   function renderCharts() {
     var ch = dataset.charts;
     document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(ch.byPeriodRating), "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(localizePeriods(ch.byPeriod));
-    document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
+    document.getElementById("chartComposer").innerHTML = Charts.hBar(localizeBy(ch.byComposer, "composers"), "var(--chart-2)", 12);
     renderComposerRating();
-    document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);
-    document.getElementById("chartVenue").innerHTML = Charts.hBar(ch.byVenue, "var(--chart-4)", 8);
+    document.getElementById("chartConductor").innerHTML = Charts.hBar(localizeBy(ch.byConductor, "conductors"), "var(--chart-3)", 12);
+    document.getElementById("chartVenue").innerHTML = Charts.hBar(localizeBy(ch.byVenue, "venues"), "var(--chart-4)", 8);
     document.getElementById("chartRating").innerHTML = Charts.vBar(ch.byRating, "var(--chart-5)");
   }
 
@@ -153,10 +160,10 @@
     el.innerHTML = '<ul class="repeat-list">' + repeated.map(function (w) {
       var parts = w.title.split(" \u2014 ");
       var related = w.performances.map(function (p) {
-        return p.date + (p.conductor ? " \u00b7 " + p.conductor : "");
+        return p.date + (p.conductor ? " \u00b7 " + td("conductors", p.conductor) : "");
       }).join(" | ");
-      return '<li><div class="work"><b>' + esc(parts[1] || w.title) + '</b>' +
-             '<span>' + esc(parts[0] || "") + '</span>' +
+      return '<li><div class="work"><b>' + esc(td("works", parts[1] || w.title)) + '</b>' +
+             '<span>' + esc(td("composers", parts[0] || "")) + '</span>' +
              '<span>' + esc(related) + '</span></div>' +
              '<span class="badge">' + w.count + '\u00d7</span></li>';
     }).join("") + '</ul>';
@@ -178,6 +185,13 @@
 
   function isEncore(p) {
     return !!p.encore;
+  }
+
+  function td(cat, value) {
+    var s = String(value == null ? "" : value);
+    if (I18n.getLang() !== "zh") return s;
+    var m = (DataI18n.zh || {})[cat];
+    return (m && m[s] != null) ? m[s] : s;
   }
 
   function badgeLabel(v) {
@@ -235,7 +249,12 @@
       if (!q) return true;
       var hay = [r.p.composer, r.p.composer_full, r.p.work_title, r.p.opus, r.p.period,
                  r.p.conductor, r.p.soloists, r.p.performers, r.p.rating, r.p.tag, r.p.section,
-                 r.c.event_type, r.c.orchestra, r.c.city, r.c.date].join(" ").toLowerCase();
+                 r.c.event_type, r.c.orchestra, r.c.city, r.c.date,
+                 td("composers", r.p.composer_full || r.p.composer),
+                 td("works", r.p.work_title),
+                 td("conductors", r.p.conductor || r.c.conductor || ""),
+                 td("soloists", r.p.soloists || ""),
+                 td("orchestras", r.c.orchestra || "")].join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
@@ -243,13 +262,13 @@
       var p = r.p, c = r.c;
       return "<tr>" +
         "<td>" + esc(c.date || "") + "</td>" +
-        "<td>" + esc(p.composer_full || p.composer) + "</td>" +
-        "<td>" + esc(p.work_title) + workBadge(p, c) + "</td>" +
+        "<td>" + esc(td("composers", p.composer_full || p.composer)) + "</td>" +
+        "<td>" + esc(td("works", p.work_title)) + workBadge(p, c) + "</td>" +
         "<td>" + esc(p.opus || "") + "</td>" +
-        "<td>" + (p.period ? '<span class="pill">' + esc(p.period) + '</span>' : "") + "</td>" +
-        "<td>" + esc(p.conductor || c.conductor || "") + "</td>" +
-        "<td>" + esc(p.soloists || "") + "</td>" +
-        "<td>" + esc(c.orchestra || "") + "</td>" +
+        "<td>" + (p.period ? '<span class="pill">' + esc(periodLabel(p.period)) + '</span>' : "") + "</td>" +
+        "<td>" + esc(td("conductors", p.conductor || c.conductor || "")) + "</td>" +
+        "<td>" + esc(td("soloists", p.soloists || "")) + "</td>" +
+        "<td>" + esc(td("orchestras", c.orchestra || "")) + "</td>" +
         "<td>" + ratingCell(p.rating) + "</td>" +
         "</tr>";
     });
