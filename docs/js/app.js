@@ -258,15 +258,12 @@
       return hay.indexOf(q) !== -1;
     }).sort(compareRows);
 
-    var markedEvents = {};
     var html = rows.map(function (r) {
       var p = r.p, c = r.c;
       var rowCls = isEncore(p) ? ' class="encore-row"' : "";
-      var reviewMark = "";
-      if (c.review && String(c.review).trim() && !markedEvents[c.concert_id]) {
-        reviewMark = '<span class="review-mark" title="' + esc(I18n.t("row.hasReview")) + '">\u270e</span>';
-        markedEvents[c.concert_id] = true;
-      }
+      var reviewMark = (c.review && String(c.review).trim())
+        ? '<span class="review-mark" title="' + esc(I18n.t("row.hasReview")) + '">\u270e</span>'
+        : "";
       return '<tr data-concert-id="' + esc(c.concert_id) + '"' + rowCls + ' tabindex="0">' +
         "<td>" + esc(c.date || "") + reviewMark + "</td>" +
         "<td>" + esc(td("composers", p.composer_full || p.composer)) + "</td>" +
