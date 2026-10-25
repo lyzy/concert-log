@@ -17,9 +17,14 @@ window.ConcertCharts = (function () {
       .replace(/"/g, "&quot;");
   }
 
+  function noData() {
+    var t = (window.ConcertI18n && window.ConcertI18n.t) ? window.ConcertI18n.t("chart.noData") : "No data.";
+    return '<p class="muted">' + t + '</p>';
+  }
+
   // Vertical bar chart (categorical, e.g. concerts per year).
   function vBar(data, color) {
-    if (!data.length) return '<p class="muted">No data.</p>';
+    if (!data.length) return noData();
     color = color || PALETTE[0];
     var W = 600, H = 240, pad = { l: 34, r: 12, t: 22, b: 38 };
     var iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
@@ -46,7 +51,7 @@ window.ConcertCharts = (function () {
 
   // Horizontal bar chart (ranked, e.g. most-heard composers).
   function hBar(data, color, maxRows, maxOverride) {
-    if (!data.length) return '<p class="muted">No data.</p>';
+    if (!data.length) return noData();
     if (maxRows) data = data.slice(0, maxRows);
     // Reserve label space based on the longest label so text never overflows.
     var longest = data.reduce(function (m, d) { return Math.max(m, String(d.label).length); }, 0);
@@ -71,7 +76,7 @@ window.ConcertCharts = (function () {
 
   // Donut chart with legend (e.g. pieces by period).
   function donut(data) {
-    if (!data.length) return '<p class="muted">No data.</p>';
+    if (!data.length) return noData();
     var size = 220, cx = size / 2, cy = size / 2, rO = 96, rI = 58;
     var total = data.reduce(function (a, d) { return a + d.value; }, 0) || 1;
     function polar(r, deg) {

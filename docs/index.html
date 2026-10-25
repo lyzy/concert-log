@@ -11,12 +11,12 @@
 <div class="wrap">
   <header class="top">
     <div>
-      <h1>Concert Record</h1>
-      <div class="sub" id="subtitle">Loading data&hellip;</div>
+      <h1 data-i18n="app.title">Concert Record</h1>
+      <div class="sub" id="subtitle" data-i18n="sub.loading">Loading data&hellip;</div>
     </div>
     <div class="toolbar">
       <label class="themebtn">
-        Theme
+        <span data-i18n="theme.label">Theme</span>
         <select id="themeSelect" aria-label="Theme">
           <option value="everforest">Everforest</option>
           <option value="light">Light</option>
@@ -25,56 +25,63 @@
           <option value="gruvbox">Gruvbox</option>
         </select>
       </label>
-      <button id="reloadBtn" title="Re-fetch the dataset">Reload data</button>
+      <label class="themebtn">
+        <span data-i18n="lang.label">Language</span>
+        <select id="langSelect" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="zh">&#20013;&#25991;</option>
+        </select>
+      </label>
+      <button id="reloadBtn" data-i18n="btn.reload" data-i18n-title="title.reload" title="Re-fetch the dataset">Reload data</button>
     </div>
   </header>
 
   <section class="stats" id="stats"></section>
 
   <div class="grid">
-    <div class="card reveal"><h2>Most-Heard Composers</h2><div id="chartComposer"></div></div>
-    <div class="card reveal"><h2>Concerts by Conductor</h2><div id="chartConductor"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.composers">Most-Heard Composers</h2><div id="chartComposer"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.conductors">Concerts by Conductor</h2><div id="chartConductor"></div></div>
   </div>
 
   <div class="grid">
-    <div class="card reveal"><h2>Average Rating by Period</h2><div id="chartPeriodRating"></div></div>
-    <div class="card reveal"><h2>Pieces by Period</h2><div id="chartPeriod"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.periodRating">Average Rating by Period</h2><div id="chartPeriodRating"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.period">Pieces by Period</h2><div id="chartPeriod"></div></div>
   </div>
 
   <div class="grid">
     <div class="card reveal">
       <div class="cardhead">
-        <h2>Average Rating by Composer</h2>
-        <label class="encore-toggle" title="Include opera works in this calculation"><input type="checkbox" id="composerOpera" checked> Include opera</label>
+        <h2 data-i18n="chart.composerRating">Average Rating by Composer</h2>
+        <label class="encore-toggle" data-i18n-title="title.includeOpera" title="Include opera works in this calculation"><input type="checkbox" id="composerOpera" checked> <span data-i18n="toggle.includeOpera">Include opera</span></label>
       </div>
       <div id="chartComposerRating"></div>
     </div>
-    <div class="card reveal"><h2>Ratings</h2><div id="chartRating"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.ratings">Ratings</h2><div id="chartRating"></div></div>
   </div>
 
   <div class="grid">
-    <div class="card reveal"><h2>Venues</h2><div id="chartVenue"></div></div>
-    <div class="card reveal"><h2>Repeated Works</h2><div id="repeat"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.venues">Venues</h2><div id="chartVenue"></div></div>
+    <div class="card reveal"><h2 data-i18n="chart.repeated">Repeated Works</h2><div id="repeat"></div></div>
   </div>
 
   <div class="grid wide">
     <div class="card tablecard reveal">
-      <h2>All Pieces</h2>
+      <h2 data-i18n="chart.allPieces">All Pieces</h2>
       <div class="filters" id="filters"></div>
       <div class="searchrow">
-        <input id="search" type="search" placeholder="Filter by composer, work, conductor, orchestra, period&hellip;">
-        <label class="encore-toggle" title="Show or hide encore pieces"><input type="checkbox" id="showEncores" checked> Encores</label>
-        <span class="sorthint">Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort</span>
+        <input id="search" type="search" data-i18n-placeholder="search.placeholder" placeholder="Filter by composer, work, conductor, orchestra, period&hellip;">
+        <label class="encore-toggle" data-i18n-title="title.encores" title="Show or hide encore pieces"><input type="checkbox" id="showEncores" checked> <span data-i18n="toggle.encores">Encores</span></label>
+        <span class="sorthint" data-i18n-html="sort.hint">Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort</span>
       </div>
       <div class="tablewrap">
         <table>
           <thead>
             <tr>
-              <th data-sort="date" class="sortable">Date</th>
-              <th data-sort="composer" class="sortable">Composer</th>
-              <th>Work</th><th>Opus</th>
-              <th>Period</th><th>Conductor</th><th>Soloists</th><th>Orchestra</th>
-              <th data-sort="rating" class="sortable">Rating</th>
+              <th data-sort="date" class="sortable" data-i18n="th.date">Date</th>
+              <th data-sort="composer" class="sortable" data-i18n="th.composer">Composer</th>
+              <th data-i18n="th.work">Work</th><th data-i18n="th.opus">Opus</th>
+              <th data-i18n="th.period">Period</th><th data-i18n="th.conductor">Conductor</th><th data-i18n="th.soloists">Soloists</th><th data-i18n="th.orchestra">Orchestra</th>
+              <th data-sort="rating" class="sortable" data-i18n="th.rating">Rating</th>
             </tr>
           </thead>
           <tbody id="tbody"></tbody>
@@ -84,20 +91,21 @@
   </div>
 
   <footer>
-    Source: <code>data/concerts.csv</code> + <code>data/programmes.csv</code>
+    <span data-i18n="footer.source">Source</span>: <code>data/concerts.csv</code> + <code>data/programmes.csv</code>
   </footer>
 </div>
 
 <div class="overlay" id="overlay">
   <div class="dropbox" id="dropbox">
-    <h3>Couldn&rsquo;t load the concert data</h3>
-    <p id="overlayMsg">The dataset could not be fetched.</p>
-    <button id="retryBtn">Retry</button>
-    <div class="hint">Start the backend with <code>node server.js</code> (or <code>serve.cmd</code>) and open the URL it prints (usually <code>http://localhost:3000</code>).</div>
+    <h3 data-i18n="overlay.title">Couldn&rsquo;t load the concert data</h3>
+    <p id="overlayMsg" data-i18n="overlay.msg">The dataset could not be fetched.</p>
+    <button id="retryBtn" data-i18n="overlay.retry">Retry</button>
+    <div class="hint" data-i18n-html="overlay.hint">Start the backend with <code>node server.js</code> (or <code>serve.cmd</code>) and open the URL it prints (usually <code>http://localhost:3000</code>).</div>
   </div>
 </div>
 
 <script src="js/charts.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

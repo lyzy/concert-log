@@ -7,9 +7,11 @@
   "use strict";
 
   var Charts = window.ConcertCharts;
+  var I18n = window.ConcertI18n;
   var esc = Charts.esc;
   var DATA_URL = "data/concert.json";
   var THEME_KEY = "concert-theme";
+  var LANG_KEY = "concert-lang";
   var DEFAULT_THEME = "everforest";
 
   var dataset = null;
@@ -24,11 +26,23 @@
   var AVG_OPERA_KEY = "concert-avg-opera";
 
   var FILTERS = [
-    { type: "", label: "All" },
-    { type: "Concert", label: "Concerts" },
-    { type: "Opera", label: "Operas" },
-    { type: "Ballet", label: "Ballets" }
+    { type: "", label: "filter.all" },
+    { type: "Concert", label: "filter.concerts" },
+    { type: "Opera", label: "filter.operas" },
+    { type: "Ballet", label: "filter.ballets" }
   ];
+
+  var STAT_KEYS = {
+    "Events": "stat.events",
+    "Pieces heard": "stat.pieces",
+    "Avg rating": "stat.avgRating",
+    "Composers": "stat.composers",
+    "Unique works": "stat.works",
+    "Orchestras": "stat.orchestras",
+    "Years": "stat.years"
+  };
+
+  var BADGE_KEYS = { "Opera": "badge.opera", "Ballet": "badge.ballet", "Encore": "badge.encore" };
 
   // ---------------------------------------------------------------- theme
   function applyTheme(theme) {
@@ -54,7 +68,7 @@
     var r = dataset.dateRange;
     var range = r ? (" \u00b7 " + r.from + " \u2192 " + r.to) : "";
     document.getElementById("subtitle").textContent =
-      c.events + " events \u00b7 " + c.programmes + " pieces" + range;
+      c.events + " " + I18n.t("unit.events") + " \u00b7 " + c.programmes + " " + I18n.t("unit.pieces") + range;
   }
 
   function renderFilters() {
@@ -64,7 +78,7 @@
       var n = f.type === "" ? dataset.counts.events : (counts[f.type] || 0);
       var cls = "filter" + (f.type === filterType ? " active" : "") + (n === 0 && f.type !== "" ? " empty" : "");
       return '<button class="' + cls + '" data-type="' + f.type + '" type="button">' +
-        esc(f.label) + ' <span class="count">' + n + '</span></button>';
+        esc(I18n.t(f.label)) + ' <span class="count">' + n + '</span></button>';
     }).join("");
     Array.prototype.forEach.call(el.querySelectorAll("button"), function (b) {
       b.addEventListener("click", function () {
@@ -78,14 +92,15 @@
   function renderStats() {
     var r = dataset.ratings || {};
     document.getElementById("stats").innerHTML = dataset.stats.map(function (s) {
+      var label = STAT_KEYS[s.label] ? I18n.t(STAT_KEYS[s.label]) : s.label;
       if (s.label === "Avg rating") {
         var v = avgOpera ? r.avg : r.avgNoOpera;
         var txt = v == null ? "\u2014" : v.toFixed(1);
         return '<div class="stat"><div class="n">' + esc(txt) + '</div>' +
-          '<div class="l">' + esc(s.label) +
-          ' <label class="stat-toggle" title="Include opera works in the average"><input type="checkbox" id="avgOpera"' + (avgOpera ? ' checked' : '') + '> Opera</label></div></div>';
+          '<div class="l">' + esc(label) +
+          ' <label class="stat-toggle" title="' + esc(I18n.t("title.includeOpera")) + '"><input type="checkbox" id="avgOpera"' + (avgOpera ? ' checked' : '') + '> ' + esc(I18n.t("badge.opera")) + '</label></div></div>';
       }
-      return '<div class="stat"><div class="n">' + esc(s.value) + '</div><div class="l">' + esc(s.label) + '</div></div>';
+      return '<div class="stat"><div class="n">' + esc(s.value) + '</div><div class="l">' + esc(label) + '</div></div>';
     }).join("");
 
     var cb = document.getElementById("avgOpera");
@@ -98,6 +113,18 @@
     }
   }
 
+  function periodLabel(p) {
+    var k = "period." + p;
+    var v = I18n.t(k);
+    return v === k ? p : v;
+  }
+
+  function localizePeriods(arr) {
+    return (arr || []).map(function (d) {
+      return { label: periodLabel(d.label), value: d.value, count: d.count };
+    });
+  }
+
   function renderComposerRating() {
     if (!dataset) return;
     var data = composerOpera ? dataset.charts.byComposerRating : dataset.charts.byComposerRatingNoOpera;
@@ -107,8 +134,8 @@
 
   function renderCharts() {
     var ch = dataset.charts;
-    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(ch.byPeriodRating, "var(--chart-1)", 0, 5);
-    document.getElementById("chartPeriod").innerHTML = Charts.donut(ch.byPeriod);
+    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(ch.byPeriodRating), "var(--chart-1)", 0, 5);
+    document.getElementById("chartPeriod").innerHTML = Charts.donut(localizePeriods(ch.byPeriod));
     document.getElementById("chartComposer").innerHTML = Charts.hBar(ch.byComposer, "var(--chart-2)", 12);
     renderComposerRating();
     document.getElementById("chartConductor").innerHTML = Charts.hBar(ch.byConductor, "var(--chart-3)", 12);
@@ -120,7 +147,7 @@
     var repeated = dataset.repeatedWorks;
     var el = document.getElementById("repeat");
     if (!repeated.length) {
-      el.innerHTML = '<p class="muted">No work heard more than once yet.</p>';
+      el.innerHTML = '<p class="muted">' + esc(I18n.t("repeat.empty")) + '</p>';
       return;
     }
     el.innerHTML = '<ul class="repeat-list">' + repeated.map(function (w) {
@@ -153,13 +180,17 @@
     return !!p.encore;
   }
 
+  function badgeLabel(v) {
+    return BADGE_KEYS[v] ? I18n.t(BADGE_KEYS[v]) : v;
+  }
+
   function workBadge(p, c) {
     var parts = [];
     // Per-piece tag wins; otherwise show the event type for opera/ballet events.
     var t = String(p.tag || "").trim();
     if (!t && c.event_type && c.event_type !== "Concert") t = c.event_type;
-    if (t) parts.push('<span class="type-badge">' + esc(t) + '</span>');
-    if (isEncore(p)) parts.push('<span class="type-badge encore-badge">Encore</span>');
+    if (t) parts.push('<span class="type-badge">' + esc(badgeLabel(t)) + '</span>');
+    if (isEncore(p)) parts.push('<span class="type-badge encore-badge">' + esc(I18n.t("badge.encore")) + '</span>');
     return parts.length ? " " + parts.join(" ") : "";
   }
 
@@ -260,7 +291,7 @@
 
   // ---------------------------------------------------------- data loading
   function showError(msg) {
-    document.getElementById("subtitle").textContent = "No data loaded.";
+    document.getElementById("subtitle").textContent = I18n.t("error.noData");
     document.getElementById("overlayMsg").textContent = msg;
     document.getElementById("overlay").classList.add("show");
   }
@@ -274,7 +305,7 @@
         renderAll();
       })
       .catch(function (err) {
-        showError("The dataset could not be fetched (" + err.message + ").");
+        showError(I18n.t("error.fetch") + " (" + err.message + ")");
       });
   }
 
@@ -304,6 +335,16 @@
     } catch (e) { /* ignore */ }
   }
 
+  function initLang() {
+    var l = "en";
+    try { l = localStorage.getItem(LANG_KEY) || "en"; } catch (e) { /* ignore */ }
+    I18n.setLang(l);
+    I18n.applyStatic();
+    var sel = document.getElementById("langSelect");
+    if (sel) sel.value = I18n.getLang();
+  }
+
+  initLang();
   initTheme();
   initEncores();
   initComposerOpera();
@@ -311,6 +352,13 @@
 
   document.getElementById("themeSelect").addEventListener("change", function (e) {
     applyTheme(e.target.value);
+  });
+  document.getElementById("langSelect").addEventListener("change", function (e) {
+    var l = e.target.value;
+    try { localStorage.setItem(LANG_KEY, l); } catch (err) { /* ignore */ }
+    I18n.setLang(l);
+    I18n.applyStatic();
+    if (dataset) renderAll();
   });
 
   document.getElementById("reloadBtn").addEventListener("click", load);
