@@ -155,7 +155,7 @@ window.ConcertI18n = (function () {
 
   function setLang(l) {
     lang = DICT[l] ? l : "en";
-    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-Hant" : "en");
+    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-Hans" : "en");
   }
 
   function getLang() { return lang; }
@@ -172,7 +172,7 @@ window.ConcertI18n = (function () {
 
   // Apply translations to static markup.
   function applyStatic() {
-    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-Hant" : "en");
+    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-Hans" : "en");
     document.title = t("app.title");
     each("[data-i18n]", function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
     each("[data-i18n-html]", function (el) { el.innerHTML = t(el.getAttribute("data-i18n-html")); });
