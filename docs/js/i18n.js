@@ -85,6 +85,7 @@ window.ConcertI18n = (function () {
       "detail.review": "My review",
       "detail.noReview": "No review yet.",
       "detail.noPieces": "No pieces recorded.",
+      "row.hasReview": "Has a review",
       "error.noData": "No data loaded.",
       "error.fetch": "The dataset could not be fetched"
     },
@@ -166,6 +167,7 @@ window.ConcertI18n = (function () {
       "detail.review": "我的评论",
       "detail.noReview": "暂无评论。",
       "detail.noPieces": "暂无曲目。",
+      "row.hasReview": "有评论",
       "error.noData": "未加载数据。",
       "error.fetch": "数据集获取失败"
     }
