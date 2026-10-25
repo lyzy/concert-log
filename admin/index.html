@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concert Log — Editor</title>
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<header class="bar">
+  <h1>Concert Log — Editor</h1>
+  <div class="bar-right">
+    <a href="/api/admin/csv?file=concerts" target="_blank">CSV: concerts</a>
+    <a href="/api/admin/csv?file=programmes" target="_blank">CSV: programmes</a>
+    <a href="/" target="_blank">View site</a>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <button id="newBtn" type="button" class="primary">+ New event</button>
+    <ul id="eventList"></ul>
+  </aside>
+
+  <section class="editor">
+    <div class="editor-head">
+      <h2 id="editorTitle">New event</h2>
+      <span id="status" class="status"></span>
+    </div>
+
+    <div id="eventFields" class="fields"></div>
+
+    <div class="pieces-head">
+      <h3>Pieces</h3>
+      <span class="hint">Rows are saved in this order (piece_order 1…n).</span>
+    </div>
+    <div id="pieces"></div>
+    <button id="addPiece" type="button">+ Add piece</button>
+
+    <div class="actions">
+      <button id="saveBtn" type="button" class="primary">Save</button>
+      <button id="deleteBtn" type="button" class="danger">Delete event</button>
+      <span class="hint">Ctrl/Cmd+S saves.</span>
+    </div>
+  </section>
+</main>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

@@ -60,6 +60,23 @@ port it picked. Set the `PORT` environment variable to force a specific port.
 - `GET /api/stats` — counts, stats, chart series, repeated works
 - `GET /api/health` — health check
 
+## Local editor (no Excel)
+
+`node server.js` also serves a local-only editor at **http://localhost:3000/admin**.
+Use it to add or edit events, their pieces, ratings and reviews without touching
+Excel. Saving writes back to `data/concerts.csv` / `data/programmes.csv` (same
+BOM + LF + quoting as the rest of the project), rebuilds `docs/data/concert.json`,
+and keeps a timestamped copy of the previous CSVs in `.backups/`.
+
+- The editor works only from the same machine (`127.0.0.1`). The published GitHub
+  Pages site is static and cannot write data.
+- Reviews go in the `review` column of `concerts.csv`; multi-line text is quoted
+  automatically.
+- The links at the top of the editor open the raw CSV at any time.
+- Deleting an event removes its rows from both CSVs (after a confirmation).
+
+After editing, commit and push to publish the change.
+
 ## Deploy to a static host
 
 ```bash

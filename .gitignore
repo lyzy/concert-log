@@ -1,0 +1,8 @@
+# Local editor backups (created on every save)
+.backups/
+
+# Temporary files
+*.tmp
+
+# Dependencies (the project has none, but just in case)
+node_modules/
