@@ -29,7 +29,7 @@
     { key: "performers", label: "Performers" },
     { key: "rating", label: "Rating (0–5)" },
     { key: "tag", label: "Tag (e.g. Opera)" },
-    { key: "section", label: "Section", type: "select", options: ["", "Encore", "Encore 1", "Encore 2"] },
+    { key: "section", label: "Section", type: "select", options: ["", "encore", "encore 1", "encore 2"] },
     { key: "notes", label: "Notes", wide: true }
   ];
 
@@ -121,7 +121,7 @@
     } else if (f.type === "select") {
       input = '<select id="' + id + '" data-key="' + key + '">' +
         (f.options || []).map(function (o) {
-          return '<option value="' + esc(o) + '"' + (String(value || "") === o ? " selected" : "") + ">" +
+          return '<option value="' + esc(o) + '"' + (String(value || "").toLowerCase() === String(o).toLowerCase() ? " selected" : "") + ">" +
             (o === "" ? "\u2014" : esc(o)) + "</option>";
         }).join("") + "</select>";
     } else {
