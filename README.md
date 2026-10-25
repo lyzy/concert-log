@@ -101,6 +101,24 @@ To add a theme:
 `styles.css` contains no hardcoded colors — it only references the variables, so
 a new theme automatically applies everywhere, including the charts.
 
+## Translations
+
+The site has an **EN / 中文** switch (top right). Two layers are translated:
+
+- **Interface** — `docs/js/i18n.js` (headings, labels, buttons, messages, periods).
+- **Data** — `docs/js/i18n-data.js` (composers, works, conductors, orchestras,
+  venues, soloists). A value with no entry falls back to the original English, so
+  the Chinese view never breaks.
+
+After adding events or pieces, check for gaps:
+
+```bash
+node scripts/check-i18n.js
+```
+
+It lists any UI string or data value without a Chinese rendering. Reviews and
+free-text notes are not translated automatically.
+
 ## Data entry
 
 Edit `data/concerts.csv` and `data/programmes.csv`, then:
