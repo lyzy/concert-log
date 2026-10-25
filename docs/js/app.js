@@ -260,7 +260,7 @@
 
     var html = rows.map(function (r) {
       var p = r.p, c = r.c;
-      return "<tr>" +
+      return '<tr data-concert-id="' + esc(c.concert_id) + '" tabindex="0">' +
         "<td>" + esc(c.date || "") + "</td>" +
         "<td>" + esc(td("composers", p.composer_full || p.composer)) + "</td>" +
         "<td>" + esc(td("works", p.work_title)) + workBadge(p, c) + "</td>" +
@@ -273,6 +273,75 @@
         "</tr>";
     });
     document.getElementById("tbody").innerHTML = html.join("");
+  }
+
+  var activeDetailId = null;
+  var lastFocused = null;
+
+  function detailRow(label, value) {
+    if (!value) return "";
+    return "<dt>" + esc(label) + "</dt><dd>" + esc(value) + "</dd>";
+  }
+
+  function openDetail(id) {
+    var c = concertById[id];
+    if (!c) return;
+    var pieces = dataset.programmes
+      .filter(function (p) { return p.concert_id === id; })
+      .slice()
+      .sort(function (a, b) { return (+a.piece_order || 0) - (+b.piece_order || 0); });
+
+    var html = '<div class="detail-head"><span class="detail-date">' + esc(c.date || "") + "</span>";
+    if (c.event_type && c.event_type !== "Concert") {
+      html += ' <span class="type-badge">' + esc(badgeLabel(c.event_type)) + "</span>";
+    }
+    html += "</div>";
+    html += '<dl class="detail-meta">';
+    html += detailRow(I18n.t("detail.venue"), td("venues", c.venue_display || c.venue));
+    html += detailRow(I18n.t("detail.city"), c.city);
+    html += detailRow(I18n.t("detail.orchestra"), td("orchestras", c.orchestra));
+    html += detailRow(I18n.t("detail.conductor"), td("conductors", c.conductor));
+    html += detailRow(I18n.t("detail.soloists"), td("soloists", c.soloists));
+    html += "</dl>";
+    html += '<h3 class="detail-h">' + esc(I18n.t("detail.programme")) + "</h3>";
+    if (pieces.length) {
+      html += '<ul class="detail-pieces">' + pieces.map(function (p) {
+        var line = '<li><span class="dp-work">' + esc(td("works", p.work_title));
+        if (p.encore) line += ' <span class="type-badge encore-badge">' + esc(I18n.t("badge.encore")) + "</span>";
+        line += "</span>";
+        line += '<span class="dp-comp">' + esc(td("composers", p.composer_full || p.composer)) + "</span>";
+        if (p.soloists) line += '<span class="dp-solo">' + esc(td("soloists", p.soloists)) + "</span>";
+        if (p.rating != null) line += '<span class="dp-rating">' + stars(p.rating) + "</span>";
+        if (p.notes) line += '<span class="dp-notes">' + esc(p.notes) + "</span>";
+        return line + "</li>";
+      }).join("") + "</ul>";
+    } else {
+      html += '<p class="muted">' + esc(I18n.t("detail.noPieces")) + "</p>";
+    }
+    html += '<h3 class="detail-h">' + esc(I18n.t("detail.review")) + "</h3>";
+    if (c.review) {
+      html += '<p class="detail-review">' + esc(c.review) + "</p>";
+    } else {
+      html += '<p class="muted">' + esc(I18n.t("detail.noReview")) + "</p>";
+    }
+    document.getElementById("detailBody").innerHTML = html;
+    activeDetailId = id;
+    lastFocused = document.activeElement;
+    var modal = document.getElementById("detailModal");
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    document.getElementById("detailClose").focus();
+  }
+
+  function closeDetail() {
+    var modal = document.getElementById("detailModal");
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    activeDetailId = null;
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+    lastFocused = null;
   }
 
   function renderAll() {
@@ -378,6 +447,7 @@
     I18n.setLang(l);
     I18n.applyStatic();
     if (dataset) renderAll();
+    if (activeDetailId) openDetail(activeDetailId);
   });
 
   document.getElementById("reloadBtn").addEventListener("click", load);
@@ -394,6 +464,24 @@
     composerOpera = e.target.checked;
     try { localStorage.setItem(COMPOSER_OPERA_KEY, composerOpera ? "1" : "0"); } catch (err) { /* ignore */ }
     renderComposerRating();
+  });
+
+  // row click -> event detail
+  var tbody = document.getElementById("tbody");
+  tbody.addEventListener("click", function (e) {
+    var tr = e.target.closest ? e.target.closest("tr[data-concert-id]") : null;
+    if (tr) openDetail(tr.getAttribute("data-concert-id"));
+  });
+  tbody.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    var tr = e.target.closest ? e.target.closest("tr[data-concert-id]") : null;
+    if (tr) { e.preventDefault(); openDetail(tr.getAttribute("data-concert-id")); }
+  });
+  document.getElementById("detailClose").addEventListener("click", closeDetail);
+  var detailBackdrop = document.querySelector("#detailModal .modal-backdrop");
+  if (detailBackdrop) detailBackdrop.addEventListener("click", closeDetail);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && activeDetailId) closeDetail();
   });
 
   // sortable column headers

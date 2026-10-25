@@ -172,6 +172,10 @@ git commit -m "Normalize CSV line endings"
 | `currency` | text | Currency code | `EUR` |
 | `companion` | text | Who you went with (leave empty if solo) | `Wife` |
 | `notes` | text | Personal notes, memories, highlights | `Incredible Beethoven 7th` |
+| `review` | text | Longer concert review, shown when you click a row in All Pieces (newlines allowed) | `A remarkable evening\u2026` |
+
+The `review` column is optional and may span several lines. In Excel use **Alt+Enter**
+inside a cell; the CSV is quoted automatically.
 
 ### programmes.csv
 

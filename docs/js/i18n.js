@@ -62,7 +62,7 @@ window.ConcertI18n = (function () {
       "th.rating": "Rating",
 
       "search.placeholder": "Filter by composer, work, conductor, orchestra, period\u2026",
-      "sort.hint": "Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort",
+      "sort.hint": "Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort \u00b7 click a row for details",
 
       "period.Classical": "Classical",
       "period.Romantic": "Romantic",
@@ -75,6 +75,16 @@ window.ConcertI18n = (function () {
       "overlay.msg": "The dataset could not be fetched.",
       "overlay.retry": "Retry",
       "overlay.hint": "Start the backend with <code>node server.js</code> (or <code>serve.cmd</code>) and open the URL it prints (usually <code>http://localhost:3000</code>).",
+      "detail.close": "Close",
+      "detail.venue": "Venue",
+      "detail.city": "City",
+      "detail.orchestra": "Orchestra",
+      "detail.conductor": "Conductor",
+      "detail.soloists": "Soloists",
+      "detail.programme": "Programme",
+      "detail.review": "My review",
+      "detail.noReview": "No review yet.",
+      "detail.noPieces": "No pieces recorded.",
       "error.noData": "No data loaded.",
       "error.fetch": "The dataset could not be fetched"
     },
@@ -133,7 +143,7 @@ window.ConcertI18n = (function () {
       "th.rating": "评分",
 
       "search.placeholder": "按作曲家、作品、指挥、乐团、时期筛选\u2026",
-      "sort.hint": "点击 <b>日期</b>、<b>作曲家</b> 或 <b>评分</b> 排序",
+      "sort.hint": "点击 <b>日期</b>、<b>作曲家</b> 或 <b>评分</b> 排序 \u00b7 点击行查看详情",
 
       "period.Classical": "古典",
       "period.Romantic": "浪漫",
@@ -146,6 +156,16 @@ window.ConcertI18n = (function () {
       "overlay.msg": "数据集获取失败。",
       "overlay.retry": "重试",
       "overlay.hint": "运行 <code>node server.js</code>（或 <code>serve.cmd</code>），打开它打印的地址（通常是 <code>http://localhost:3000</code>）。",
+      "detail.close": "关闭",
+      "detail.venue": "场馆",
+      "detail.city": "城市",
+      "detail.orchestra": "乐团",
+      "detail.conductor": "指挥",
+      "detail.soloists": "独奏/独唱",
+      "detail.programme": "曲目",
+      "detail.review": "我的评论",
+      "detail.noReview": "暂无评论。",
+      "detail.noPieces": "暂无曲目。",
       "error.noData": "未加载数据。",
       "error.fetch": "数据集获取失败"
     }
@@ -178,6 +198,7 @@ window.ConcertI18n = (function () {
     each("[data-i18n-html]", function (el) { el.innerHTML = t(el.getAttribute("data-i18n-html")); });
     each("[data-i18n-placeholder]", function (el) { el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder"))); });
     each("[data-i18n-title]", function (el) { el.setAttribute("title", t(el.getAttribute("data-i18n-title"))); });
+    each("[data-i18n-aria]", function (el) { el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"))); });
   }
 
   return { setLang: setLang, getLang: getLang, t: t, applyStatic: applyStatic };

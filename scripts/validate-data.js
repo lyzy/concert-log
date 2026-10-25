@@ -78,7 +78,7 @@ function main() {
   checkEncoding("programmes.csv", pBuf);
 
   console.log("\nconcerts.csv structure");
-  const concerts = checkStructure("concerts.csv", parseCSV(cBuf.toString("utf8")), 12, true);
+  const concerts = checkStructure("concerts.csv", parseCSV(cBuf.toString("utf8")), 13, true);
   const dIdx = colIndex(concerts.header, "date");
   concerts.data.forEach((r, i) => {
     const raw = r[dIdx];
