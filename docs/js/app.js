@@ -287,6 +287,16 @@
     return "<dt>" + esc(label) + "</dt><dd>" + esc(value) + "</dd>";
   }
 
+  // Reviews are free text; render each line/paragraph as its own <p> so the
+  // display has clear spacing (blank lines are collapsed).
+  function reviewHtml(text) {
+    var s = String(text == null ? "" : text).replace(/\r\n?/g, "\n").trim();
+    if (!s) return "";
+    return s.split(/\n+/).map(function (para) {
+      return '<p class="detail-review-p">' + esc(para.trim()) + "</p>";
+    }).join("");
+  }
+
   function openDetail(id) {
     var c = concertById[id];
     if (!c) return;
@@ -324,7 +334,7 @@
     }
     html += '<h3 class="detail-h">' + esc(I18n.t("detail.review")) + "</h3>";
     if (c.review) {
-      html += '<p class="detail-review">' + esc(c.review) + "</p>";
+      html += '<div class="detail-review">' + reviewHtml(c.review) + "</div>";
     } else {
       html += '<p class="muted">' + esc(I18n.t("detail.noReview")) + "</p>";
     }

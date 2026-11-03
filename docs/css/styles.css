@@ -412,7 +412,9 @@ footer code {
 .dp-work { font-weight: 600; }
 .dp-comp, .dp-solo, .dp-notes { display: block; color: var(--text-muted); font-size: 12.5px; }
 .dp-rating { display: block; margin-top: 4px; }
-.detail-review { white-space: pre-line; margin: 0; }
+.detail-review { margin: 0; line-height: 1.65; font-size: 14.5px; }
+.detail-review p { margin: 0 0 0.9em; }
+.detail-review p:last-child { margin-bottom: 0; }
 body.modal-open { overflow: hidden; }
 tbody tr[data-concert-id] { cursor: pointer; }
 

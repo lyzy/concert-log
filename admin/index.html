@@ -25,7 +25,6 @@
   <section class="editor">
     <div class="editor-head">
       <h2 id="editorTitle">New event</h2>
-      <span id="status" class="status"></span>
     </div>
 
     <div id="eventFields" class="fields"></div>
@@ -39,6 +38,7 @@
 
     <div class="actions">
       <button id="saveBtn" type="button" class="primary">Save</button>
+      <span id="status" class="status" role="status" aria-live="polite"></span>
       <button id="deleteBtn" type="button" class="danger">Delete event</button>
       <span class="hint">Ctrl/Cmd+S saves.</span>
     </div>
