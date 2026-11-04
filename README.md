@@ -77,6 +77,22 @@ and keeps a timestamped copy of the previous CSVs in `.backups/`.
 
 After editing, commit and push to publish the change.
 
+## One-command update
+
+After editing the CSVs (or using the local editor), run:
+
+```bat
+update.cmd                       :: message defaults to "data: update"
+update.cmd "data: add review for event 20"
+```
+
+It validates the CSVs, rebuilds `docs/data/concert.json`, runs the translation
+check (informational), then commits everything and pushes to `main`. If only the
+`generatedAt` timestamp in the JSON changed, it skips the commit instead of
+creating an empty update.
+
+`serve.cmd` starts the local server (including the editor at `/admin`).
+
 ## Deploy to a static host
 
 ```bash
