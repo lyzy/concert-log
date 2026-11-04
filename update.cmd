@@ -23,6 +23,8 @@ git diff --cached --name-only > "%TEMP%\concert-update-files.txt"
 findstr /v /c:"docs/data/concert.json" "%TEMP%\concert-update-files.txt" >nul
 if errorlevel 1 (
   echo No content changes to commit.
+  git reset >nul 2>nul
+  git checkout -- docs/data/concert.json >nul 2>nul
   goto :done
 )
 
