@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T16:50:17.669Z",
+  "generatedAt": "2026-11-06T16:51:20.285Z",
   "counts": {
     "events": 20,
     "programmes": 67,
@@ -103,11 +103,6 @@
         "label": "Classical",
         "value": 2.93,
         "count": 9
-      },
-      {
-        "label": "World",
-        "value": 0,
-        "count": 8
       }
     ],
     "byComposer": [
@@ -220,16 +215,6 @@
         "label": "Ludwig van Beethoven",
         "value": 2.93,
         "count": 9
-      },
-      {
-        "label": "I Wayan Sudirana",
-        "value": 0,
-        "count": 2
-      },
-      {
-        "label": "Zamzuriah Zahari",
-        "value": 0,
-        "count": 3
       }
     ],
     "byComposerRatingNoOpera": [
@@ -272,16 +257,6 @@
         "label": "Ludwig van Beethoven",
         "value": 2.93,
         "count": 9
-      },
-      {
-        "label": "I Wayan Sudirana",
-        "value": 0,
-        "count": 2
-      },
-      {
-        "label": "Zamzuriah Zahari",
-        "value": 0,
-        "count": 3
       }
     ],
     "byConductor": [
@@ -2182,7 +2157,7 @@
     }
   ],
   "classical": {
-    "generatedAt": "2026-11-06T16:50:17.675Z",
+    "generatedAt": "2026-11-06T16:51:20.290Z",
     "counts": {
       "events": 19,
       "programmes": 59,
