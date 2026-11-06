@@ -43,9 +43,11 @@ window.ConcertI18n = (function () {
       "filter.concerts": "Concerts",
       "filter.operas": "Operas",
       "filter.ballets": "Ballets",
+      "filter.world": "World",
 
       "badge.opera": "Opera",
       "badge.ballet": "Ballet",
+      "badge.world": "World",
       "badge.encore": "Encore",
 
       "toggle.includeOpera": "Include opera",
@@ -125,9 +127,11 @@ window.ConcertI18n = (function () {
       "filter.concerts": "音乐会",
       "filter.operas": "歌剧",
       "filter.ballets": "芭蕾",
+      "filter.world": "世界音乐",
 
       "badge.opera": "歌剧",
       "badge.ballet": "芭蕾",
+      "badge.world": "世界音乐",
       "badge.encore": "加演",
 
       "toggle.includeOpera": "含歌剧",

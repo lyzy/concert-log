@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-05T19:39:50.218Z",
+  "generatedAt": "2026-11-06T15:34:16.116Z",
   "counts": {
-    "events": 19,
-    "programmes": 59,
-    "composers": 33,
-    "works": 57,
-    "orchestras": 4,
+    "events": 20,
+    "programmes": 67,
+    "composers": 38,
+    "works": 65,
+    "orchestras": 5,
     "years": 2
   },
   "byType": {
     "Concert": 17,
-    "Opera": 2
+    "Opera": 2,
+    "World": 1
   },
   "dateRange": {
     "from": "2025-05-08",
-    "to": "2026-10-23"
+    "to": "2026-11-06"
   },
   "stats": [
     {
       "label": "Events",
-      "value": 19
+      "value": 20
     },
     {
       "label": "Pieces heard",
-      "value": 59
+      "value": 67
     },
     {
       "label": "Avg rating",
@@ -31,15 +32,15 @@
     },
     {
       "label": "Composers",
-      "value": 33
+      "value": 38
     },
     {
       "label": "Unique works",
-      "value": 57
+      "value": 65
     },
     {
       "label": "Orchestras",
-      "value": 4
+      "value": 5
     },
     {
       "label": "Years",
@@ -57,6 +58,10 @@
         "value": 26
       },
       {
+        "label": "Contemporary",
+        "value": 15
+      },
+      {
         "label": "20th Century",
         "value": 9
       },
@@ -67,10 +72,6 @@
       {
         "label": "Post-Romantic",
         "value": 8
-      },
-      {
-        "label": "Contemporary",
-        "value": 7
       }
     ],
     "byPeriodRating": [
@@ -87,7 +88,7 @@
       {
         "label": "Contemporary",
         "value": 3.71,
-        "count": 7
+        "count": 15
       },
       {
         "label": "20th Century",
@@ -126,6 +127,10 @@
         "value": 3
       },
       {
+        "label": "Zamzuriah Zahari",
+        "value": 3
+      },
+      {
         "label": "Felix Mendelssohn",
         "value": 2
       },
@@ -138,15 +143,11 @@
         "value": 2
       },
       {
+        "label": "I Wayan Sudirana",
+        "value": 2
+      },
+      {
         "label": "Jacques Offenbach",
-        "value": 2
-      },
-      {
-        "label": "Jean Sibelius",
-        "value": 2
-      },
-      {
-        "label": "Sergei Rachmaninoff",
         "value": 2
       }
     ],
@@ -210,6 +211,16 @@
         "label": "Ludwig van Beethoven",
         "value": 2.93,
         "count": 9
+      },
+      {
+        "label": "I Wayan Sudirana",
+        "value": 0,
+        "count": 2
+      },
+      {
+        "label": "Zamzuriah Zahari",
+        "value": 0,
+        "count": 3
       }
     ],
     "byComposerRatingNoOpera": [
@@ -252,6 +263,16 @@
         "label": "Ludwig van Beethoven",
         "value": 2.93,
         "count": 9
+      },
+      {
+        "label": "I Wayan Sudirana",
+        "value": 0,
+        "count": 2
+      },
+      {
+        "label": "Zamzuriah Zahari",
+        "value": 0,
+        "count": 3
       }
     ],
     "byConductor": [
@@ -316,6 +337,10 @@
       {
         "label": "HK Cultural Centre Grand Theatre",
         "value": 2
+      },
+      {
+        "label": "Sha Tin Town Hall",
+        "value": 1
       },
       {
         "label": "Shenzhen Concert Hall",
@@ -687,6 +712,22 @@
       "notes": "",
       "review": "The Sisters' Islands: the most interesting contemporary piece I have listened to. It goes with Malay and Chinese flavored melody. The music brings out very concrete pictures about the islandic resident life. \nChloe: Fully expressional performance on the Mendelssohn violin concerto. Her violin solo can penetrate into the minds. Some details are not relaxing or easy compared to Heifetz's version, but that's too much for her now.\nMahler 1: In fact, I thought it is very obvious to understand, not like the stereotypical impression on Mahler's works. Some inharmonic sounds occur (maybe mistakes?) but the whole symphony is generally impressive. Maybe my expectation to Lintu and Singapore SO is higher.\nShenzhen Music Hall: the entrance time is too long. The hall is good (H area this time); the audience is tolerable.",
       "venue_display": "Shenzhen Concert Hall"
+    },
+    {
+      "concert_id": "20",
+      "date": "2026-11-06",
+      "venue": "Sha Tin Town Hall",
+      "city": "Hong Kong",
+      "orchestra": "HANDS Percussion",
+      "conductor": "",
+      "soloists": "Gamelan Yuganada; Zamzuriah Zahari; Kamarul Baisah Bin Hussin; Aaru8; HK Children's Choir (Chamber Youth)",
+      "event_type": "World",
+      "ticket_price": "",
+      "currency": "HKD",
+      "companion": "",
+      "notes": "Asia+ Festival 2026; ~1h45 with a 15-minute interval; sung/spoken in Malay, Indonesian and Putonghua; meet-the-artist after the 6 Nov performance; loud sound effects.",
+      "review": "",
+      "venue_display": "Sha Tin Town Hall"
     }
   ],
   "programmes": [
@@ -1985,6 +2026,150 @@
       "tag": "",
       "section": "encore",
       "encore": true
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "1",
+      "composer": "I Wayan Sudirana",
+      "composer_full": "I Wayan Sudirana",
+      "work_title": "Kecak Modern",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "",
+      "performers": "HANDS Percussion; Gamelan Yuganada",
+      "rating": null,
+      "notes": "Opening item.",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "2",
+      "composer": "I Wayan Sudirana",
+      "composer_full": "I Wayan Sudirana",
+      "work_title": "Balinese Modern",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "",
+      "performers": "Gamelan Yuganada",
+      "rating": null,
+      "notes": "Four movements: Kontemplasi (Contemplation); Siklus (Cycle); Linearitas (Linearity); Aniyamita (Unlimited).",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "3",
+      "composer": "Zamzuriah Zahari",
+      "composer_full": "Zamzuriah Zahari",
+      "work_title": "Terang Bulan",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "Zamzuriah Zahari",
+      "performers": "HANDS Percussion; Gamelan Yuganada",
+      "rating": null,
+      "notes": "Arranged by Yuan Leow Yunn. Opens the second half after the interval.",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "4",
+      "composer": "Zamzuriah Zahari",
+      "composer_full": "Zamzuriah Zahari",
+      "work_title": "Gendang Duduk",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "Zamzuriah Zahari; Kamarul Baisah Bin Hussin",
+      "performers": "HANDS Percussion",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "5",
+      "composer": "Zamzuriah Zahari",
+      "composer_full": "Zamzuriah Zahari",
+      "work_title": "Bunga Emas & Jasmine Flower",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "Zamzuriah Zahari; HK Children's Choir (Chamber Youth)",
+      "performers": "HANDS Percussion; Gamelan Yuganada; The Hong Kong Children's Choir (Chamber Youth)",
+      "rating": null,
+      "notes": "Malay folk song Bunga Emas paired with the Chinese folk song Jasmine Flower; arranged by Yuan Leow Yunn; with The Hong Kong Children's Choir (Chamber Youth).",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "6",
+      "composer": "HANDS Percussion",
+      "composer_full": "HANDS Percussion",
+      "work_title": "Armor and Skin",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "",
+      "performers": "HANDS Percussion",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "7",
+      "composer": "I Wayan Gandera",
+      "composer_full": "I Wayan Gandera",
+      "work_title": "Kebyar Susun",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "",
+      "performers": "Gamelan Yuganada",
+      "rating": null,
+      "notes": "",
+      "tag": "",
+      "section": "",
+      "encore": false
+    },
+    {
+      "concert_id": "20",
+      "piece_order": "8",
+      "composer": "I Wayan Sudirana & HANDS Percussion",
+      "composer_full": "I Wayan Sudirana & HANDS Percussion",
+      "work_title": "Baladrum",
+      "opus": "",
+      "catalog": "",
+      "period": "Contemporary",
+      "conductor": "",
+      "soloists": "",
+      "performers": "HANDS Percussion; Gamelan Yuganada",
+      "rating": null,
+      "notes": "Closing item.",
+      "tag": "",
+      "section": "",
+      "encore": false
     }
   ]
 }

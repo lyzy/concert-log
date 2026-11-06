@@ -22,6 +22,10 @@ window.ConcertDataI18n = {
       "Gioachino Rossini": "焦阿基诺·罗西尼",
       "Giuseppe Verdi": "朱塞佩·威尔第",
       "Gustav Mahler": "古斯塔夫·马勒",
+      "HANDS Percussion": "手集团",
+      "I Wayan Gandera": "艾·瓦亚恩·甘德拉",
+      "I Wayan Sudirana": "艾·瓦亚恩·苏蒂拉那",
+      "I Wayan Sudirana & HANDS Percussion": "艾·瓦亚恩·苏蒂拉那与手集团",
       "Igor Stravinsky": "伊戈尔·斯特拉文斯基",
       "Jacques Offenbach": "雅克·奥芬巴赫",
       "Jean Sibelius": "让·西贝柳斯",
@@ -42,7 +46,8 @@ window.ConcertDataI18n = {
       "Robert Schumann": "罗伯特·舒曼",
       "Ruggero Leoncavallo": "鲁杰罗·莱翁卡瓦洛",
       "Sergei Rachmaninoff": "谢尔盖·拉赫玛尼诺夫",
-      "Yao Chen": "姚晨"
+      "Yao Chen": "姚晨",
+      "Zamzuriah Zahari": "珊·苏丽亚"
     },
     works: {
       "13 Preludes: V. Prelude in G, Moderato": "《13首前奏曲》第五首：G大调前奏曲，中板",
@@ -50,7 +55,11 @@ window.ConcertDataI18n = {
       "A Sea Symphony": "《大海交响曲》",
       "Also sprach Zarathustra": "《查拉图斯特拉如是说》",
       "Andante Festivo": "《节日行板》",
+      "Armor and Skin": "《鼓带铜话》",
+      "Baladrum": "《鼓聚梵岛》",
+      "Balinese Modern": "《现代峇里》",
       "Boléro": "《波莱罗》",
+      "Bunga Emas & Jasmine Flower": "《金花》与《茉莉花》",
       "Carmen: Aragonaise": "《卡门》：阿拉贡舞曲",
       "Castor": "《卡斯托尔》",
       "Cavalleria Rusticana": "《乡村骑士》",
@@ -66,8 +75,11 @@ window.ConcertDataI18n = {
       "Estrellita (Heifetz)": "《小星星》（海菲兹改编）",
       "Eugene Onegin": "《叶甫盖尼·奥涅金》",
       "Festive Overture": "《节日序曲》",
+      "Gendang Duduk": "《坐势手鼓》",
       "Horn Concerto": "圆号协奏曲",
       "I Lombardi alla prima crociata: La mia letizia infondere": "《第一次十字军东征的伦巴第人》：倾注我的喜悦",
+      "Kebyar Susun": "《层峦叠松》",
+      "Kecak Modern": "《现代猴子圣歌》",
       "Kinderszenen: Träumerei": "《童年情景》：梦幻曲",
       "L'elisir d'amore: Una furtiva lagrima": "《爱之甘醇》：一滴隐秘的眼泪",
       "La Cenerentola: Overture": "《灰姑娘》：序曲",
@@ -106,6 +118,7 @@ window.ConcertDataI18n = {
       "Symphony No. 4 \"Italian\"": "第四交响曲《意大利》",
       "Symphony No. 5": "第五交响曲",
       "Symphony No. 6 \"Pastoral\"": "第六交响曲《田园》",
+      "Terang Bulan": "《明月》",
       "The Firebird Suite": "《火鸟》组曲",
       "The Sisters' Islands": "《姐妹岛》",
       "Variations on a Theme by Haydn": "《海顿主题变奏曲》",
@@ -132,6 +145,7 @@ window.ConcertDataI18n = {
     },
     orchestras: {
       "Gewandhausorchester Leipzig": "莱比锡布商大厦管弦乐团",
+      "HANDS Percussion": "手集团",
       "Hong Kong Philharmonic Orchestra": "香港管弦乐团",
       "Singapore Symphony Orchestra": "新加坡交响乐团",
       "The Janáček Opera of the National Theatre Brno": "布尔诺国家剧院雅纳切克歌剧院"
@@ -140,6 +154,7 @@ window.ConcertDataI18n = {
       "HK City Hall Concert Hall": "香港大会堂音乐厅",
       "HK Cultural Centre Concert Hall": "香港文化中心音乐厅",
       "HK Cultural Centre Grand Theatre": "香港文化中心大剧院",
+      "Sha Tin Town Hall": "沙田大会堂",
       "Shenzhen Concert Hall": "深圳音乐厅"
     },
     soloists: {
@@ -155,7 +170,11 @@ window.ConcertDataI18n = {
       "Leila Josefowicz (violin)": "莱拉·约瑟福维奇（小提琴）",
       "Richard Bamping (cello)": "理查德·班平（大提琴）",
       "Stefan Dohr (horn)": "斯特凡·多尔（圆号）",
-      "Yulianna Avdeeva (piano)": "尤利安娜·阿芙杰耶娃（钢琴）"
+      "Yulianna Avdeeva (piano)": "尤利安娜·阿芙杰耶娃（钢琴）",
+      "Gamelan Yuganada; Zamzuriah Zahari; Kamarul Baisah Bin Hussin; Aaru8; HK Children's Choir (Chamber Youth)": "印尼峇里岛甘美兰乐团；珊·苏丽亚；卡玛儒·百萨；阿陆八；香港儿童合唱团（青年合唱组）",
+      "Zamzuriah Zahari": "珊·苏丽亚",
+      "Zamzuriah Zahari; HK Children's Choir (Chamber Youth)": "珊·苏丽亚；香港儿童合唱团（青年合唱组）",
+      "Zamzuriah Zahari; Kamarul Baisah Bin Hussin": "珊·苏丽亚；卡玛儒·百萨"
     }
   }
 };

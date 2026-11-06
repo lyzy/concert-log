@@ -52,8 +52,8 @@ const uiKeys = new Set();
 [
   "stat.events", "stat.pieces", "stat.avgRating", "stat.composers", "stat.works",
   "stat.orchestras", "stat.years",
-  "filter.all", "filter.concerts", "filter.operas", "filter.ballets",
-  "badge.opera", "badge.ballet", "badge.encore",
+  "filter.all", "filter.concerts", "filter.operas", "filter.ballets", "filter.world",
+  "badge.opera", "badge.ballet", "badge.world", "badge.encore",
   "period.Classical", "period.Romantic", "period.Post-Romantic",
   "period.20th Century", "period.Contemporary",
   "chart.noData"

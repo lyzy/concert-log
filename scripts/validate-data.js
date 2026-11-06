@@ -86,7 +86,7 @@ function main() {
   });
 
   const tIdx = colIndex(concerts.header, "event_type");
-  const ALLOWED_TYPES = ["Concert", "Opera", "Ballet"];
+  const ALLOWED_TYPES = ["Concert", "Opera", "Ballet", "World"];
   concerts.data.forEach((r, i) => {
     const t = (r[tIdx] || "").trim();
     if (!t) warn("line " + (i + 2) + ": event_type empty (shown as Concert)");

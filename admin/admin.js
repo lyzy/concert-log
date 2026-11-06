@@ -4,7 +4,7 @@
 
   var EVENT_FIELDS = [
     { key: "date", label: "Date (YYYY-MM-DD)", placeholder: "2026-10-23" },
-    { key: "event_type", label: "Type", type: "select", options: ["Concert", "Opera", "Ballet"] },
+    { key: "event_type", label: "Type", type: "select", options: ["Concert", "Opera", "Ballet", "World"] },
     { key: "venue", label: "Venue" },
     { key: "city", label: "City" },
     { key: "orchestra", label: "Orchestra" },

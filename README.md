@@ -1,6 +1,6 @@
 # Classical Music Concert Log
 
-A CSV-based performance log — concerts, opera, and ballet — with a clean **front-end / back-end** separation.
+A CSV-based performance log — concerts, opera, ballet, and world music — with a clean **front-end / back-end** separation.
 
 ## Architecture
 
@@ -200,7 +200,7 @@ git commit -m "Normalize CSV line endings"
 | `orchestra` | text | Orchestra name | `Vienna Philharmonic` |
 | `conductor` | text | Conductor name (leave empty if none) | `Andris Nelsons` |
 | `soloists` | text | Soloists, semicolon-separated (if any) | `Hilary Hahn; Lang Lang` |
-| `event_type` | text | Event type: `Concert`, `Opera`, `Ballet` (empty = `Concert`) | `Concert` |
+| `event_type` | text | Event type: `Concert`, `Opera`, `Ballet`, `World` (empty = `Concert`) | `Concert` |
 | `ticket_price` | number | Ticket cost (numeric only) | `90` |
 | `currency` | text | Currency code | `EUR` |
 | `companion` | text | Who you went with (leave empty if solo) | `Wife` |
@@ -282,13 +282,19 @@ this is more about the event; note it in the piece's `notes` if it matters.
 1. Add one row to `concerts.csv` with the concert details
 2. Add N rows to `programmes.csv` (one per piece), all sharing the same `concert_id`
 
-### Event types (concert / opera / ballet)
+### Event types (concert / opera / ballet / world)
 
 `concerts.csv` holds every kind of event. Set `event_type` to `Concert`, `Opera`,
 or `Ballet` (blank is treated as `Concert`). Since an opera or a ballet is a
 single work, it gets **one row** in `programmes.csv` — put principals (singers or
 dancers) in `soloists`, and production credits (choreographer, stage director,
 librettist) in `notes`.
+
+For **world / traditional / non-classical** events, use `event_type = World`
+(the filter chip and badge read "World"). This covers gamelan, folk, percussion
+theatre and similar productions. Put the ensemble or troupe in `orchestra`,
+featured performers in `soloists`, production credits (director, arranger,
+choreographer) in `notes`, and use `Contemporary` for newly composed works.
 
 For a **gala or recital** made of excerpts, use `event_type = Concert` and give
 each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture`).

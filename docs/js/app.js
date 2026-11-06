@@ -30,7 +30,8 @@
     { type: "", label: "filter.all" },
     { type: "Concert", label: "filter.concerts" },
     { type: "Opera", label: "filter.operas" },
-    { type: "Ballet", label: "filter.ballets" }
+    { type: "Ballet", label: "filter.ballets" },
+    { type: "World", label: "filter.world" }
   ];
 
   var STAT_KEYS = {
@@ -43,7 +44,7 @@
     "Years": "stat.years"
   };
 
-  var BADGE_KEYS = { "Opera": "badge.opera", "Ballet": "badge.ballet", "Encore": "badge.encore" };
+  var BADGE_KEYS = { "Opera": "badge.opera", "Ballet": "badge.ballet", "World": "badge.world", "Encore": "badge.encore" };
 
   // ---------------------------------------------------------------- theme
   function applyTheme(theme) {
@@ -200,7 +201,7 @@
 
   function workBadge(p, c) {
     var parts = [];
-    // Per-piece tag wins; otherwise show the event type for opera/ballet events.
+    // Per-piece tag wins; otherwise show the event type for non-Concert events.
     var t = String(p.tag || "").trim();
     if (!t && c.event_type && c.event_type !== "Concert") t = c.event_type;
     if (t) parts.push('<span class="type-badge">' + esc(badgeLabel(t)) + '</span>');
