@@ -221,7 +221,7 @@ inside a cell; the CSV is quoted automatically.
 | `work_title` | text | Work name | `Symphony No. 7` |
 | `opus` | text | Opus number (if applicable) | `Op. 102` |
 | `catalog` | text | Catalog number: K. (Mozart), BWV (Bach), RV (Vivaldi), etc. | `K. 525` |
-| `period` | text | One of: `Classical`, `Romantic`, `Post-Romantic`, `20th Century`, `Contemporary` | `Romantic` |
+| `period` | text | One of: `Classical`, `Romantic`, `Post-Romantic`, `20th Century`, `Contemporary`, `World` | `Romantic` |
 | `conductor` | text | Conductor name (duplicated from concerts.csv for easy querying) | `Andris Nelsons` |
 | `soloists` | text | Featured soloists for this piece (leave empty for symphonies, etc.) | `Lang Lang (piano)` |
 | `performers` | text | Ensemble / chorus specific to this piece (if any) | `Hong Kong Philharmonic Chorus` |
@@ -294,7 +294,12 @@ For **world / traditional / non-classical** events, use `event_type = World`
 (the filter chip and badge read "World"). This covers gamelan, folk, percussion
 theatre and similar productions. Put the ensemble or troupe in `orchestra`,
 featured performers in `soloists`, production credits (director, arranger,
-choreographer) in `notes`, and use `Contemporary` for newly composed works.
+choreographer) in `notes`, and set `period = World` on those rows.
+
+The **Include world music** switch in the toolbar toggles the whole page between
+all events and classical-only. In classical-only mode, world-music events are
+excluded from the table, statistics, charts, and repeated works, and the World
+filter chip is hidden. The preference is remembered per browser.
 
 For a **gala or recital** made of excerpts, use `event_type = Concert` and give
 each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture`).

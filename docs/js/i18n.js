@@ -15,6 +15,7 @@ window.ConcertI18n = (function () {
       "title.reload": "Re-fetch the dataset",
       "title.includeOpera": "Include opera works in this calculation",
       "title.encores": "Show or hide encore pieces",
+      "title.includeWorld": "Include world-music events in the table and statistics",
       "sub.loading": "Loading data\u2026",
       "unit.events": "events",
       "unit.pieces": "pieces",
@@ -52,6 +53,7 @@ window.ConcertI18n = (function () {
 
       "toggle.includeOpera": "Include opera",
       "toggle.encores": "Encores",
+      "toggle.includeWorld": "Include world music",
 
       "th.date": "Date",
       "th.composer": "Composer",
@@ -71,6 +73,7 @@ window.ConcertI18n = (function () {
       "period.Post-Romantic": "Post-Romantic",
       "period.20th Century": "20th Century",
       "period.Contemporary": "Contemporary",
+      "period.World": "World",
 
       "footer.source": "Source",
       "overlay.title": "Couldn\u2019t load the concert data",
@@ -99,6 +102,7 @@ window.ConcertI18n = (function () {
       "title.reload": "重新获取数据",
       "title.includeOpera": "把歌剧作品计入统计",
       "title.encores": "显示/隐藏加演曲目",
+      "title.includeWorld": "把世界音乐演出计入表格与统计",
       "sub.loading": "正在加载\u2026",
       "unit.events": "场",
       "unit.pieces": "首",
@@ -136,6 +140,7 @@ window.ConcertI18n = (function () {
 
       "toggle.includeOpera": "含歌剧",
       "toggle.encores": "加演",
+      "toggle.includeWorld": "含世界音乐",
 
       "th.date": "日期",
       "th.composer": "作曲家",
@@ -155,6 +160,7 @@ window.ConcertI18n = (function () {
       "period.Post-Romantic": "后浪漫",
       "period.20th Century": "20世纪",
       "period.Contemporary": "当代",
+      "period.World": "世界音乐",
 
       "footer.source": "数据来源",
       "overlay.title": "无法加载演出数据",

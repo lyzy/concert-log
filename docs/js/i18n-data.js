@@ -146,6 +146,7 @@ window.ConcertDataI18n = {
     orchestras: {
       "Gewandhausorchester Leipzig": "莱比锡布商大厦管弦乐团",
       "HANDS Percussion": "手集团",
+      "HANDS Percussion, Gamelan Yuganada": "手集团、印尼峇里岛甘美兰乐团",
       "Hong Kong Philharmonic Orchestra": "香港管弦乐团",
       "Singapore Symphony Orchestra": "新加坡交响乐团",
       "The Janáček Opera of the National Theatre Brno": "布尔诺国家剧院雅纳切克歌剧院"
@@ -171,7 +172,7 @@ window.ConcertDataI18n = {
       "Richard Bamping (cello)": "理查德·班平（大提琴）",
       "Stefan Dohr (horn)": "斯特凡·多尔（圆号）",
       "Yulianna Avdeeva (piano)": "尤利安娜·阿芙杰耶娃（钢琴）",
-      "Gamelan Yuganada; Zamzuriah Zahari; Kamarul Baisah Bin Hussin; Aaru8; HK Children's Choir (Chamber Youth)": "印尼峇里岛甘美兰乐团；珊·苏丽亚；卡玛儒·百萨；阿陆八；香港儿童合唱团（青年合唱组）",
+      "Zamzuriah Zahari; Kamarul Baisah Bin Hussin; Aaru8; HK Children's Choir (Chamber Youth)": "珊·苏丽亚；卡玛儒·百萨；阿陆八；香港儿童合唱团（青年合唱组）",
       "Zamzuriah Zahari": "珊·苏丽亚",
       "Zamzuriah Zahari; HK Children's Choir (Chamber Youth)": "珊·苏丽亚；香港儿童合唱团（青年合唱组）",
       "Zamzuriah Zahari; Kamarul Baisah Bin Hussin": "珊·苏丽亚；卡玛儒·百萨"

@@ -12,7 +12,9 @@ const path = require("path");
 const { buildDataset } = require("../lib/dataset");
 
 const OUT_DIR = path.join(__dirname, "..", "docs", "data");
-const dataset = buildDataset();
+const dataset = buildDataset({ includeWorld: true });
+const classical = buildDataset({ includeWorld: false });
+dataset.classical = classical;
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(
@@ -24,5 +26,6 @@ console.log(
   "Wrote docs/data/concert.json (" +
     dataset.concerts.length + " concerts, " +
     dataset.programmes.length + " pieces, " +
-    dataset.repeatedWorks.length + " repeated works)."
+    dataset.repeatedWorks.length + " repeated works; classical-only: " +
+    classical.concerts.length + " concerts)."
 );

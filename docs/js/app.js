@@ -16,6 +16,9 @@
   var DEFAULT_THEME = "everforest";
 
   var dataset = null;
+  var fullDataset = null;
+  var includeWorld = true;
+  var INCLUDE_WORLD_KEY = "concert-include-world";
   var concertById = {};
   var sort = { key: "date", dir: "asc" };
   var filterType = "";
@@ -75,8 +78,9 @@
 
   function renderFilters() {
     var counts = dataset.byType || {};
+    var list = includeWorld ? FILTERS : FILTERS.filter(function (f) { return f.type !== "World"; });
     var el = document.getElementById("filters");
-    el.innerHTML = FILTERS.map(function (f) {
+    el.innerHTML = list.map(function (f) {
       var n = f.type === "" ? dataset.counts.events : (counts[f.type] || 0);
       var cls = "filter" + (f.type === filterType ? " active" : "") + (n === 0 && f.type !== "" ? " empty" : "");
       return '<button class="' + cls + '" data-type="' + f.type + '" type="button">' +
@@ -367,7 +371,7 @@
     renderFilters();
     renderCharts();
     renderRepeated();
-    renderTable("");
+    renderTable(document.getElementById("search").value || "");
     revealCards();
   }
 
@@ -404,7 +408,8 @@
     fetch(DATA_URL, { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .then(function (data) {
-        dataset = data;
+        fullDataset = data;
+        dataset = includeWorld ? data : (data.classical || data);
         renderAll();
       })
       .catch(function (err) {
@@ -438,6 +443,23 @@
     } catch (e) { /* ignore */ }
   }
 
+  function initIncludeWorld() {
+    try {
+      var v = localStorage.getItem(INCLUDE_WORLD_KEY);
+      if (v !== null) includeWorld = v === "1";
+    } catch (e) { /* ignore */ }
+    var cb = document.getElementById("includeWorld");
+    if (cb) cb.checked = includeWorld;
+  }
+
+  function applyView() {
+    if (!fullDataset) return;
+    dataset = includeWorld ? fullDataset : (fullDataset.classical || fullDataset);
+    if (!includeWorld && filterType === "World") filterType = "";
+    if (activeDetailId) closeDetail();
+    renderAll();
+  }
+
   function initLang() {
     var l = "en";
     try { l = localStorage.getItem(LANG_KEY) || "en"; } catch (e) { /* ignore */ }
@@ -452,6 +474,7 @@
   initEncores();
   initComposerOpera();
   initAvgOpera();
+  initIncludeWorld();
 
   document.getElementById("themeSelect").addEventListener("change", function (e) {
     applyTheme(e.target.value);
@@ -479,6 +502,11 @@
     composerOpera = e.target.checked;
     try { localStorage.setItem(COMPOSER_OPERA_KEY, composerOpera ? "1" : "0"); } catch (err) { /* ignore */ }
     renderComposerRating();
+  });
+  document.getElementById("includeWorld").addEventListener("change", function (e) {
+    includeWorld = e.target.checked;
+    try { localStorage.setItem(INCLUDE_WORLD_KEY, includeWorld ? "1" : "0"); } catch (err) { /* ignore */ }
+    applyView();
   });
 
   // row click -> event detail

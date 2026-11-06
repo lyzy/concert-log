@@ -55,7 +55,7 @@ const uiKeys = new Set();
   "filter.all", "filter.concerts", "filter.operas", "filter.ballets", "filter.world",
   "badge.opera", "badge.ballet", "badge.world", "badge.encore",
   "period.Classical", "period.Romantic", "period.Post-Romantic",
-  "period.20th Century", "period.Contemporary",
+  "period.20th Century", "period.Contemporary", "period.World",
   "chart.noData"
 ].forEach(function (k) { uiKeys.add(k); });
 

@@ -24,7 +24,13 @@ const OUT_JSON = path.join(PUBLIC_DIR, "data", "concert.json");
 // or honour an explicit PORT from the environment.
 const PORTS = process.env.PORT ? [Number(process.env.PORT)] : [3000, 8080, 8081, 5173, 4321, 9000];
 
-let dataset = buildDataset();
+function buildAll() {
+  const all = buildDataset({ includeWorld: true });
+  all.classical = buildDataset({ includeWorld: false });
+  return all;
+}
+
+let dataset = buildAll();
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -44,7 +50,7 @@ function writeDatasetJson() {
 }
 
 function reloadDataset() {
-  dataset = buildDataset();
+  dataset = buildAll();
   writeDatasetJson();
 }
 
