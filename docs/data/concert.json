@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-11-06T16:51:20.285Z",
+  "generatedAt": "2026-11-07T13:09:28.955Z",
   "counts": {
-    "events": 20,
-    "programmes": 67,
+    "events": 21,
+    "programmes": 68,
     "composers": 38,
-    "works": 65,
+    "works": 66,
     "orchestras": 5,
     "years": 2
   },
   "byType": {
-    "Concert": 17,
+    "Concert": 18,
     "Opera": 2,
     "World": 1
   },
   "dateRange": {
     "from": "2025-05-08",
-    "to": "2026-11-06"
+    "to": "2026-11-07"
   },
   "stats": [
     {
       "label": "Events",
-      "value": 20
+      "value": 21
     },
     {
       "label": "Pieces heard",
-      "value": 67
+      "value": 68
     },
     {
       "label": "Avg rating",
@@ -36,7 +36,7 @@
     },
     {
       "label": "Unique works",
-      "value": 65
+      "value": 66
     },
     {
       "label": "Orchestras",
@@ -67,7 +67,7 @@
       },
       {
         "label": "Post-Romantic",
-        "value": 8
+        "value": 9
       },
       {
         "label": "World",
@@ -82,7 +82,7 @@
       {
         "label": "Post-Romantic",
         "value": 4.19,
-        "count": 8
+        "count": 9
       },
       {
         "label": "Romantic",
@@ -147,11 +147,11 @@
         "value": 2
       },
       {
-        "label": "I Wayan Sudirana",
+        "label": "Gustav Mahler",
         "value": 2
       },
       {
-        "label": "Jacques Offenbach",
+        "label": "I Wayan Sudirana",
         "value": 2
       }
     ],
@@ -202,6 +202,11 @@
         "count": 4
       },
       {
+        "label": "Gustav Mahler",
+        "value": 3.5,
+        "count": 2
+      },
+      {
         "label": "Maurice Ravel",
         "value": 3.5,
         "count": 3
@@ -244,6 +249,11 @@
         "count": 4
       },
       {
+        "label": "Gustav Mahler",
+        "value": 3.5,
+        "count": 2
+      },
+      {
         "label": "Maurice Ravel",
         "value": 3.5,
         "count": 3
@@ -262,7 +272,7 @@
     "byConductor": [
       {
         "label": "Tarmo Peltokoski",
-        "value": 3
+        "value": 4
       },
       {
         "label": "Andris Nelsons",
@@ -312,7 +322,7 @@
     "byVenue": [
       {
         "label": "HK Cultural Centre Concert Hall",
-        "value": 14
+        "value": 15
       },
       {
         "label": "HK City Hall Concert Hall",
@@ -712,6 +722,22 @@
       "notes": "Asia+ Festival 2026; ~1h45 with a 15-minute interval; sung/spoken in Malay, Indonesian and Putonghua; meet-the-artist after the 6 Nov performance; loud sound effects.",
       "review": "",
       "venue_display": "Sha Tin Town Hall"
+    },
+    {
+      "concert_id": "21",
+      "date": "2026-11-07",
+      "venue": "Hong Kong Cultural Centre Concert Hall",
+      "city": "Hong Kong",
+      "orchestra": "Hong Kong Philharmonic Orchestra",
+      "conductor": "Tarmo Peltokoski",
+      "soloists": "Jacquelyn Wagner (soprano, Magna Peccatrix); Chen Reiss (soprano, Una poenitentium); Louise Kwong (soprano, Mater Gloriosa); Catriona Morison (alto, Mulier Samaritana); Sasha Cooke (alto, Maria Aegyptiaca); Tuomas Katajala (tenor, Doctor Marianus); Rinalds Kandalincevs (baritone, Pater Ecstaticus); Shenyang (bass, Pater Profundus)",
+      "event_type": "Concert",
+      "ticket_price": "",
+      "currency": "HKD",
+      "companion": "",
+      "notes": "HK Phil premiere of Mahler 8; ~1h40 without intermission; part of the 6th Guangdong-Hong Kong-Macao Greater Bay Area Culture and Arts Festival.",
+      "review": "",
+      "venue_display": "HK Cultural Centre Concert Hall"
     }
   ],
   "programmes": [
@@ -2154,34 +2180,52 @@
       "tag": "",
       "section": "",
       "encore": false
+    },
+    {
+      "concert_id": "21",
+      "piece_order": "1",
+      "composer": "Mahler",
+      "composer_full": "Gustav Mahler",
+      "work_title": "Symphony No. 8 in E flat major",
+      "opus": "",
+      "catalog": "",
+      "period": "Post-Romantic",
+      "conductor": "Tarmo Peltokoski",
+      "soloists": "Jacquelyn Wagner; Chen Reiss; Louise Kwong; Catriona Morison; Sasha Cooke; Tuomas Katajala; Rinalds Kandalincevs; Shenyang",
+      "performers": "Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir",
+      "rating": null,
+      "notes": "Choirs: Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir. HK Phil premiere of Mahler 8; ~1h40 without intermission.",
+      "tag": "",
+      "section": "",
+      "encore": false
     }
   ],
   "classical": {
-    "generatedAt": "2026-11-06T16:51:20.290Z",
+    "generatedAt": "2026-11-07T13:09:28.960Z",
     "counts": {
-      "events": 19,
-      "programmes": 59,
+      "events": 20,
+      "programmes": 60,
       "composers": 33,
-      "works": 57,
+      "works": 58,
       "orchestras": 4,
       "years": 2
     },
     "byType": {
-      "Concert": 17,
+      "Concert": 18,
       "Opera": 2
     },
     "dateRange": {
       "from": "2025-05-08",
-      "to": "2026-10-23"
+      "to": "2026-11-07"
     },
     "stats": [
       {
         "label": "Events",
-        "value": 19
+        "value": 20
       },
       {
         "label": "Pieces heard",
-        "value": 59
+        "value": 60
       },
       {
         "label": "Avg rating",
@@ -2193,7 +2237,7 @@
       },
       {
         "label": "Unique works",
-        "value": 57
+        "value": 58
       },
       {
         "label": "Orchestras",
@@ -2224,7 +2268,7 @@
         },
         {
           "label": "Post-Romantic",
-          "value": 8
+          "value": 9
         },
         {
           "label": "Contemporary",
@@ -2235,7 +2279,7 @@
         {
           "label": "Post-Romantic",
           "value": 4.19,
-          "count": 8
+          "count": 9
         },
         {
           "label": "Romantic",
@@ -2296,15 +2340,15 @@
           "value": 2
         },
         {
+          "label": "Gustav Mahler",
+          "value": 2
+        },
+        {
           "label": "Jacques Offenbach",
           "value": 2
         },
         {
           "label": "Jean Sibelius",
-          "value": 2
-        },
-        {
-          "label": "Sergei Rachmaninoff",
           "value": 2
         }
       ],
@@ -2355,6 +2399,11 @@
           "count": 4
         },
         {
+          "label": "Gustav Mahler",
+          "value": 3.5,
+          "count": 2
+        },
+        {
           "label": "Maurice Ravel",
           "value": 3.5,
           "count": 3
@@ -2397,6 +2446,11 @@
           "count": 4
         },
         {
+          "label": "Gustav Mahler",
+          "value": 3.5,
+          "count": 2
+        },
+        {
           "label": "Maurice Ravel",
           "value": 3.5,
           "count": 3
@@ -2415,7 +2469,7 @@
       "byConductor": [
         {
           "label": "Tarmo Peltokoski",
-          "value": 3
+          "value": 4
         },
         {
           "label": "Andris Nelsons",
@@ -2465,7 +2519,7 @@
       "byVenue": [
         {
           "label": "HK Cultural Centre Concert Hall",
-          "value": 14
+          "value": 15
         },
         {
           "label": "HK City Hall Concert Hall",
@@ -2845,6 +2899,22 @@
         "notes": "",
         "review": "The Sisters' Islands: the most interesting contemporary piece I have listened to. It goes with Malay and Chinese flavored melody. The music brings out very concrete pictures about the islandic resident life. \nChloe: Fully expressional performance on the Mendelssohn violin concerto. Her violin solo can penetrate into the minds. Some details are not relaxing or easy compared to Heifetz's version, but that's too much for her now.\nMahler 1: In fact, I thought it is very obvious to understand, not like the stereotypical impression on Mahler's works. Some inharmonic sounds occur (maybe mistakes?) but the whole symphony is generally impressive. Maybe my expectation to Lintu and Singapore SO is higher.\nShenzhen Music Hall: the entrance time is too long. The hall is good (H area this time); the audience is tolerable.",
         "venue_display": "Shenzhen Concert Hall"
+      },
+      {
+        "concert_id": "21",
+        "date": "2026-11-07",
+        "venue": "Hong Kong Cultural Centre Concert Hall",
+        "city": "Hong Kong",
+        "orchestra": "Hong Kong Philharmonic Orchestra",
+        "conductor": "Tarmo Peltokoski",
+        "soloists": "Jacquelyn Wagner (soprano, Magna Peccatrix); Chen Reiss (soprano, Una poenitentium); Louise Kwong (soprano, Mater Gloriosa); Catriona Morison (alto, Mulier Samaritana); Sasha Cooke (alto, Maria Aegyptiaca); Tuomas Katajala (tenor, Doctor Marianus); Rinalds Kandalincevs (baritone, Pater Ecstaticus); Shenyang (bass, Pater Profundus)",
+        "event_type": "Concert",
+        "ticket_price": "",
+        "currency": "HKD",
+        "companion": "",
+        "notes": "HK Phil premiere of Mahler 8; ~1h40 without intermission; part of the 6th Guangdong-Hong Kong-Macao Greater Bay Area Culture and Arts Festival.",
+        "review": "",
+        "venue_display": "HK Cultural Centre Concert Hall"
       }
     ],
     "programmes": [
@@ -4143,6 +4213,24 @@
         "tag": "",
         "section": "encore",
         "encore": true
+      },
+      {
+        "concert_id": "21",
+        "piece_order": "1",
+        "composer": "Mahler",
+        "composer_full": "Gustav Mahler",
+        "work_title": "Symphony No. 8 in E flat major",
+        "opus": "",
+        "catalog": "",
+        "period": "Post-Romantic",
+        "conductor": "Tarmo Peltokoski",
+        "soloists": "Jacquelyn Wagner; Chen Reiss; Louise Kwong; Catriona Morison; Sasha Cooke; Tuomas Katajala; Rinalds Kandalincevs; Shenyang",
+        "performers": "Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir",
+        "rating": null,
+        "notes": "Choirs: Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir. HK Phil premiere of Mahler 8; ~1h40 without intermission.",
+        "tag": "",
+        "section": "",
+        "encore": false
       }
     ]
   }
