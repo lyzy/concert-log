@@ -20,7 +20,7 @@
   var includeWorld = true;
   var INCLUDE_WORLD_KEY = "concert-include-world";
   var concertById = {};
-  var sort = { key: "date", dir: "asc" };
+  var sort = { key: "date", dir: "desc" };
   var filterType = "";
   var showEncores = true;
   var ENCORE_KEY = "concert-show-encores";
