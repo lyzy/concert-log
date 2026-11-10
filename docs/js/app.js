@@ -292,11 +292,14 @@
     return "<dt>" + esc(label) + "</dt><dd>" + esc(value) + "</dd>";
   }
 
-  // Reviews are free text; render each line/paragraph as its own <p> so the
-  // display has clear spacing (blank lines are collapsed).
+  // Reviews are Markdown; fall back to one <p> per line if the renderer is
+  // unavailable.
   function reviewHtml(text) {
     var s = String(text == null ? "" : text).replace(/\r\n?/g, "\n").trim();
     if (!s) return "";
+    if (window.ConcertMarkdown && window.ConcertMarkdown.render) {
+      return window.ConcertMarkdown.render(s);
+    }
     return s.split(/\n+/).map(function (para) {
       return '<p class="detail-review-p">' + esc(para.trim()) + "</p>";
     }).join("");

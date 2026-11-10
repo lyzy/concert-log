@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T13:09:28.955Z",
+  "generatedAt": "2026-11-10T17:06:03.810Z",
   "counts": {
     "events": 21,
     "programmes": 68,
@@ -48,8 +48,8 @@
     }
   ],
   "ratings": {
-    "avg": 3.8333333333333335,
-    "avgNoOpera": 3.6842105263157894
+    "avg": 3.8106060606060606,
+    "avgNoOpera": 3.6808510638297873
   },
   "charts": {
     "byPeriod": [
@@ -81,7 +81,7 @@
     "byPeriodRating": [
       {
         "label": "Post-Romantic",
-        "value": 4.19,
+        "value": 4.22,
         "count": 9
       },
       {
@@ -98,6 +98,11 @@
         "label": "20th Century",
         "value": 3.69,
         "count": 9
+      },
+      {
+        "label": "World",
+        "value": 3.56,
+        "count": 8
       },
       {
         "label": "Classical",
@@ -192,7 +197,17 @@
         "count": 2
       },
       {
+        "label": "Gustav Mahler",
+        "value": 4,
+        "count": 2
+      },
+      {
         "label": "Gioachino Rossini",
+        "value": 3.75,
+        "count": 2
+      },
+      {
+        "label": "I Wayan Sudirana",
         "value": 3.75,
         "count": 2
       },
@@ -202,13 +217,13 @@
         "count": 4
       },
       {
-        "label": "Gustav Mahler",
-        "value": 3.5,
-        "count": 2
-      },
-      {
         "label": "Maurice Ravel",
         "value": 3.5,
+        "count": 3
+      },
+      {
+        "label": "Zamzuriah Zahari",
+        "value": 3.33,
         "count": 3
       },
       {
@@ -244,18 +259,28 @@
         "count": 2
       },
       {
+        "label": "Gustav Mahler",
+        "value": 4,
+        "count": 2
+      },
+      {
+        "label": "I Wayan Sudirana",
+        "value": 3.75,
+        "count": 2
+      },
+      {
         "label": "Esa-Pekka Salonen",
         "value": 3.5,
         "count": 4
       },
       {
-        "label": "Gustav Mahler",
-        "value": 3.5,
-        "count": 2
-      },
-      {
         "label": "Maurice Ravel",
         "value": 3.5,
+        "count": 3
+      },
+      {
+        "label": "Zamzuriah Zahari",
+        "value": 3.33,
         "count": 3
       },
       {
@@ -352,19 +377,19 @@
       },
       {
         "label": "3",
-        "value": 7
+        "value": 10
       },
       {
         "label": "3.5",
-        "value": 14
+        "value": 16
       },
       {
         "label": "4",
-        "value": 18
+        "value": 20
       },
       {
         "label": "4.5",
-        "value": 6
+        "value": 8
       },
       {
         "label": "5",
@@ -736,7 +761,7 @@
       "currency": "HKD",
       "companion": "",
       "notes": "HK Phil premiere of Mahler 8; ~1h40 without intermission; part of the 6th Guangdong-Hong Kong-Macao Greater Bay Area Culture and Arts Festival.",
-      "review": "",
+      "review": "Fascinating. The sound wave is still resonating after I return home. \nIt is difficult to comment on such a massive performance with vocals: the records are too limited to express the vastness of 'a thousand' (in fact, 600+ for this one in HK). 'Veni, Creator Spiritus' is holy, but sometimes fiercely threw out from some choruses (maybe my seat is not spatially balanced). The voices of soloists are hard to distinguish but touchable enough. The 'intermezzo' at the beginning of the second part is pictural and not lengthy, thanks to a very great audience that behave well in the silent and lingering melody. Once came to the vocal parts, the intertwined soloists and choruses speeded up, as the plot developed: angels showed the path to the holy realm, and the woman singers were story-telling, serving as the guide to the spiritual way.\nBesides, the sept-trumpet and trombone group from third flour are extremely holy: Messiaen's *Quatuor pour la fin du temps* is compared too slender. It is really a 'stereo' music.  The mystical choir elevated the whole concert hall and almost pressed my tear out. The splendid horn finally burst out and 'Zieht uns hinan'.  \nThe performance is really full score. The minus 0.5 is for my innocence of the Mahler recording.",
       "venue_display": "HK Cultural Centre Concert Hall"
     }
   ],
@@ -2049,7 +2074,7 @@
       "conductor": "",
       "soloists": "",
       "performers": "Gamelan Yuganada",
-      "rating": null,
+      "rating": 4,
       "notes": "Opening item.",
       "tag": "",
       "section": "",
@@ -2067,7 +2092,7 @@
       "conductor": "",
       "soloists": "",
       "performers": "HANDS Percussion, Gamelan Yuganada",
-      "rating": null,
+      "rating": 3.5,
       "notes": "Four movements: Kontemplasi (Contemplation); Siklus (Cycle); Linearitas (Linearity); Aniyamita (Unlimited).",
       "tag": "",
       "section": "",
@@ -2085,7 +2110,7 @@
       "conductor": "",
       "soloists": "Zamzuriah Zahari",
       "performers": "Gamelan Yuganada",
-      "rating": null,
+      "rating": 3,
       "notes": "Arranged by Yuan Leow Yunn. Opens the second half after the interval.",
       "tag": "",
       "section": "",
@@ -2103,7 +2128,7 @@
       "conductor": "",
       "soloists": "Zamzuriah Zahari; Kamarul Baisah Bin Hussin",
       "performers": "HANDS Percussion",
-      "rating": null,
+      "rating": 3,
       "notes": "",
       "tag": "",
       "section": "",
@@ -2121,7 +2146,7 @@
       "conductor": "",
       "soloists": "Zamzuriah Zahari; HK Children's Choir (Chamber Youth)",
       "performers": "HANDS Percussion; Gamelan Yuganada; The Hong Kong Children's Choir (Chamber Youth)",
-      "rating": null,
+      "rating": 4,
       "notes": "Malay folk song Bunga Emas paired with the Chinese folk song Jasmine Flower; arranged by Yuan Leow Yunn; with The Hong Kong Children's Choir (Chamber Youth).",
       "tag": "",
       "section": "",
@@ -2139,7 +2164,7 @@
       "conductor": "",
       "soloists": "",
       "performers": "HANDS Percussion",
-      "rating": null,
+      "rating": 3.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -2157,7 +2182,7 @@
       "conductor": "",
       "soloists": "",
       "performers": "Gamelan Yuganada",
-      "rating": null,
+      "rating": 4.5,
       "notes": "",
       "tag": "",
       "section": "",
@@ -2175,7 +2200,7 @@
       "conductor": "",
       "soloists": "",
       "performers": "HANDS Percussion; Gamelan Yuganada",
-      "rating": null,
+      "rating": 3,
       "notes": "Closing item.",
       "tag": "",
       "section": "",
@@ -2193,7 +2218,7 @@
       "conductor": "Tarmo Peltokoski",
       "soloists": "Jacquelyn Wagner; Chen Reiss; Louise Kwong; Catriona Morison; Sasha Cooke; Tuomas Katajala; Rinalds Kandalincevs; Shenyang",
       "performers": "Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir",
-      "rating": null,
+      "rating": 4.5,
       "notes": "Choirs: Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir. HK Phil premiere of Mahler 8; ~1h40 without intermission.",
       "tag": "",
       "section": "",
@@ -2201,7 +2226,7 @@
     }
   ],
   "classical": {
-    "generatedAt": "2026-11-07T13:09:28.960Z",
+    "generatedAt": "2026-11-10T17:06:03.815Z",
     "counts": {
       "events": 20,
       "programmes": 60,
@@ -2249,8 +2274,8 @@
       }
     ],
     "ratings": {
-      "avg": 3.8333333333333335,
-      "avgNoOpera": 3.6842105263157894
+      "avg": 3.8448275862068964,
+      "avgNoOpera": 3.7051282051282053
     },
     "charts": {
       "byPeriod": [
@@ -2278,7 +2303,7 @@
       "byPeriodRating": [
         {
           "label": "Post-Romantic",
-          "value": 4.19,
+          "value": 4.22,
           "count": 9
         },
         {
@@ -2389,6 +2414,11 @@
           "count": 2
         },
         {
+          "label": "Gustav Mahler",
+          "value": 4,
+          "count": 2
+        },
+        {
           "label": "Gioachino Rossini",
           "value": 3.75,
           "count": 2
@@ -2397,11 +2427,6 @@
           "label": "Esa-Pekka Salonen",
           "value": 3.5,
           "count": 4
-        },
-        {
-          "label": "Gustav Mahler",
-          "value": 3.5,
-          "count": 2
         },
         {
           "label": "Maurice Ravel",
@@ -2441,14 +2466,14 @@
           "count": 2
         },
         {
+          "label": "Gustav Mahler",
+          "value": 4,
+          "count": 2
+        },
+        {
           "label": "Esa-Pekka Salonen",
           "value": 3.5,
           "count": 4
-        },
-        {
-          "label": "Gustav Mahler",
-          "value": 3.5,
-          "count": 2
         },
         {
           "label": "Maurice Ravel",
@@ -2557,7 +2582,7 @@
         },
         {
           "label": "4.5",
-          "value": 6
+          "value": 7
         },
         {
           "label": "5",
@@ -2913,7 +2938,7 @@
         "currency": "HKD",
         "companion": "",
         "notes": "HK Phil premiere of Mahler 8; ~1h40 without intermission; part of the 6th Guangdong-Hong Kong-Macao Greater Bay Area Culture and Arts Festival.",
-        "review": "",
+        "review": "Fascinating. The sound wave is still resonating after I return home. \nIt is difficult to comment on such a massive performance with vocals: the records are too limited to express the vastness of 'a thousand' (in fact, 600+ for this one in HK). 'Veni, Creator Spiritus' is holy, but sometimes fiercely threw out from some choruses (maybe my seat is not spatially balanced). The voices of soloists are hard to distinguish but touchable enough. The 'intermezzo' at the beginning of the second part is pictural and not lengthy, thanks to a very great audience that behave well in the silent and lingering melody. Once came to the vocal parts, the intertwined soloists and choruses speeded up, as the plot developed: angels showed the path to the holy realm, and the woman singers were story-telling, serving as the guide to the spiritual way.\nBesides, the sept-trumpet and trombone group from third flour are extremely holy: Messiaen's *Quatuor pour la fin du temps* is compared too slender. It is really a 'stereo' music.  The mystical choir elevated the whole concert hall and almost pressed my tear out. The splendid horn finally burst out and 'Zieht uns hinan'.  \nThe performance is really full score. The minus 0.5 is for my innocence of the Mahler recording.",
         "venue_display": "HK Cultural Centre Concert Hall"
       }
     ],
@@ -4226,7 +4251,7 @@
         "conductor": "Tarmo Peltokoski",
         "soloists": "Jacquelyn Wagner; Chen Reiss; Louise Kwong; Catriona Morison; Sasha Cooke; Tuomas Katajala; Rinalds Kandalincevs; Shenyang",
         "performers": "Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir",
-        "rating": null,
+        "rating": 4.5,
         "notes": "Choirs: Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir. HK Phil premiere of Mahler 8; ~1h40 without intermission.",
         "tag": "",
         "section": "",

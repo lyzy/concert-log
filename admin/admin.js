@@ -14,7 +14,7 @@
     { key: "currency", label: "Currency" },
     { key: "companion", label: "Companion" },
     { key: "notes", label: "Notes" },
-    { key: "review", label: "My review", type: "textarea", wide: true }
+    { key: "review", label: "My review (Markdown)", type: "textarea", wide: true, preview: true }
   ];
 
   var PIECE_FIELDS = [
@@ -23,7 +23,7 @@
     { key: "work_title", label: "Work title", wide: true },
     { key: "opus", label: "Opus" },
     { key: "catalog", label: "Catalog" },
-    { key: "period", label: "Period", type: "select", options: ["", "Classical", "Romantic", "Post-Romantic", "20th Century", "Contemporary"] },
+    { key: "period", label: "Period", type: "select", options: ["", "Classical", "Romantic", "Post-Romantic", "20th Century", "Contemporary", "World"] },
     { key: "conductor", label: "Conductor" },
     { key: "soloists", label: "Soloists" },
     { key: "performers", label: "Performers" },
@@ -118,6 +118,10 @@
     var input;
     if (f.type === "textarea") {
       input = '<textarea id="' + id + '" data-key="' + key + '">' + esc(value) + "</textarea>";
+      if (f.preview) {
+        input += '<div class="md-hint">Markdown: **bold**, *italic*, lists, links, quotes, `code`, # heading.</div>';
+        input += '<div class="md-preview" id="' + id + '-preview"></div>';
+      }
     } else if (f.type === "select") {
       input = '<select id="' + id + '" data-key="' + key + '">' +
         (f.options || []).map(function (o) {
@@ -137,6 +141,7 @@
     els.eventFields.innerHTML = EVENT_FIELDS.map(function (f) {
       return fieldHtml("ev", f.key, f.label, state.event[f.key], f);
     }).join("");
+    renderReviewPreview();
     renderPieces();
   }
 
@@ -153,6 +158,17 @@
           return fieldHtml("p" + i, f.key, f.label, p[f.key], f);
         }).join("") + "</div></div>";
     }).join("");
+  }
+
+  function renderReviewPreview() {
+    var ta = $("ev-review");
+    var out = $("ev-review-preview");
+    if (!ta || !out) return;
+    var src = ta.value.trim();
+    if (!src) { out.innerHTML = '<span class="muted">Nothing to preview.</span>'; return; }
+    out.innerHTML = (window.ConcertMarkdown && window.ConcertMarkdown.render)
+      ? window.ConcertMarkdown.render(src)
+      : esc(src).replace(/\n/g, "<br>");
   }
 
   function collectEvent() {
@@ -274,6 +290,10 @@
     els.eventList.addEventListener("click", function (e) {
       var li = e.target.closest ? e.target.closest("li[data-id]") : null;
       if (li) selectEvent(li.getAttribute("data-id"));
+    });
+
+    els.eventFields.addEventListener("input", function (e) {
+      if (e.target && e.target.getAttribute("data-key") === "review") renderReviewPreview();
     });
 
     els.pieces.addEventListener("click", function (e) {
