@@ -17,6 +17,7 @@ window.ConcertI18n = (function () {
       "title.encores": "Show or hide encore pieces",
       "title.includeWorld": "Include world-music events in the table and statistics",
       "sub.loading": "Loading data\u2026",
+      "view.label": "View",
       "unit.events": "events",
       "unit.pieces": "pieces",
 
@@ -104,6 +105,7 @@ window.ConcertI18n = (function () {
       "title.encores": "显示/隐藏加演曲目",
       "title.includeWorld": "把世界音乐演出计入表格与统计",
       "sub.loading": "正在加载\u2026",
+      "view.label": "显示",
       "unit.events": "场",
       "unit.pieces": "首",
 
