@@ -94,9 +94,15 @@
   }
 
   function renderStats() {
+    var r = dataset.ratings || {};
     document.getElementById("stats").innerHTML = dataset.stats.map(function (s) {
       var label = STAT_KEYS[s.label] ? I18n.t(STAT_KEYS[s.label]) : s.label;
-      return '<div class="stat"><div class="n">' + esc(s.value) + '</div><div class="l">' + esc(label) + '</div></div>';
+      var value = s.value;
+      if (s.label === "Avg rating") {
+        var v = composerOpera ? r.avg : r.avgNoOpera;
+        value = v == null ? "\u2014" : v.toFixed(1);
+      }
+      return '<div class="stat"><div class="n">' + esc(value) + '</div><div class="l">' + esc(label) + '</div></div>';
     }).join("");
   }
 
@@ -127,7 +133,8 @@
 
   function renderCharts() {
     var ch = dataset.charts;
-    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(ch.byPeriodRating), "var(--chart-1)", 0, 5);
+    var periodRating = composerOpera ? ch.byPeriodRating : ch.byPeriodRatingNoOpera;
+    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(periodRating), "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(localizePeriods(ch.byPeriod));
     document.getElementById("chartComposer").innerHTML = Charts.hBar(localizeBy(ch.byComposer, "composers"), "var(--chart-2)", 12);
     renderComposerRating();
@@ -477,7 +484,8 @@
   document.getElementById("composerOpera").addEventListener("change", function (e) {
     composerOpera = e.target.checked;
     try { localStorage.setItem(COMPOSER_OPERA_KEY, composerOpera ? "1" : "0"); } catch (err) { /* ignore */ }
-    renderComposerRating();
+    renderStats();
+    renderCharts();
   });
   document.getElementById("includeWorld").addEventListener("change", function (e) {
     includeWorld = e.target.checked;

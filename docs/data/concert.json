@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T17:06:03.810Z",
+  "generatedAt": "2026-11-11T13:38:37.431Z",
   "counts": {
     "events": 21,
     "programmes": 68,
@@ -88,6 +88,38 @@
         "label": "Romantic",
         "value": 4.04,
         "count": 26
+      },
+      {
+        "label": "Contemporary",
+        "value": 3.71,
+        "count": 7
+      },
+      {
+        "label": "20th Century",
+        "value": 3.69,
+        "count": 9
+      },
+      {
+        "label": "World",
+        "value": 3.56,
+        "count": 8
+      },
+      {
+        "label": "Classical",
+        "value": 2.93,
+        "count": 9
+      }
+    ],
+    "byPeriodRatingNoOpera": [
+      {
+        "label": "Post-Romantic",
+        "value": 4.36,
+        "count": 7
+      },
+      {
+        "label": "Romantic",
+        "value": 3.8,
+        "count": 11
       },
       {
         "label": "Contemporary",
@@ -2226,7 +2258,7 @@
     }
   ],
   "classical": {
-    "generatedAt": "2026-11-10T17:06:03.815Z",
+    "generatedAt": "2026-11-11T13:38:37.442Z",
     "counts": {
       "events": 20,
       "programmes": 60,
@@ -2310,6 +2342,33 @@
           "label": "Romantic",
           "value": 4.04,
           "count": 26
+        },
+        {
+          "label": "Contemporary",
+          "value": 3.71,
+          "count": 7
+        },
+        {
+          "label": "20th Century",
+          "value": 3.69,
+          "count": 9
+        },
+        {
+          "label": "Classical",
+          "value": 2.93,
+          "count": 9
+        }
+      ],
+      "byPeriodRatingNoOpera": [
+        {
+          "label": "Post-Romantic",
+          "value": 4.36,
+          "count": 7
+        },
+        {
+          "label": "Romantic",
+          "value": 3.8,
+          "count": 11
         },
         {
           "label": "Contemporary",
