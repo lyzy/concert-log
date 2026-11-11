@@ -7,8 +7,8 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Concert Record</title>
-<link rel="stylesheet" href="css/themes.css?v=20261107f">
-<link rel="stylesheet" href="css/styles.css?v=20261107f">
+<link rel="stylesheet" href="css/themes.css?v=20261107g">
+<link rel="stylesheet" href="css/styles.css?v=20261107g">
 </head>
 <body>
 <div class="wrap">
@@ -44,10 +44,10 @@
         <span class="switch-track" aria-hidden="true"></span>
         <span data-i18n="toggle.includeWorld">Include world music</span>
       </label>
-      <label class="switch" data-i18n-title="title.encores" title="Show or hide encore pieces">
-        <input type="checkbox" id="showEncores" checked>
+      <label class="switch" data-i18n-title="title.includeOpera" title="Include opera works in this calculation">
+        <input type="checkbox" id="composerOpera" checked>
         <span class="switch-track" aria-hidden="true"></span>
-        <span data-i18n="toggle.encores">Encores</span>
+        <span data-i18n="toggle.includeOpera">Include opera</span>
       </label>
     </div>
   </header>
@@ -65,13 +65,7 @@
   </div>
 
   <div class="grid">
-    <div class="card reveal">
-      <div class="cardhead">
-        <h2 data-i18n="chart.composerRating">Average Rating by Composer</h2>
-        <label class="encore-toggle" data-i18n-title="title.includeOpera" title="Include opera works in this calculation"><input type="checkbox" id="composerOpera" checked> <span data-i18n="toggle.includeOpera">Include opera</span></label>
-      </div>
-      <div id="chartComposerRating"></div>
-    </div>
+    <div class="card reveal"><h2 data-i18n="chart.composerRating">Average Rating by Composer</h2><div id="chartComposerRating"></div></div>
     <div class="card reveal"><h2 data-i18n="chart.ratings">Ratings</h2><div id="chartRating"></div></div>
   </div>
 
@@ -86,6 +80,7 @@
       <div class="filters" id="filters"></div>
       <div class="searchrow">
         <input id="search" type="search" data-i18n-placeholder="search.placeholder" placeholder="Filter by composer, work, conductor, orchestra, period&hellip;">
+        <label class="encore-toggle" data-i18n-title="title.encores" title="Show or hide encore pieces"><input type="checkbox" id="showEncores" checked> <span data-i18n="toggle.encores">Encores</span></label>
         <span class="sorthint" data-i18n-html="sort.hint">Click <b>Date</b>, <b>Composer</b> or <b>Rating</b> to sort</span>
       </div>
       <div class="tablewrap">
@@ -127,10 +122,10 @@
   </div>
 </div>
 
-<script src="js/charts.js?v=20261107f"></script>
-<script src="js/i18n.js?v=20261107f"></script>
-<script src="js/i18n-data.js?v=20261107f"></script>
-<script src="js/markdown.js?v=20261107f"></script>
-<script src="js/app.js?v=20261107f"></script>
+<script src="js/charts.js?v=20261107g"></script>
+<script src="js/i18n.js?v=20261107g"></script>
+<script src="js/i18n-data.js?v=20261107g"></script>
+<script src="js/markdown.js?v=20261107g"></script>
+<script src="js/app.js?v=20261107g"></script>
 </body>
 </html>
