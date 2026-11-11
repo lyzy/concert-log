@@ -301,10 +301,12 @@ theatre and similar productions. Put the ensemble or troupe in `orchestra`,
 featured performers in `soloists`, production credits (director, arranger,
 choreographer) in `notes`, and set `period = World` on those rows.
 
-The **Include world music** switch in the toolbar toggles the whole page between
-all events and classical-only. In classical-only mode, world-music events are
-excluded from the table, statistics, charts, and repeated works, and the World
-filter chip is hidden. The preference is remembered per browser.
+The **Include world music** and **Include opera** switches at the top scope the
+**statistics and charts** only — the All Pieces table always shows every piece.
+Turning off world music removes World events from the stats; turning off opera
+removes opera pieces (and any event left with no pieces) from the stats. The
+World filter chip stays available for the table. Both preferences are remembered
+per browser.
 
 For a **gala or recital** made of excerpts, use `event_type = Concert` and give
 each excerpt its own row titled `Opera: Excerpt` (e.g. `La Cenerentola: Overture`).

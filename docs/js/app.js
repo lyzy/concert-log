@@ -15,7 +15,6 @@
   var LANG_KEY = "concert-lang";
   var DEFAULT_THEME = "everforest";
 
-  var dataset = null;
   var fullDataset = null;
   var includeWorld = true;
   var INCLUDE_WORLD_KEY = "concert-include-world";
@@ -47,6 +46,17 @@
 
   var BADGE_KEYS = { "Opera": "badge.opera", "Ballet": "badge.ballet", "World": "badge.world", "Encore": "badge.encore" };
 
+  // The switches scope the statistics; All Pieces always uses fullDataset.
+  function statsView() {
+    if (!fullDataset) return null;
+    var v = fullDataset.views;
+    if (!v) return fullDataset;
+    var key = includeWorld
+      ? (composerOpera ? "all" : "noOpera")
+      : (composerOpera ? "noWorld" : "none");
+    return v[key] || fullDataset;
+  }
+
   // ---------------------------------------------------------------- theme
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
@@ -67,19 +77,21 @@
 
   // --------------------------------------------------------------- render
   function renderSubtitle() {
-    var c = dataset.counts;
-    var r = dataset.dateRange;
+    var v = statsView();
+    if (!v) return;
+    var c = v.counts;
+    var r = v.dateRange;
     var range = r ? (" \u00b7 " + r.from + " \u2192 " + r.to) : "";
     document.getElementById("subtitle").textContent =
       c.events + " " + I18n.t("unit.events") + " \u00b7 " + c.programmes + " " + I18n.t("unit.pieces") + range;
   }
 
   function renderFilters() {
-    var counts = dataset.byType || {};
-    var list = includeWorld ? FILTERS : FILTERS.filter(function (f) { return f.type !== "World"; });
+    if (!fullDataset) return;
+    var counts = fullDataset.byType || {};
     var el = document.getElementById("filters");
-    el.innerHTML = list.map(function (f) {
-      var n = f.type === "" ? dataset.counts.events : (counts[f.type] || 0);
+    el.innerHTML = FILTERS.map(function (f) {
+      var n = f.type === "" ? fullDataset.counts.events : (counts[f.type] || 0);
       var cls = "filter" + (f.type === filterType ? " active" : "") + (n === 0 && f.type !== "" ? " empty" : "");
       return '<button class="' + cls + '" data-type="' + f.type + '" type="button">' +
         esc(I18n.t(f.label)) + ' <span class="count">' + n + '</span></button>';
@@ -94,15 +106,11 @@
   }
 
   function renderStats() {
-    var r = dataset.ratings || {};
-    document.getElementById("stats").innerHTML = dataset.stats.map(function (s) {
+    var v = statsView();
+    if (!v) return;
+    document.getElementById("stats").innerHTML = v.stats.map(function (s) {
       var label = STAT_KEYS[s.label] ? I18n.t(STAT_KEYS[s.label]) : s.label;
-      var value = s.value;
-      if (s.label === "Avg rating") {
-        var v = composerOpera ? r.avg : r.avgNoOpera;
-        value = v == null ? "\u2014" : v.toFixed(1);
-      }
-      return '<div class="stat"><div class="n">' + esc(value) + '</div><div class="l">' + esc(label) + '</div></div>';
+      return '<div class="stat"><div class="n">' + esc(s.value) + '</div><div class="l">' + esc(label) + '</div></div>';
     }).join("");
   }
 
@@ -125,16 +133,17 @@
   }
 
   function renderComposerRating() {
-    if (!dataset) return;
-    var data = composerOpera ? dataset.charts.byComposerRating : dataset.charts.byComposerRatingNoOpera;
+    var v = statsView();
+    if (!v) return;
     document.getElementById("chartComposerRating").innerHTML =
-      Charts.hBar(localizeBy(data || [], "composers"), "var(--chart-6)", 0, 5);
+      Charts.hBar(localizeBy(v.charts.byComposerRating || [], "composers"), "var(--chart-6)", 0, 5);
   }
 
   function renderCharts() {
-    var ch = dataset.charts;
-    var periodRating = composerOpera ? ch.byPeriodRating : ch.byPeriodRatingNoOpera;
-    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(periodRating), "var(--chart-1)", 0, 5);
+    var v = statsView();
+    if (!v) return;
+    var ch = v.charts;
+    document.getElementById("chartPeriodRating").innerHTML = Charts.hBar(localizePeriods(ch.byPeriodRating), "var(--chart-1)", 0, 5);
     document.getElementById("chartPeriod").innerHTML = Charts.donut(localizePeriods(ch.byPeriod));
     document.getElementById("chartComposer").innerHTML = Charts.hBar(localizeBy(ch.byComposer, "composers"), "var(--chart-2)", 12);
     renderComposerRating();
@@ -144,7 +153,9 @@
   }
 
   function renderRepeated() {
-    var repeated = dataset.repeatedWorks;
+    var v = statsView();
+    if (!v) return;
+    var repeated = v.repeatedWorks;
     var el = document.getElementById("repeat");
     if (!repeated.length) {
       el.innerHTML = '<p class="muted">' + esc(I18n.t("repeat.empty")) + '</p>';
@@ -233,8 +244,9 @@
   }
 
   function renderTable(query) {
+    if (!fullDataset) return;
     var q = (query || "").trim().toLowerCase();
-    var rows = dataset.programmes.map(function (p) {
+    var rows = fullDataset.programmes.map(function (p) {
       return { p: p, c: concertById[p.concert_id] || {} };
     }).filter(function (r) {
       if (!showEncores && isEncore(r.p)) return false;
@@ -295,8 +307,8 @@
 
   function openDetail(id) {
     var c = concertById[id];
-    if (!c) return;
-    var pieces = dataset.programmes
+    if (!c || !fullDataset) return;
+    var pieces = fullDataset.programmes
       .filter(function (p) { return p.concert_id === id; })
       .slice()
       .sort(function (a, b) { return (+a.piece_order || 0) - (+b.piece_order || 0); });
@@ -355,8 +367,9 @@
   }
 
   function renderAll() {
+    if (!fullDataset) return;
     concertById = {};
-    dataset.concerts.forEach(function (c) { concertById[c.concert_id] = c; });
+    fullDataset.concerts.forEach(function (c) { concertById[c.concert_id] = c; });
     renderSubtitle();
     renderStats();
     renderFilters();
@@ -400,7 +413,6 @@
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .then(function (data) {
         fullDataset = data;
-        dataset = includeWorld ? data : (data.classical || data);
         renderAll();
       })
       .catch(function (err) {
@@ -436,12 +448,12 @@
     if (cb) cb.checked = includeWorld;
   }
 
-  function applyView() {
+  function renderScopedStats() {
     if (!fullDataset) return;
-    dataset = includeWorld ? fullDataset : (fullDataset.classical || fullDataset);
-    if (!includeWorld && filterType === "World") filterType = "";
-    if (activeDetailId) closeDetail();
-    renderAll();
+    renderSubtitle();
+    renderStats();
+    renderCharts();
+    renderRepeated();
   }
 
   function initLang() {
@@ -467,30 +479,29 @@
     try { localStorage.setItem(LANG_KEY, l); } catch (err) { /* ignore */ }
     I18n.setLang(l);
     I18n.applyStatic();
-    if (dataset) renderAll();
+    if (fullDataset) renderAll();
     if (activeDetailId) openDetail(activeDetailId);
   });
 
   document.getElementById("reloadBtn").addEventListener("click", load);
   document.getElementById("retryBtn").addEventListener("click", load);
   document.getElementById("search").addEventListener("input", function (e) {
-    if (dataset) renderTable(e.target.value);
+    if (fullDataset) renderTable(e.target.value);
   });
   document.getElementById("showEncores").addEventListener("change", function (e) {
     showEncores = e.target.checked;
     try { localStorage.setItem(ENCORE_KEY, showEncores ? "1" : "0"); } catch (err) { /* ignore */ }
-    if (dataset) renderTable(document.getElementById("search").value);
+    if (fullDataset) renderTable(document.getElementById("search").value);
   });
   document.getElementById("composerOpera").addEventListener("change", function (e) {
     composerOpera = e.target.checked;
     try { localStorage.setItem(COMPOSER_OPERA_KEY, composerOpera ? "1" : "0"); } catch (err) { /* ignore */ }
-    renderStats();
-    renderCharts();
+    renderScopedStats();
   });
   document.getElementById("includeWorld").addEventListener("change", function (e) {
     includeWorld = e.target.checked;
     try { localStorage.setItem(INCLUDE_WORLD_KEY, includeWorld ? "1" : "0"); } catch (err) { /* ignore */ }
-    applyView();
+    renderScopedStats();
   });
 
   // row click -> event detail

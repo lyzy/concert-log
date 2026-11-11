@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:38:37.431Z",
+  "generatedAt": "2026-11-11T13:47:34.898Z",
   "counts": {
     "events": 21,
     "programmes": 68,
@@ -48,8 +48,7 @@
     }
   ],
   "ratings": {
-    "avg": 3.8106060606060606,
-    "avgNoOpera": 3.6808510638297873
+    "avg": 3.8106060606060606
   },
   "charts": {
     "byPeriod": [
@@ -88,38 +87,6 @@
         "label": "Romantic",
         "value": 4.04,
         "count": 26
-      },
-      {
-        "label": "Contemporary",
-        "value": 3.71,
-        "count": 7
-      },
-      {
-        "label": "20th Century",
-        "value": 3.69,
-        "count": 9
-      },
-      {
-        "label": "World",
-        "value": 3.56,
-        "count": 8
-      },
-      {
-        "label": "Classical",
-        "value": 2.93,
-        "count": 9
-      }
-    ],
-    "byPeriodRatingNoOpera": [
-      {
-        "label": "Post-Romantic",
-        "value": 4.36,
-        "count": 7
-      },
-      {
-        "label": "Romantic",
-        "value": 3.8,
-        "count": 11
       },
       {
         "label": "Contemporary",
@@ -236,63 +203,6 @@
       {
         "label": "Gioachino Rossini",
         "value": 3.75,
-        "count": 2
-      },
-      {
-        "label": "I Wayan Sudirana",
-        "value": 3.75,
-        "count": 2
-      },
-      {
-        "label": "Esa-Pekka Salonen",
-        "value": 3.5,
-        "count": 4
-      },
-      {
-        "label": "Maurice Ravel",
-        "value": 3.5,
-        "count": 3
-      },
-      {
-        "label": "Zamzuriah Zahari",
-        "value": 3.33,
-        "count": 3
-      },
-      {
-        "label": "Sergei Rachmaninoff",
-        "value": 3,
-        "count": 2
-      },
-      {
-        "label": "Ludwig van Beethoven",
-        "value": 2.93,
-        "count": 9
-      }
-    ],
-    "byComposerRatingNoOpera": [
-      {
-        "label": "Jean Sibelius",
-        "value": 4.5,
-        "count": 2
-      },
-      {
-        "label": "Richard Strauss",
-        "value": 4.5,
-        "count": 3
-      },
-      {
-        "label": "Dmitri Shostakovich",
-        "value": 4.17,
-        "count": 4
-      },
-      {
-        "label": "Felix Mendelssohn",
-        "value": 4,
-        "count": 2
-      },
-      {
-        "label": "Gustav Mahler",
-        "value": 4,
         "count": 2
       },
       {
@@ -2257,2065 +2167,1376 @@
       "encore": false
     }
   ],
-  "classical": {
-    "generatedAt": "2026-11-11T13:38:37.442Z",
-    "counts": {
-      "events": 20,
-      "programmes": 60,
-      "composers": 33,
-      "works": 58,
-      "orchestras": 4,
-      "years": 2
-    },
-    "byType": {
-      "Concert": 18,
-      "Opera": 2
-    },
-    "dateRange": {
-      "from": "2025-05-08",
-      "to": "2026-11-07"
-    },
-    "stats": [
-      {
-        "label": "Events",
-        "value": 20
+  "views": {
+    "all": {
+      "counts": {
+        "events": 21,
+        "programmes": 68,
+        "composers": 38,
+        "works": 66,
+        "orchestras": 5,
+        "years": 2
       },
-      {
-        "label": "Pieces heard",
-        "value": 60
+      "dateRange": {
+        "from": "2025-05-08",
+        "to": "2026-11-07"
       },
-      {
-        "label": "Avg rating",
-        "value": "3.8"
+      "stats": [
+        {
+          "label": "Events",
+          "value": 21
+        },
+        {
+          "label": "Pieces heard",
+          "value": 68
+        },
+        {
+          "label": "Avg rating",
+          "value": "3.8"
+        },
+        {
+          "label": "Composers",
+          "value": 38
+        },
+        {
+          "label": "Unique works",
+          "value": 66
+        },
+        {
+          "label": "Orchestras",
+          "value": 5
+        },
+        {
+          "label": "Years",
+          "value": 2
+        }
+      ],
+      "ratings": {
+        "avg": 3.8106060606060606
       },
-      {
-        "label": "Composers",
-        "value": 33
+      "charts": {
+        "byPeriod": [
+          {
+            "label": "Romantic",
+            "value": 26
+          },
+          {
+            "label": "20th Century",
+            "value": 9
+          },
+          {
+            "label": "Classical",
+            "value": 9
+          },
+          {
+            "label": "Post-Romantic",
+            "value": 9
+          },
+          {
+            "label": "World",
+            "value": 8
+          },
+          {
+            "label": "Contemporary",
+            "value": 7
+          }
+        ],
+        "byPeriodRating": [
+          {
+            "label": "Post-Romantic",
+            "value": 4.22,
+            "count": 9
+          },
+          {
+            "label": "Romantic",
+            "value": 4.04,
+            "count": 26
+          },
+          {
+            "label": "Contemporary",
+            "value": 3.71,
+            "count": 7
+          },
+          {
+            "label": "20th Century",
+            "value": 3.69,
+            "count": 9
+          },
+          {
+            "label": "World",
+            "value": 3.56,
+            "count": 8
+          },
+          {
+            "label": "Classical",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byComposer": [
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 9
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 4
+          },
+          {
+            "label": "Gaetano Donizetti",
+            "value": 3
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 3
+          },
+          {
+            "label": "Zamzuriah Zahari",
+            "value": 3
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 2
+          },
+          {
+            "label": "Gioachino Rossini",
+            "value": 2
+          },
+          {
+            "label": "Giuseppe Verdi",
+            "value": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 2
+          },
+          {
+            "label": "I Wayan Sudirana",
+            "value": 2
+          }
+        ],
+        "byComposerRating": [
+          {
+            "label": "Jacques Offenbach",
+            "value": 4.75,
+            "count": 2
+          },
+          {
+            "label": "Jean Sibelius",
+            "value": 4.5,
+            "count": 2
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 4.5,
+            "count": 3
+          },
+          {
+            "label": "Gaetano Donizetti",
+            "value": 4.33,
+            "count": 3
+          },
+          {
+            "label": "Giuseppe Verdi",
+            "value": 4.25,
+            "count": 2
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4.17,
+            "count": 4
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gioachino Rossini",
+            "value": 3.75,
+            "count": 2
+          },
+          {
+            "label": "I Wayan Sudirana",
+            "value": 3.75,
+            "count": 2
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 3.5,
+            "count": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3.5,
+            "count": 3
+          },
+          {
+            "label": "Zamzuriah Zahari",
+            "value": 3.33,
+            "count": 3
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 3,
+            "count": 2
+          },
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byConductor": [
+          {
+            "label": "Tarmo Peltokoski",
+            "value": 4
+          },
+          {
+            "label": "Andris Nelsons",
+            "value": 2
+          },
+          {
+            "label": "Francois-Frederic Guy",
+            "value": 2
+          },
+          {
+            "label": "Robert Kružík",
+            "value": 2
+          },
+          {
+            "label": "Christoph Koncz",
+            "value": 1
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 1
+          },
+          {
+            "label": "Hannu Lintu",
+            "value": 1
+          },
+          {
+            "label": "Kahchun Wong",
+            "value": 1
+          },
+          {
+            "label": "Lio Kuokman",
+            "value": 1
+          },
+          {
+            "label": "Manfred Honeck",
+            "value": 1
+          },
+          {
+            "label": "Michael Sanderling",
+            "value": 1
+          },
+          {
+            "label": "Michele Spotti",
+            "value": 1
+          }
+        ],
+        "byVenue": [
+          {
+            "label": "HK Cultural Centre Concert Hall",
+            "value": 15
+          },
+          {
+            "label": "HK City Hall Concert Hall",
+            "value": 2
+          },
+          {
+            "label": "HK Cultural Centre Grand Theatre",
+            "value": 2
+          },
+          {
+            "label": "Sha Tin Town Hall",
+            "value": 1
+          },
+          {
+            "label": "Shenzhen Concert Hall",
+            "value": 1
+          }
+        ],
+        "byRating": [
+          {
+            "label": "2",
+            "value": 1
+          },
+          {
+            "label": "2.5",
+            "value": 3
+          },
+          {
+            "label": "3",
+            "value": 10
+          },
+          {
+            "label": "3.5",
+            "value": 16
+          },
+          {
+            "label": "4",
+            "value": 20
+          },
+          {
+            "label": "4.5",
+            "value": 8
+          },
+          {
+            "label": "5",
+            "value": 8
+          }
+        ]
       },
-      {
-        "label": "Unique works",
-        "value": 58
-      },
-      {
-        "label": "Orchestras",
-        "value": 4
-      },
-      {
-        "label": "Years",
-        "value": 2
-      }
-    ],
-    "ratings": {
-      "avg": 3.8448275862068964,
-      "avgNoOpera": 3.7051282051282053
-    },
-    "charts": {
-      "byPeriod": [
+      "repeatedWorks": [
         {
-          "label": "Romantic",
-          "value": 26
+          "title": "Ludwig van Beethoven — Piano Concerto No. 5 \"Emperor\"",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2026-05-23",
+              "conductor": "Francois-Frederic Guy"
+            },
+            {
+              "date": "2026-06-02",
+              "conductor": "Andris Nelsons"
+            }
+          ]
         },
         {
-          "label": "20th Century",
-          "value": 9
-        },
-        {
-          "label": "Classical",
-          "value": 9
-        },
-        {
-          "label": "Post-Romantic",
-          "value": 9
-        },
-        {
-          "label": "Contemporary",
-          "value": 7
-        }
-      ],
-      "byPeriodRating": [
-        {
-          "label": "Post-Romantic",
-          "value": 4.22,
-          "count": 9
-        },
-        {
-          "label": "Romantic",
-          "value": 4.04,
-          "count": 26
-        },
-        {
-          "label": "Contemporary",
-          "value": 3.71,
-          "count": 7
-        },
-        {
-          "label": "20th Century",
-          "value": 3.69,
-          "count": 9
-        },
-        {
-          "label": "Classical",
-          "value": 2.93,
-          "count": 9
-        }
-      ],
-      "byPeriodRatingNoOpera": [
-        {
-          "label": "Post-Romantic",
-          "value": 4.36,
-          "count": 7
-        },
-        {
-          "label": "Romantic",
-          "value": 3.8,
-          "count": 11
-        },
-        {
-          "label": "Contemporary",
-          "value": 3.71,
-          "count": 7
-        },
-        {
-          "label": "20th Century",
-          "value": 3.69,
-          "count": 9
-        },
-        {
-          "label": "Classical",
-          "value": 2.93,
-          "count": 9
-        }
-      ],
-      "byComposer": [
-        {
-          "label": "Ludwig van Beethoven",
-          "value": 9
-        },
-        {
-          "label": "Dmitri Shostakovich",
-          "value": 4
-        },
-        {
-          "label": "Esa-Pekka Salonen",
-          "value": 4
-        },
-        {
-          "label": "Gaetano Donizetti",
-          "value": 3
-        },
-        {
-          "label": "Maurice Ravel",
-          "value": 3
-        },
-        {
-          "label": "Richard Strauss",
-          "value": 3
-        },
-        {
-          "label": "Felix Mendelssohn",
-          "value": 2
-        },
-        {
-          "label": "Gioachino Rossini",
-          "value": 2
-        },
-        {
-          "label": "Giuseppe Verdi",
-          "value": 2
-        },
-        {
-          "label": "Gustav Mahler",
-          "value": 2
-        },
-        {
-          "label": "Jacques Offenbach",
-          "value": 2
-        },
-        {
-          "label": "Jean Sibelius",
-          "value": 2
-        }
-      ],
-      "byComposerRating": [
-        {
-          "label": "Jacques Offenbach",
-          "value": 4.75,
-          "count": 2
-        },
-        {
-          "label": "Jean Sibelius",
-          "value": 4.5,
-          "count": 2
-        },
-        {
-          "label": "Richard Strauss",
-          "value": 4.5,
-          "count": 3
-        },
-        {
-          "label": "Gaetano Donizetti",
-          "value": 4.33,
-          "count": 3
-        },
-        {
-          "label": "Giuseppe Verdi",
-          "value": 4.25,
-          "count": 2
-        },
-        {
-          "label": "Dmitri Shostakovich",
-          "value": 4.17,
-          "count": 4
-        },
-        {
-          "label": "Felix Mendelssohn",
-          "value": 4,
-          "count": 2
-        },
-        {
-          "label": "Gustav Mahler",
-          "value": 4,
-          "count": 2
-        },
-        {
-          "label": "Gioachino Rossini",
-          "value": 3.75,
-          "count": 2
-        },
-        {
-          "label": "Esa-Pekka Salonen",
-          "value": 3.5,
-          "count": 4
-        },
-        {
-          "label": "Maurice Ravel",
-          "value": 3.5,
-          "count": 3
-        },
-        {
-          "label": "Sergei Rachmaninoff",
-          "value": 3,
-          "count": 2
-        },
-        {
-          "label": "Ludwig van Beethoven",
-          "value": 2.93,
-          "count": 9
-        }
-      ],
-      "byComposerRatingNoOpera": [
-        {
-          "label": "Jean Sibelius",
-          "value": 4.5,
-          "count": 2
-        },
-        {
-          "label": "Richard Strauss",
-          "value": 4.5,
-          "count": 3
-        },
-        {
-          "label": "Dmitri Shostakovich",
-          "value": 4.17,
-          "count": 4
-        },
-        {
-          "label": "Felix Mendelssohn",
-          "value": 4,
-          "count": 2
-        },
-        {
-          "label": "Gustav Mahler",
-          "value": 4,
-          "count": 2
-        },
-        {
-          "label": "Esa-Pekka Salonen",
-          "value": 3.5,
-          "count": 4
-        },
-        {
-          "label": "Maurice Ravel",
-          "value": 3.5,
-          "count": 3
-        },
-        {
-          "label": "Sergei Rachmaninoff",
-          "value": 3,
-          "count": 2
-        },
-        {
-          "label": "Ludwig van Beethoven",
-          "value": 2.93,
-          "count": 9
-        }
-      ],
-      "byConductor": [
-        {
-          "label": "Tarmo Peltokoski",
-          "value": 4
-        },
-        {
-          "label": "Andris Nelsons",
-          "value": 2
-        },
-        {
-          "label": "Francois-Frederic Guy",
-          "value": 2
-        },
-        {
-          "label": "Robert Kružík",
-          "value": 2
-        },
-        {
-          "label": "Christoph Koncz",
-          "value": 1
-        },
-        {
-          "label": "Esa-Pekka Salonen",
-          "value": 1
-        },
-        {
-          "label": "Hannu Lintu",
-          "value": 1
-        },
-        {
-          "label": "Kahchun Wong",
-          "value": 1
-        },
-        {
-          "label": "Lio Kuokman",
-          "value": 1
-        },
-        {
-          "label": "Manfred Honeck",
-          "value": 1
-        },
-        {
-          "label": "Michael Sanderling",
-          "value": 1
-        },
-        {
-          "label": "Michele Spotti",
-          "value": 1
-        }
-      ],
-      "byVenue": [
-        {
-          "label": "HK Cultural Centre Concert Hall",
-          "value": 15
-        },
-        {
-          "label": "HK City Hall Concert Hall",
-          "value": 2
-        },
-        {
-          "label": "HK Cultural Centre Grand Theatre",
-          "value": 2
-        },
-        {
-          "label": "Shenzhen Concert Hall",
-          "value": 1
-        }
-      ],
-      "byRating": [
-        {
-          "label": "2",
-          "value": 1
-        },
-        {
-          "label": "2.5",
-          "value": 3
-        },
-        {
-          "label": "3",
-          "value": 7
-        },
-        {
-          "label": "3.5",
-          "value": 14
-        },
-        {
-          "label": "4",
-          "value": 18
-        },
-        {
-          "label": "4.5",
-          "value": 7
-        },
-        {
-          "label": "5",
-          "value": 8
+          "title": "Sergei Rachmaninoff — Piano Concerto No. 2",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2025-09-27",
+              "conductor": "Yu Long"
+            },
+            {
+              "date": "2026-06-03",
+              "conductor": "Andris Nelsons"
+            }
+          ]
         }
       ]
     },
-    "repeatedWorks": [
-      {
-        "title": "Ludwig van Beethoven — Piano Concerto No. 5 \"Emperor\"",
-        "count": 2,
-        "performances": [
+    "noWorld": {
+      "counts": {
+        "events": 20,
+        "programmes": 60,
+        "composers": 33,
+        "works": 58,
+        "orchestras": 4,
+        "years": 2
+      },
+      "dateRange": {
+        "from": "2025-05-08",
+        "to": "2026-11-07"
+      },
+      "stats": [
+        {
+          "label": "Events",
+          "value": 20
+        },
+        {
+          "label": "Pieces heard",
+          "value": 60
+        },
+        {
+          "label": "Avg rating",
+          "value": "3.8"
+        },
+        {
+          "label": "Composers",
+          "value": 33
+        },
+        {
+          "label": "Unique works",
+          "value": 58
+        },
+        {
+          "label": "Orchestras",
+          "value": 4
+        },
+        {
+          "label": "Years",
+          "value": 2
+        }
+      ],
+      "ratings": {
+        "avg": 3.8448275862068964
+      },
+      "charts": {
+        "byPeriod": [
           {
-            "date": "2026-05-23",
-            "conductor": "Francois-Frederic Guy"
+            "label": "Romantic",
+            "value": 26
           },
           {
-            "date": "2026-06-02",
-            "conductor": "Andris Nelsons"
+            "label": "20th Century",
+            "value": 9
+          },
+          {
+            "label": "Classical",
+            "value": 9
+          },
+          {
+            "label": "Post-Romantic",
+            "value": 9
+          },
+          {
+            "label": "Contemporary",
+            "value": 7
+          }
+        ],
+        "byPeriodRating": [
+          {
+            "label": "Post-Romantic",
+            "value": 4.22,
+            "count": 9
+          },
+          {
+            "label": "Romantic",
+            "value": 4.04,
+            "count": 26
+          },
+          {
+            "label": "Contemporary",
+            "value": 3.71,
+            "count": 7
+          },
+          {
+            "label": "20th Century",
+            "value": 3.69,
+            "count": 9
+          },
+          {
+            "label": "Classical",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byComposer": [
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 9
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 4
+          },
+          {
+            "label": "Gaetano Donizetti",
+            "value": 3
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 3
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 2
+          },
+          {
+            "label": "Gioachino Rossini",
+            "value": 2
+          },
+          {
+            "label": "Giuseppe Verdi",
+            "value": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 2
+          },
+          {
+            "label": "Jacques Offenbach",
+            "value": 2
+          },
+          {
+            "label": "Jean Sibelius",
+            "value": 2
+          }
+        ],
+        "byComposerRating": [
+          {
+            "label": "Jacques Offenbach",
+            "value": 4.75,
+            "count": 2
+          },
+          {
+            "label": "Jean Sibelius",
+            "value": 4.5,
+            "count": 2
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 4.5,
+            "count": 3
+          },
+          {
+            "label": "Gaetano Donizetti",
+            "value": 4.33,
+            "count": 3
+          },
+          {
+            "label": "Giuseppe Verdi",
+            "value": 4.25,
+            "count": 2
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4.17,
+            "count": 4
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gioachino Rossini",
+            "value": 3.75,
+            "count": 2
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 3.5,
+            "count": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3.5,
+            "count": 3
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 3,
+            "count": 2
+          },
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byConductor": [
+          {
+            "label": "Tarmo Peltokoski",
+            "value": 4
+          },
+          {
+            "label": "Andris Nelsons",
+            "value": 2
+          },
+          {
+            "label": "Francois-Frederic Guy",
+            "value": 2
+          },
+          {
+            "label": "Robert Kružík",
+            "value": 2
+          },
+          {
+            "label": "Christoph Koncz",
+            "value": 1
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 1
+          },
+          {
+            "label": "Hannu Lintu",
+            "value": 1
+          },
+          {
+            "label": "Kahchun Wong",
+            "value": 1
+          },
+          {
+            "label": "Lio Kuokman",
+            "value": 1
+          },
+          {
+            "label": "Manfred Honeck",
+            "value": 1
+          },
+          {
+            "label": "Michael Sanderling",
+            "value": 1
+          },
+          {
+            "label": "Michele Spotti",
+            "value": 1
+          }
+        ],
+        "byVenue": [
+          {
+            "label": "HK Cultural Centre Concert Hall",
+            "value": 15
+          },
+          {
+            "label": "HK City Hall Concert Hall",
+            "value": 2
+          },
+          {
+            "label": "HK Cultural Centre Grand Theatre",
+            "value": 2
+          },
+          {
+            "label": "Shenzhen Concert Hall",
+            "value": 1
+          }
+        ],
+        "byRating": [
+          {
+            "label": "2",
+            "value": 1
+          },
+          {
+            "label": "2.5",
+            "value": 3
+          },
+          {
+            "label": "3",
+            "value": 7
+          },
+          {
+            "label": "3.5",
+            "value": 14
+          },
+          {
+            "label": "4",
+            "value": 18
+          },
+          {
+            "label": "4.5",
+            "value": 7
+          },
+          {
+            "label": "5",
+            "value": 8
           }
         ]
       },
-      {
-        "title": "Sergei Rachmaninoff — Piano Concerto No. 2",
-        "count": 2,
-        "performances": [
+      "repeatedWorks": [
+        {
+          "title": "Ludwig van Beethoven — Piano Concerto No. 5 \"Emperor\"",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2026-05-23",
+              "conductor": "Francois-Frederic Guy"
+            },
+            {
+              "date": "2026-06-02",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        },
+        {
+          "title": "Sergei Rachmaninoff — Piano Concerto No. 2",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2025-09-27",
+              "conductor": "Yu Long"
+            },
+            {
+              "date": "2026-06-03",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        }
+      ]
+    },
+    "noOpera": {
+      "counts": {
+        "events": 18,
+        "programmes": 51,
+        "composers": 26,
+        "works": 49,
+        "orchestras": 5,
+        "years": 2
+      },
+      "dateRange": {
+        "from": "2025-05-08",
+        "to": "2026-11-07"
+      },
+      "stats": [
+        {
+          "label": "Events",
+          "value": 18
+        },
+        {
+          "label": "Pieces heard",
+          "value": 51
+        },
+        {
+          "label": "Avg rating",
+          "value": "3.7"
+        },
+        {
+          "label": "Composers",
+          "value": 26
+        },
+        {
+          "label": "Unique works",
+          "value": 49
+        },
+        {
+          "label": "Orchestras",
+          "value": 5
+        },
+        {
+          "label": "Years",
+          "value": 2
+        }
+      ],
+      "ratings": {
+        "avg": 3.6808510638297873
+      },
+      "charts": {
+        "byPeriod": [
           {
-            "date": "2025-09-27",
-            "conductor": "Yu Long"
+            "label": "Romantic",
+            "value": 11
           },
           {
-            "date": "2026-06-03",
-            "conductor": "Andris Nelsons"
+            "label": "20th Century",
+            "value": 9
+          },
+          {
+            "label": "Classical",
+            "value": 9
+          },
+          {
+            "label": "World",
+            "value": 8
+          },
+          {
+            "label": "Contemporary",
+            "value": 7
+          },
+          {
+            "label": "Post-Romantic",
+            "value": 7
+          }
+        ],
+        "byPeriodRating": [
+          {
+            "label": "Post-Romantic",
+            "value": 4.36,
+            "count": 7
+          },
+          {
+            "label": "Romantic",
+            "value": 3.8,
+            "count": 11
+          },
+          {
+            "label": "Contemporary",
+            "value": 3.71,
+            "count": 7
+          },
+          {
+            "label": "20th Century",
+            "value": 3.69,
+            "count": 9
+          },
+          {
+            "label": "World",
+            "value": 3.56,
+            "count": 8
+          },
+          {
+            "label": "Classical",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byComposer": [
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 9
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 3
+          },
+          {
+            "label": "Zamzuriah Zahari",
+            "value": 3
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 2
+          },
+          {
+            "label": "I Wayan Sudirana",
+            "value": 2
+          },
+          {
+            "label": "Jean Sibelius",
+            "value": 2
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 2
+          },
+          {
+            "label": "Antonín Dvořák",
+            "value": 1
+          }
+        ],
+        "byComposerRating": [
+          {
+            "label": "Jean Sibelius",
+            "value": 4.5,
+            "count": 2
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 4.5,
+            "count": 3
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4.17,
+            "count": 4
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "I Wayan Sudirana",
+            "value": 3.75,
+            "count": 2
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 3.5,
+            "count": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3.5,
+            "count": 3
+          },
+          {
+            "label": "Zamzuriah Zahari",
+            "value": 3.33,
+            "count": 3
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 3,
+            "count": 2
+          },
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byConductor": [
+          {
+            "label": "Tarmo Peltokoski",
+            "value": 4
+          },
+          {
+            "label": "Andris Nelsons",
+            "value": 2
+          },
+          {
+            "label": "Francois-Frederic Guy",
+            "value": 2
+          },
+          {
+            "label": "Christoph Koncz",
+            "value": 1
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 1
+          },
+          {
+            "label": "Hannu Lintu",
+            "value": 1
+          },
+          {
+            "label": "Kahchun Wong",
+            "value": 1
+          },
+          {
+            "label": "Lio Kuokman",
+            "value": 1
+          },
+          {
+            "label": "Manfred Honeck",
+            "value": 1
+          },
+          {
+            "label": "Michael Sanderling",
+            "value": 1
+          },
+          {
+            "label": "Robert Kružík",
+            "value": 1
+          },
+          {
+            "label": "Yu Long",
+            "value": 1
+          }
+        ],
+        "byVenue": [
+          {
+            "label": "HK Cultural Centre Concert Hall",
+            "value": 14
+          },
+          {
+            "label": "HK City Hall Concert Hall",
+            "value": 2
+          },
+          {
+            "label": "Sha Tin Town Hall",
+            "value": 1
+          },
+          {
+            "label": "Shenzhen Concert Hall",
+            "value": 1
+          }
+        ],
+        "byRating": [
+          {
+            "label": "2",
+            "value": 1
+          },
+          {
+            "label": "2.5",
+            "value": 3
+          },
+          {
+            "label": "3",
+            "value": 9
+          },
+          {
+            "label": "3.5",
+            "value": 12
+          },
+          {
+            "label": "4",
+            "value": 13
+          },
+          {
+            "label": "4.5",
+            "value": 5
+          },
+          {
+            "label": "5",
+            "value": 4
           }
         ]
-      }
-    ],
-    "concerts": [
-      {
-        "concert_id": "1",
-        "date": "2025-05-08",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Christoph Koncz",
-        "soloists": "Gautier Capucon (cello)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "Also performed on 2025-05-09. Part of French May Arts Festival.",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
       },
-      {
-        "concert_id": "2",
-        "date": "2026-04-24",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Leila Josefowicz (violin)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "3",
-        "date": "2026-05-01",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Esa-Pekka Salonen",
-        "soloists": "Stefan Dohr (horn)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "The best ever concert I have watched (at that time). \nDon Juan by Strauss has the most catching beginning, also very suitable for the starting piece of the concert. From then on, it is added to my playlist.\nNo much impression on the Horn Concerto, as difficult (or contemporary) as Salonen's other works. I just feeling that horn is very difficult to play; the player needs to clean the liquid inside the instrument during the pauses; and there is a skill to clog the horn to change the timbre. And now I know Stefan Dohr may be one of the current best horn players; maybe the only horn player I know that will play as soloist in concerts. \nSibelius No. 5 is often conducted by Salonen. During my 'preview' listening, I do not have a strong impression for the symphony (except the short piece of 'Swan Call'). But Salonen did make it. The performance left me the most memorable second movement (normally slow) even the whole symphony is rather slow. The struggling low-volumn strings before the swan call is clearly heard and make the moment of the swan call magnificent. The ending is also unusually astonishing: several pauses challenge those hotheaded audience.\nAnyway, Salonen is my very anticipated conductor since then, although his composing works...",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "4",
-        "date": "2026-05-15",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Michael Sanderling",
-        "soloists": "Richard Bamping (cello)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "5",
-        "date": "2026-05-22",
-        "venue": "Hong Kong City Hall Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK City Hall Concert Hall"
-      },
-      {
-        "concert_id": "6",
-        "date": "2026-05-23",
-        "venue": "Hong Kong City Hall Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK City Hall Concert Hall"
-      },
-      {
-        "concert_id": "7",
-        "date": "2026-07-03",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "8",
-        "date": "2025-09-27",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Yu Long",
-        "soloists": "Behzod Abduraimov (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "9",
-        "date": "2025-12-11",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Lang Lang (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "I got the ticket of Lang Lang in the regular selling time: a miracle.\nThis is the first time to hear the work of Salonen. In fact, Castor is not that unintelligible. There is some touching movement bringing out the Greek mythical feeling. \nGrieg's piano concerto: it is my first time hear this composer. A Stunning beginning! and that is enough for me to add to my playlist. Lang Lang's body move is also so 'impressive' that I understand why he is sometimes criticized as greasy. While his body moves and rubato for this concerto is suitable, rendering the dramatic melody. The four-hand encore with Tarmo is also funny to watch. Such an encore also need preparation, I guess!\nLemminkainen Suite is relatively rarely performed as a whole suite. My rough feeling is that the music keeps struggling in a lowkey register. But it is not depressive; the lowkey register brings a cold, tragic atmosphere while the music is moving forward, as the hero surpasses the obstacles on his way. I will say this work is more exotic than other North Europe works (and Sibelius No.5 Symphony which I have heard).",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "10",
-        "date": "2026-01-17",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Kahchun Wong",
-        "soloists": "",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "11",
-        "date": "2026-06-02",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Gewandhausorchester Leipzig",
-        "conductor": "Andris Nelsons",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "'Emperor': Unbelievably... not good. The piano music is scattered and discontinuous. Avdeeva is so mysterious.\n'Spring': Fantastic. The performance let me listen to Schumann Symphony No. 1 more, as a daily music choice, which is my 5-star rating standard. The symphony itself is easy to understand like a tone poem. The performance is flawless (from my view) with impressive brass.",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "12",
-        "date": "2026-06-03",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Gewandhausorchester Leipzig",
-        "conductor": "Andris Nelsons",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "13",
-        "date": "2026-09-09",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Lio Kuokman",
-        "soloists": "Eric Lu (piano)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "14",
-        "date": "2026-09-16",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Manfred Honeck",
-        "soloists": "",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "Season Opening: Manfred Honeck's Pastoral and Elektra. Also performed on 2026-09-17.",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "15",
-        "date": "2026-03-22",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "The Janáček Opera of the National Theatre Brno",
-        "conductor": "Robert Kružík",
-        "soloists": "",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "16",
-        "date": "2026-03-21",
-        "venue": "Hong Kong Cultural Centre Grand Theatre",
-        "city": "Hong Kong",
-        "orchestra": "The Janáček Opera of the National Theatre Brno",
-        "conductor": "Robert Kružík",
-        "soloists": "",
-        "event_type": "Opera",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "",
-        "venue_display": "HK Cultural Centre Grand Theatre"
-      },
-      {
-        "concert_id": "17",
-        "date": "2026-10-09",
-        "venue": "Hong Kong Cultural Centre Grand Theatre",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Roberto Gianola",
-        "soloists": "",
-        "event_type": "Opera",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "A good chance and beginning to enjoy some operas. Cav/Pag is also not very long so I guess the operas are attractive enough to watch with some friends.\nThe costume design is good and classical, no special 'modern reinterpretation', very nice. Although the Sicilian coppola (flat cap) on Hong Kong local actors make them look like gangsters in the HK triads...\nCavalleria Rusticana: the story is simple; love and death. Santuzza is the best vocal. Intermezzo is too peaceful that makes audience forget the duel will start soon. Turiddu's performance is also dramatic enough as a pure 渣男; the only sympathy for him may be from his final begging: ask his mom to treat Santuzza well. \nPagliacci: the plot is very well designed, but the Chinese soprano for Nedda is not as good as other singers: her voice cannot penetrate the hall and sound vague. The baritone for Alfio/Tonio contributes to two distinctive roles tonight, with both singing and acting vividly.\nBtw, the music from HKPhil is also 'purer' (in a better sense) than the previous opera experience by the Czech orchestra.",
-        "venue_display": "HK Cultural Centre Grand Theatre"
-      },
-      {
-        "concert_id": "18",
-        "date": "2026-10-22",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "Juan Diego Flórez Opera Gala (Hong Kong debut).",
-        "review": "Most enthusiastic audience I have ever watched, aroused by the enthusiastic Flórez (with 5 encores!).\nVocal music can be more impressive than instruments. The starting two pieces are not really ear-catching, but from 'Una furtiva lagrima' all the pieces are great and perfect.\nSpanish zarzuelas are interesting and easy to get ('Al mismito rey del moro').\nWerther: Pourquoi me réveiller? is another best one. It is better singing with triste, not with the 'full-power' high voice (compared with the record of Bocelli).\n\nI can also sense that the conductor Spotti have more 'operatic' details for the instruments. The overture of Cenerentola and Prelude of Macbeth are more dramatic, better than the records. A so great night that I clapped my hand to red.",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      },
-      {
-        "concert_id": "19",
-        "date": "2026-10-23",
-        "venue": "Shenzhen Concert Hall",
-        "city": "Shenzhen",
-        "orchestra": "Singapore Symphony Orchestra",
-        "conductor": "Hannu Lintu",
-        "soloists": "Chloe Chua",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "",
-        "companion": "",
-        "notes": "",
-        "review": "The Sisters' Islands: the most interesting contemporary piece I have listened to. It goes with Malay and Chinese flavored melody. The music brings out very concrete pictures about the islandic resident life. \nChloe: Fully expressional performance on the Mendelssohn violin concerto. Her violin solo can penetrate into the minds. Some details are not relaxing or easy compared to Heifetz's version, but that's too much for her now.\nMahler 1: In fact, I thought it is very obvious to understand, not like the stereotypical impression on Mahler's works. Some inharmonic sounds occur (maybe mistakes?) but the whole symphony is generally impressive. Maybe my expectation to Lintu and Singapore SO is higher.\nShenzhen Music Hall: the entrance time is too long. The hall is good (H area this time); the audience is tolerable.",
-        "venue_display": "Shenzhen Concert Hall"
-      },
-      {
-        "concert_id": "21",
-        "date": "2026-11-07",
-        "venue": "Hong Kong Cultural Centre Concert Hall",
-        "city": "Hong Kong",
-        "orchestra": "Hong Kong Philharmonic Orchestra",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Jacquelyn Wagner (soprano, Magna Peccatrix); Chen Reiss (soprano, Una poenitentium); Louise Kwong (soprano, Mater Gloriosa); Catriona Morison (alto, Mulier Samaritana); Sasha Cooke (alto, Maria Aegyptiaca); Tuomas Katajala (tenor, Doctor Marianus); Rinalds Kandalincevs (baritone, Pater Ecstaticus); Shenyang (bass, Pater Profundus)",
-        "event_type": "Concert",
-        "ticket_price": "",
-        "currency": "HKD",
-        "companion": "",
-        "notes": "HK Phil premiere of Mahler 8; ~1h40 without intermission; part of the 6th Guangdong-Hong Kong-Macao Greater Bay Area Culture and Arts Festival.",
-        "review": "Fascinating. The sound wave is still resonating after I return home. \nIt is difficult to comment on such a massive performance with vocals: the records are too limited to express the vastness of 'a thousand' (in fact, 600+ for this one in HK). 'Veni, Creator Spiritus' is holy, but sometimes fiercely threw out from some choruses (maybe my seat is not spatially balanced). The voices of soloists are hard to distinguish but touchable enough. The 'intermezzo' at the beginning of the second part is pictural and not lengthy, thanks to a very great audience that behave well in the silent and lingering melody. Once came to the vocal parts, the intertwined soloists and choruses speeded up, as the plot developed: angels showed the path to the holy realm, and the woman singers were story-telling, serving as the guide to the spiritual way.\nBesides, the sept-trumpet and trombone group from third flour are extremely holy: Messiaen's *Quatuor pour la fin du temps* is compared too slender. It is really a 'stereo' music.  The mystical choir elevated the whole concert hall and almost pressed my tear out. The splendid horn finally burst out and 'Zieht uns hinan'.  \nThe performance is really full score. The minus 0.5 is for my innocence of the Mahler recording.",
-        "venue_display": "HK Cultural Centre Concert Hall"
-      }
-    ],
-    "programmes": [
-      {
-        "concert_id": "1",
-        "piece_order": "1",
-        "composer": "Shostakovich",
-        "composer_full": "Dmitri Shostakovich",
-        "work_title": "Festive Overture",
-        "opus": "Op. 96",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Christoph Koncz",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "Opening piece. Energetic and brilliant.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "1",
-        "piece_order": "2",
-        "composer": "Shostakovich",
-        "composer_full": "Dmitri Shostakovich",
-        "work_title": "Cello Concerto No. 1",
-        "opus": "Op. 107",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Christoph Koncz",
-        "soloists": "Gautier Capucon (cello)",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "Written for Rostropovich.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "1",
-        "piece_order": "3",
-        "composer": "Ravel",
-        "composer_full": "Maurice Ravel",
-        "work_title": "La Valse",
-        "opus": "",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Christoph Koncz",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "Ravel's 150th anniversary year.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "1",
-        "piece_order": "4",
-        "composer": "Ravel",
-        "composer_full": "Maurice Ravel",
-        "work_title": "Pavane pour une infante défunte",
-        "opus": "",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Christoph Koncz",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "Lyrical and tender.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "1",
-        "piece_order": "5",
-        "composer": "Ravel",
-        "composer_full": "Maurice Ravel",
-        "work_title": "Boléro",
-        "opus": "",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Christoph Koncz",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "The famous orchestral showpiece.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "2",
-        "piece_order": "1",
-        "composer": "Salonen",
-        "composer_full": "Esa-Pekka Salonen",
-        "work_title": "Violin Concerto",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Leila Josefowicz (violin)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "2",
-        "piece_order": "2",
-        "composer": "Salonen",
-        "composer_full": "Esa-Pekka Salonen",
-        "work_title": "Lachen Verlernt: Finale",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Leila Josefowicz (violin)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "2",
-        "piece_order": "3",
-        "composer": "Shostakovich",
-        "composer_full": "Dmitri Shostakovich",
-        "work_title": "Symphony No. 11",
-        "opus": "Op. 103",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "3",
-        "piece_order": "1",
-        "composer": "Strauss",
-        "composer_full": "Richard Strauss",
-        "work_title": "Don Juan",
-        "opus": "Op. 20",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Esa-Pekka Salonen",
-        "soloists": "",
-        "performers": "",
-        "rating": 5,
-        "notes": "Tone poem.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "3",
-        "piece_order": "2",
-        "composer": "Salonen",
-        "composer_full": "Esa-Pekka Salonen",
-        "work_title": "Horn Concerto",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Esa-Pekka Salonen",
-        "soloists": "Stefan Dohr (horn)",
-        "performers": "",
-        "rating": 4,
-        "notes": "Asian Premiere.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "3",
-        "piece_order": "3",
-        "composer": "Sibelius",
-        "composer_full": "Jean Sibelius",
-        "work_title": "Symphony No. 5",
-        "opus": "Op. 82",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Esa-Pekka Salonen",
-        "soloists": "",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "4",
-        "piece_order": "1",
-        "composer": "Brahms",
-        "composer_full": "Johannes Brahms",
-        "work_title": "Variations on a Theme by Haydn",
-        "opus": "Op. 56a",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michael Sanderling",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "Theme and variations.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "4",
-        "piece_order": "2",
-        "composer": "Howard",
-        "composer_full": "Dani Howard",
-        "work_title": "Cello Concerto \"The Lonesome Walker\"",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Michael Sanderling",
-        "soloists": "Richard Bamping (cello)",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "World Premiere.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "4",
-        "piece_order": "3",
-        "composer": "Strauss",
-        "composer_full": "Richard Strauss",
-        "work_title": "Also sprach Zarathustra",
-        "opus": "Op. 30",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Michael Sanderling",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "Nietzsche-inspired tone poem.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "5",
-        "piece_order": "1",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 2",
-        "opus": "Op. 19",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "performers": "",
-        "rating": 3,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "5",
-        "piece_order": "2",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 3",
-        "opus": "Op. 37",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "performers": "",
-        "rating": 2.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "5",
-        "piece_order": "3",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 4",
-        "opus": "Op. 58",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "performers": "",
-        "rating": 2.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "6",
-        "piece_order": "1",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 1",
-        "opus": "Op. 15",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "performers": "",
-        "rating": 3,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "6",
-        "piece_order": "2",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 5 \"Emperor\"",
-        "opus": "Op. 73",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Francois-Frederic Guy",
-        "soloists": "Francois-Frederic Guy (piano)",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "7",
-        "piece_order": "1",
-        "composer": "Salonen",
-        "composer_full": "Esa-Pekka Salonen",
-        "work_title": "Pollux",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "",
-        "performers": "",
-        "rating": 3,
-        "notes": "Composed for LA Philharmonic centennial.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "7",
-        "piece_order": "2",
-        "composer": "Vaughan Williams",
-        "composer_full": "Ralph Vaughan Williams",
-        "work_title": "A Sea Symphony",
-        "opus": "",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Chen Reiss (soprano), Andre Schuen (bass-baritone)",
-        "performers": "Hong Kong Philharmonic Chorus, Hong Kong Young Philharmonic Chorus",
-        "rating": 3.5,
-        "notes": "Symphony with chorus.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "8",
-        "piece_order": "1",
-        "composer": "Mussorgsky",
-        "composer_full": "Modest Mussorgsky",
-        "work_title": "Dawn on the Moscow River",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Yu Long",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "From Khovanshchina Prelude.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "8",
-        "piece_order": "2",
-        "composer": "Rachmaninoff",
-        "composer_full": "Sergei Rachmaninoff",
-        "work_title": "Piano Concerto No. 2",
-        "opus": "Op. 18",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Yu Long",
-        "soloists": "Behzod Abduraimov (piano)",
-        "performers": "",
-        "rating": 2.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "8",
-        "piece_order": "3",
-        "composer": "Rachmaninoff",
-        "composer_full": "Sergei Rachmaninoff",
-        "work_title": "13 Preludes: V. Prelude in G, Moderato",
-        "opus": "Op. 32",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Behzod Abduraimov (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "8",
-        "piece_order": "4",
-        "composer": "Rimsky-Korsakov",
-        "composer_full": "Nikolai Rimsky-Korsakov",
-        "work_title": "Scheherazade",
-        "opus": "Op. 35",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Yu Long",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "Symphonic suite.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "9",
-        "piece_order": "1",
-        "composer": "Salonen",
-        "composer_full": "Esa-Pekka Salonen",
-        "work_title": "Castor",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "",
-        "performers": "",
-        "rating": 3,
-        "notes": "Composed for Bicentennial of the LA Philharmonic.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "9",
-        "piece_order": "2",
-        "composer": "Grieg",
-        "composer_full": "Edvard Grieg",
-        "work_title": "Piano Concerto",
-        "opus": "Op. 16",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Lang Lang (piano)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "9",
-        "piece_order": "3",
-        "composer": "Brahms",
-        "composer_full": "Johannes Brahms",
-        "work_title": "21 Hungarian Dance: No. 1 in G minor",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Lang Lang, Tarmo Peltokoski (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "9",
-        "piece_order": "4",
-        "composer": "Liszt",
-        "composer_full": "Franz Liszt",
-        "work_title": "Consolations S.172: No. 2 Un poco più mosso",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Lang Lang (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "9",
-        "piece_order": "5",
-        "composer": "Sibelius",
-        "composer_full": "Jean Sibelius",
-        "work_title": "Lemminkainen Suite",
-        "opus": "Op. 22",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "Four legends from the Kalevala.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "10",
-        "piece_order": "1",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Egmont Overture",
-        "opus": "Op. 84",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Kahchun Wong",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "Goethe's Egmont incidental music.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "10",
-        "piece_order": "2",
-        "composer": "Mendelssohn",
-        "composer_full": "Felix Mendelssohn",
-        "work_title": "Symphony No. 4 \"Italian\"",
-        "opus": "Op. 90",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Kahchun Wong",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "Italianate sun-drenched energy.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "10",
-        "piece_order": "3",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Symphony No. 4",
-        "opus": "Op. 60",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Kahchun Wong",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "11",
-        "piece_order": "1",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Piano Concerto No. 5 \"Emperor\"",
-        "opus": "Op. 73",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Andris Nelsons",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "performers": "",
-        "rating": 2,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "11",
-        "piece_order": "2",
-        "composer": "Schubert",
-        "composer_full": "Franz Schubert",
-        "work_title": "Moments musicaux: III. Allegro moderato",
-        "opus": "Op. 94",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "11",
-        "piece_order": "3",
-        "composer": "Schumann",
-        "composer_full": "Robert Schumann",
-        "work_title": "Symphony No. 1 \"Spring\"",
-        "opus": "Op. 38",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Andris Nelsons",
-        "soloists": "",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "12",
-        "piece_order": "1",
-        "composer": "Rachmaninoff",
-        "composer_full": "Sergei Rachmaninoff",
-        "work_title": "Piano Concerto No. 2",
-        "opus": "Op. 18",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Andris Nelsons",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "12",
-        "piece_order": "2",
-        "composer": "Chopin",
-        "composer_full": "Fryderyk Chopin",
-        "work_title": "Nocturne 20 in C# minor",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Yulianna Avdeeva (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "12",
-        "piece_order": "3",
-        "composer": "Shostakovich",
-        "composer_full": "Dmitri Shostakovich",
-        "work_title": "Symphony No. 10",
-        "opus": "Op. 93",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Andris Nelsons",
-        "soloists": "",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "12",
-        "piece_order": "4",
-        "composer": "Shostakovich",
-        "composer_full": "Dmitri Shostakovich",
-        "work_title": "Moscow, Cheryomushki: I. A Spin Through Moscow",
-        "opus": "Op. 105",
-        "catalog": "",
-        "period": "",
-        "conductor": "Andris Nelsons",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "13",
-        "piece_order": "1",
-        "composer": "Yao",
-        "composer_full": "Yao Chen",
-        "work_title": "Waltz of the Rolling Giants",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Lio Kuokman",
-        "soloists": "",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "World Premiere. HK Phil Commission.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "13",
-        "piece_order": "2",
-        "composer": "Chopin",
-        "composer_full": "Fryderyk Chopin",
-        "work_title": "Piano Concerto No. 1",
-        "opus": "Op. 11",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Lio Kuokman",
-        "soloists": "Eric Lu (piano)",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "13",
-        "piece_order": "3",
-        "composer": "Schumann",
-        "composer_full": "Robert Schumann",
-        "work_title": "Kinderszenen: Träumerei",
-        "opus": "Op. 15/7",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Lio Kuokman",
-        "soloists": "Eric Lu (piano)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "13",
-        "piece_order": "4",
-        "composer": "Stravinsky",
-        "composer_full": "Igor Stravinsky",
-        "work_title": "The Firebird Suite",
-        "opus": "",
-        "catalog": "",
-        "period": "20th Century",
-        "conductor": "Lio Kuokman",
-        "soloists": "",
-        "performers": "",
-        "rating": 3,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "14",
-        "piece_order": "1",
-        "composer": "Beethoven",
-        "composer_full": "Ludwig van Beethoven",
-        "work_title": "Symphony No. 6 \"Pastoral\"",
-        "opus": "Op. 68",
-        "catalog": "",
-        "period": "Classical",
-        "conductor": "Manfred Honeck",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "14",
-        "piece_order": "2",
-        "composer": "Strauss",
-        "composer_full": "Richard Strauss",
-        "work_title": "Elektra Suite",
-        "opus": "",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Manfred Honeck",
-        "soloists": "",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "Suite from the opera, arr. Manfred Honeck & Tomás Ille.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "15",
-        "piece_order": "1",
-        "composer": "Dvořák",
-        "composer_full": "Antonín Dvořák",
-        "work_title": "Requiem",
-        "opus": "Op. 89",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Robert Kružík",
-        "soloists": "",
-        "performers": "",
-        "rating": 3,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "16",
-        "piece_order": "1",
-        "composer": "Tchaikovsky",
-        "composer_full": "Pyotr Ilyich Tchaikovsky",
-        "work_title": "Eugene Onegin",
-        "opus": "Op. 24",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Robert Kružík",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "17",
-        "piece_order": "1",
-        "composer": "Mascagni",
-        "composer_full": "Pietro Mascagni",
-        "work_title": "Cavalleria Rusticana",
-        "opus": "",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Roberto Gianola",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "17",
-        "piece_order": "2",
-        "composer": "Leoncavallo",
-        "composer_full": "Ruggero Leoncavallo",
-        "work_title": "Pagliacci",
-        "opus": "",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Roberto Gianola",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "1",
-        "composer": "Rossini",
-        "composer_full": "Gioachino Rossini",
-        "work_title": "La pietra del paragone: Quell'alme pupille",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "2",
-        "composer": "Rossini",
-        "composer_full": "Gioachino Rossini",
-        "work_title": "La Cenerentola: Overture",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "3",
-        "composer": "Rossini",
-        "composer_full": "Gioachino Rossini",
-        "work_title": "La Cenerentola: Sì, ritrovarla io giuro",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "4",
-        "composer": "Donizetti",
-        "composer_full": "Gaetano Donizetti",
-        "work_title": "Don Pasquale: Overture",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "5",
-        "composer": "Donizetti",
-        "composer_full": "Gaetano Donizetti",
-        "work_title": "L'elisir d'amore: Una furtiva lagrima",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "6",
-        "composer": "Donizetti",
-        "composer_full": "Gaetano Donizetti",
-        "work_title": "Lucia di Lammermoor: Tombe degli avi miei",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "7",
-        "composer": "Bizet",
-        "composer_full": "Georges Bizet",
-        "work_title": "Carmen: Aragonaise",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "8",
-        "composer": "Soutullo & Vert",
-        "composer_full": "Reveriano Soutullo & Juan Vert",
-        "work_title": "El último romántico: Bella enamorada",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "9",
-        "composer": "Serrano",
-        "composer_full": "José Serrano",
-        "work_title": "La alegría del batallón: Al mismito rey del moro",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "10",
-        "composer": "Offenbach",
-        "composer_full": "Jacques Offenbach",
-        "work_title": "Orphée aux enfers: Can-can",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "11",
-        "composer": "Offenbach",
-        "composer_full": "Jacques Offenbach",
-        "work_title": "La belle Hélène: Au mont Ida",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "12",
-        "composer": "Gounod",
-        "composer_full": "Charles Gounod",
-        "work_title": "Roméo et Juliette: Entr'acte to Act II",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 3,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "13",
-        "composer": "Gounod",
-        "composer_full": "Charles Gounod",
-        "work_title": "Roméo et Juliette: L'amour!... Ah, lève-toi soleil!",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "14",
-        "composer": "Massenet",
-        "composer_full": "Jules Massenet",
-        "work_title": "Werther: Pourquoi me réveiller?",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "15",
-        "composer": "Verdi",
-        "composer_full": "Giuseppe Verdi",
-        "work_title": "Macbeth: Prelude",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "",
-        "performers": "",
-        "rating": 4.5,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "18",
-        "piece_order": "16",
-        "composer": "Verdi",
-        "composer_full": "Giuseppe Verdi",
-        "work_title": "I Lombardi alla prima crociata: La mia letizia infondere",
-        "opus": "",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Michele Spotti",
-        "soloists": "Juan Diego Flórez (tenor)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "Opera",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "1",
-        "composer": "Wang",
-        "composer_full": "Chenwei Wang",
-        "work_title": "The Sisters' Islands",
-        "opus": "",
-        "catalog": "",
-        "period": "Contemporary",
-        "conductor": "Hannu Lintu",
-        "soloists": "",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "2",
-        "composer": "Mendelssohn",
-        "composer_full": "Felix Mendelssohn",
-        "work_title": "Violin Concerto in E minor",
-        "opus": "Op. 64",
-        "catalog": "",
-        "period": "Romantic",
-        "conductor": "Hannu Lintu",
-        "soloists": "Chloe Chua (violin)",
-        "performers": "",
-        "rating": 4,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "3",
-        "composer": "Ponce",
-        "composer_full": "Manuel Ponce",
-        "work_title": "Estrellita (Heifetz)",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Chloe Chua (violin)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "4",
-        "composer": "Bach",
-        "composer_full": "Johann Sebastian Bach",
-        "work_title": "Sonata No. 3 for Solo Violin in C Major BWV 1005: 3. Largo",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "",
-        "soloists": "Chloe Chua (violin)",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "5",
-        "composer": "Mahler",
-        "composer_full": "Gustav Mahler",
-        "work_title": "Symphony No. 1 in D major",
-        "opus": "",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Hannu Lintu",
-        "soloists": "",
-        "performers": "",
-        "rating": 3.5,
-        "notes": "",
-        "tag": "",
-        "section": "",
-        "encore": false
-      },
-      {
-        "concert_id": "19",
-        "piece_order": "6",
-        "composer": "Sibelius",
-        "composer_full": "Jean Sibelius",
-        "work_title": "Andante Festivo",
-        "opus": "",
-        "catalog": "",
-        "period": "",
-        "conductor": "Hannu Lintu",
-        "soloists": "",
-        "performers": "",
-        "rating": null,
-        "notes": "",
-        "tag": "",
-        "section": "encore",
-        "encore": true
-      },
-      {
-        "concert_id": "21",
-        "piece_order": "1",
-        "composer": "Mahler",
-        "composer_full": "Gustav Mahler",
-        "work_title": "Symphony No. 8 in E flat major",
-        "opus": "",
-        "catalog": "",
-        "period": "Post-Romantic",
-        "conductor": "Tarmo Peltokoski",
-        "soloists": "Jacquelyn Wagner; Chen Reiss; Louise Kwong; Catriona Morison; Sasha Cooke; Tuomas Katajala; Rinalds Kandalincevs; Shenyang",
-        "performers": "Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir",
-        "rating": 4.5,
-        "notes": "Choirs: Hong Kong Philharmonic Chorus; The Learners Chorus; London Philharmonic Choir; St. Paul's Co-educational College Senior Mixed-Voice Choir; Ying Wa College Choir; The Hong Kong Children's Choir. HK Phil premiere of Mahler 8; ~1h40 without intermission.",
-        "tag": "",
-        "section": "",
-        "encore": false
-      }
-    ]
+      "repeatedWorks": [
+        {
+          "title": "Ludwig van Beethoven — Piano Concerto No. 5 \"Emperor\"",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2026-05-23",
+              "conductor": "Francois-Frederic Guy"
+            },
+            {
+              "date": "2026-06-02",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        },
+        {
+          "title": "Sergei Rachmaninoff — Piano Concerto No. 2",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2025-09-27",
+              "conductor": "Yu Long"
+            },
+            {
+              "date": "2026-06-03",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        }
+      ]
+    },
+    "none": {
+      "counts": {
+        "events": 17,
+        "programmes": 43,
+        "composers": 21,
+        "works": 41,
+        "orchestras": 4,
+        "years": 2
+      },
+      "dateRange": {
+        "from": "2025-05-08",
+        "to": "2026-11-07"
+      },
+      "stats": [
+        {
+          "label": "Events",
+          "value": 17
+        },
+        {
+          "label": "Pieces heard",
+          "value": 43
+        },
+        {
+          "label": "Avg rating",
+          "value": "3.7"
+        },
+        {
+          "label": "Composers",
+          "value": 21
+        },
+        {
+          "label": "Unique works",
+          "value": 41
+        },
+        {
+          "label": "Orchestras",
+          "value": 4
+        },
+        {
+          "label": "Years",
+          "value": 2
+        }
+      ],
+      "ratings": {
+        "avg": 3.7051282051282053
+      },
+      "charts": {
+        "byPeriod": [
+          {
+            "label": "Romantic",
+            "value": 11
+          },
+          {
+            "label": "20th Century",
+            "value": 9
+          },
+          {
+            "label": "Classical",
+            "value": 9
+          },
+          {
+            "label": "Contemporary",
+            "value": 7
+          },
+          {
+            "label": "Post-Romantic",
+            "value": 7
+          }
+        ],
+        "byPeriodRating": [
+          {
+            "label": "Post-Romantic",
+            "value": 4.36,
+            "count": 7
+          },
+          {
+            "label": "Romantic",
+            "value": 3.8,
+            "count": 11
+          },
+          {
+            "label": "Contemporary",
+            "value": 3.71,
+            "count": 7
+          },
+          {
+            "label": "20th Century",
+            "value": 3.69,
+            "count": 9
+          },
+          {
+            "label": "Classical",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byComposer": [
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 9
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 3
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 2
+          },
+          {
+            "label": "Jean Sibelius",
+            "value": 2
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 2
+          },
+          {
+            "label": "Antonín Dvořák",
+            "value": 1
+          },
+          {
+            "label": "Chenwei Wang",
+            "value": 1
+          },
+          {
+            "label": "Dani Howard",
+            "value": 1
+          }
+        ],
+        "byComposerRating": [
+          {
+            "label": "Jean Sibelius",
+            "value": 4.5,
+            "count": 2
+          },
+          {
+            "label": "Richard Strauss",
+            "value": 4.5,
+            "count": 3
+          },
+          {
+            "label": "Dmitri Shostakovich",
+            "value": 4.17,
+            "count": 4
+          },
+          {
+            "label": "Felix Mendelssohn",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Gustav Mahler",
+            "value": 4,
+            "count": 2
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 3.5,
+            "count": 4
+          },
+          {
+            "label": "Maurice Ravel",
+            "value": 3.5,
+            "count": 3
+          },
+          {
+            "label": "Sergei Rachmaninoff",
+            "value": 3,
+            "count": 2
+          },
+          {
+            "label": "Ludwig van Beethoven",
+            "value": 2.93,
+            "count": 9
+          }
+        ],
+        "byConductor": [
+          {
+            "label": "Tarmo Peltokoski",
+            "value": 4
+          },
+          {
+            "label": "Andris Nelsons",
+            "value": 2
+          },
+          {
+            "label": "Francois-Frederic Guy",
+            "value": 2
+          },
+          {
+            "label": "Christoph Koncz",
+            "value": 1
+          },
+          {
+            "label": "Esa-Pekka Salonen",
+            "value": 1
+          },
+          {
+            "label": "Hannu Lintu",
+            "value": 1
+          },
+          {
+            "label": "Kahchun Wong",
+            "value": 1
+          },
+          {
+            "label": "Lio Kuokman",
+            "value": 1
+          },
+          {
+            "label": "Manfred Honeck",
+            "value": 1
+          },
+          {
+            "label": "Michael Sanderling",
+            "value": 1
+          },
+          {
+            "label": "Robert Kružík",
+            "value": 1
+          },
+          {
+            "label": "Yu Long",
+            "value": 1
+          }
+        ],
+        "byVenue": [
+          {
+            "label": "HK Cultural Centre Concert Hall",
+            "value": 14
+          },
+          {
+            "label": "HK City Hall Concert Hall",
+            "value": 2
+          },
+          {
+            "label": "Shenzhen Concert Hall",
+            "value": 1
+          }
+        ],
+        "byRating": [
+          {
+            "label": "2",
+            "value": 1
+          },
+          {
+            "label": "2.5",
+            "value": 3
+          },
+          {
+            "label": "3",
+            "value": 6
+          },
+          {
+            "label": "3.5",
+            "value": 10
+          },
+          {
+            "label": "4",
+            "value": 11
+          },
+          {
+            "label": "4.5",
+            "value": 4
+          },
+          {
+            "label": "5",
+            "value": 4
+          }
+        ]
+      },
+      "repeatedWorks": [
+        {
+          "title": "Ludwig van Beethoven — Piano Concerto No. 5 \"Emperor\"",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2026-05-23",
+              "conductor": "Francois-Frederic Guy"
+            },
+            {
+              "date": "2026-06-02",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        },
+        {
+          "title": "Sergei Rachmaninoff — Piano Concerto No. 2",
+          "count": 2,
+          "performances": [
+            {
+              "date": "2025-09-27",
+              "conductor": "Yu Long"
+            },
+            {
+              "date": "2026-06-03",
+              "conductor": "Andris Nelsons"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

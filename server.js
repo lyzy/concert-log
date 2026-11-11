@@ -25,9 +25,28 @@ const OUT_JSON = path.join(PUBLIC_DIR, "data", "concert.json");
 const PORTS = process.env.PORT ? [Number(process.env.PORT)] : [3000, 8080, 8081, 5173, 4321, 9000];
 
 function buildAll() {
-  const all = buildDataset({ includeWorld: true });
-  all.classical = buildDataset({ includeWorld: false });
-  return all;
+  const all = buildDataset({ includeWorld: true, includeOpera: true });
+  const noWorld = buildDataset({ includeWorld: false, includeOpera: true });
+  const noOpera = buildDataset({ includeWorld: true, includeOpera: false });
+  const none = buildDataset({ includeWorld: false, includeOpera: false });
+  const view = function (d) {
+    return {
+      counts: d.counts,
+      dateRange: d.dateRange,
+      stats: d.stats,
+      ratings: d.ratings,
+      charts: d.charts,
+      repeatedWorks: d.repeatedWorks
+    };
+  };
+  return Object.assign({}, all, {
+    views: {
+      all: view(all),
+      noWorld: view(noWorld),
+      noOpera: view(noOpera),
+      none: view(none)
+    }
+  });
 }
 
 let dataset = buildAll();
